@@ -1,0 +1,95 @@
+{
+    "ndroram_pistat": { /* piu_static_ram */ 
+        "type": "custom_common",
+        "num": "pchstat_bw",
+        "param": {
+            "NUM_DATA": "num_pch",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+    "demux_pistat": { /* piu_static_ram */ 
+        "type": "rtl_common",
+        "num": "pchstat_bw",
+        "param": {
+            "NUM_DATA": "num_pch",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "ndroram_pidyn": { /* piu_dynamic_ram */ 
+        "type": "custom_common",
+        "num": "pchdyn_bw",
+        "param": {
+            "NUM_DATA": "num_pch",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_pidyn": {
+        "type": "rtl_common",
+        "num": "pchdyn_bw",
+        "param": {
+            "NUM_DATA": "num_pch",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "piu_ctrl": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_PCH": "num_pch"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "piu_nextsrc": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_PCH": "num_pch"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "piu_pchindexer": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_PCH": "num_pch"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "piu_dyndecoder": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_PCH": "num_pch"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "piu_pchinfo": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_LQ": "num_lq",
+            "NUM_PCH": "num_pch"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }
+}

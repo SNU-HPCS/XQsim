@@ -1,0 +1,94 @@
+{
+    "fifo_ctrl_pdubuf": { /* fifo_ctrl for to_pdubuf */
+        "type": "rtl_common", 
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "to_pdubuf_sz"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "fifo_ctrl_lmubuf": { /* fifo_ctrl for to_lmubuf */
+        "type": "rtl_common", 
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "to_lmubuf_sz"
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndroram_pdubuf": { /* fifo_to_pdu */
+        "type": "custom_common",
+        "num": "to_pdubuf_bw",
+        "param": {
+            "NUM_DATA": "to_pdubuf_sz",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+     "demux_pdubuf": { /* fifo_to_pdu */
+        "type": "rtl_common",
+        "num": "to_pdubuf_bw",
+        "param": {
+            "NUM_DATA": "to_pdubuf_sz",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndroram_lmubuf": { /* fifo_to_lmu */
+        "type": "custom_common",
+        "num": "to_lmubuf_bw",
+        "param": {
+            "NUM_DATA": "to_lmubuf_sz",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_lmubuf": { /* fifo_to_lmu */
+        "type": "rtl_common",
+        "num": "to_lmubuf_bw",
+        "param": {
+            "NUM_DATA": "to_lmubuf_sz",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "qid_ctrl": {
+        "type": "rtl_unit",
+        "num": 1,
+        "param":{
+            "NUM_LQ": "num_lq"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "qid_decoder": {
+        "type": "rtl_unit",
+        "num": 1,
+        "param":{
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "qid_locator": {
+        "type": "rtl_unit",
+        "num": 1,
+        "param":{
+            "NUM_LQ": "num_lq"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }
+}

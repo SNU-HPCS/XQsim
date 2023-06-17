@@ -1,0 +1,79 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'EDU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : EDU
+Version: P-2019.03
+Date   : Wed May 31 04:04:45 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: gen_educell_i[0].gen_educell_j[17].UUT2_i_j/syndrome_taken_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_educell_i[5].gen_educell_j[11].UUT2_i_j/esm_reg_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  gen_educell_i[0].gen_educell_j[17].UUT2_i_j/syndrome_taken_reg/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  gen_educell_i[0].gen_educell_j[17].UUT2_i_j/syndrome_taken_reg/Q (DFF_X1)
+                                                          0.08       0.08 f
+  gen_educell_i[0].gen_educell_j[17].UUT2_i_j/U5/ZN (NAND2_X1)
+                                                          0.01 *     0.10 r
+  gen_educell_i[0].gen_educell_j[17].UUT2_i_j/U4/ZN (NOR2_X1)
+                                                          0.02 *     0.11 f
+  gen_educell_i[0].gen_educell_j[17].UUT2_i_j/local_errormatch (edu_cell_AQROW0_AQCOL17) <-
+                                                          0.00       0.11 f
+  U3090/ZN (NOR2_X1)                                      0.03 *     0.14 r
+  U3208/ZN (NAND4_X1)                                     0.03 *     0.18 f
+  U3217/ZN (NOR2_X1)                                      0.03 *     0.21 r
+  U3004/ZN (NAND2_X1)                                     0.03 *     0.24 f
+  U3091/ZN (NOR2_X4)                                      0.04 *     0.27 r
+  U7789/ZN (NAND4_X4)                                     0.04 *     0.32 f
+  U7833/Z (BUF_X2)                                        0.06 *     0.37 f
+  U7525/Z (BUF_X2)                                        0.05 *     0.42 f
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/global_errormatch (edu_cell_AQROW5_AQCOL11) <-
+                                                          0.00       0.42 f
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/U139/ZN (NOR2_X1)
+                                                          0.04 *     0.46 r
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/U72/ZN (NAND2_X1)
+                                                          0.02 *     0.48 f
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/U30/ZN (NOR2_X1)
+                                                          0.02 *     0.51 r
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/U154/ZN (NOR2_X1)
+                                                          0.01 *     0.52 f
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/U156/Z (MUX2_X1)
+                                                          0.06 *     0.57 f
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/esm_reg_reg[2]/D (DFF_X1)
+                                                          0.00 *     0.57 f
+  data arrival time                                                  0.57
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j/esm_reg_reg[2]/CK (DFF_X1)
+                                                          0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.21
+
+
+1

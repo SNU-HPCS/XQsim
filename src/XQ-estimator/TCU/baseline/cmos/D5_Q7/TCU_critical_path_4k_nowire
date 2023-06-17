@@ -1,0 +1,74 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'TCU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TCU
+Version: P-2019.03
+Date   : Sat May 20 11:53:32 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: num_item_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_cwdbuf[650].UUT3_I/regarray_reg[0][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  num_item_reg[1]/CK (DFF_X1)                             0.00 #     0.00 r
+  num_item_reg[1]/Q (DFF_X1) <-                           0.09       0.09 r
+  UUT0/num_item[1] (buffer_ctrl_ADDR_BW1) <-              0.00       0.09 r
+  UUT0/U7/ZN (INV_X2)                                     0.01 *     0.10 f
+  UUT0/U5/ZN (NOR2_X2)                                    0.03 *     0.13 r
+  UUT0/U3/ZN (NOR2_X4)                                    0.02 *     0.15 f
+  UUT0/reg_push (buffer_ctrl_ADDR_BW1) <-                 0.00       0.15 f
+  U878/A (INV_X4) <-                                      0.00 *     0.15 f
+  U878/ZN (INV_X4) <-                                     0.02       0.17 r
+  U869/A (INV_X8) <-                                      0.00 *     0.17 r
+  U869/ZN (INV_X8) <-                                     0.01       0.18 f
+  U893/A (INV_X16) <-                                     0.00 *     0.18 f
+  U893/ZN (INV_X16) <-                                    0.02       0.21 r
+  U911/A (INV_X16) <-                                     0.00 *     0.21 r
+  U911/ZN (INV_X16) <-                                    0.01       0.22 f
+  U782/A (BUF_X32) <-                                     0.00 *     0.22 f
+  U782/Z (BUF_X32) <-                                     0.03       0.25 f
+  U880/A (BUF_X32) <-                                     0.00 *     0.25 f
+  U880/Z (BUF_X32) <-                                     0.02       0.28 f
+  gen_cwdbuf[650].UUT3_I/IN0 (buffer_ADDR_BW1_DATA_BW4_429) <-
+                                                          0.00       0.28 f
+  gen_cwdbuf[650].UUT3_I/U5/ZN (AOI21_X4)                 0.03 *     0.31 r
+  gen_cwdbuf[650].UUT3_I/U6/ZN (NOR2_X2)                  0.01 *     0.32 f
+  gen_cwdbuf[650].UUT3_I/U23/ZN (AOI22_X1)                0.03 *     0.36 r
+  gen_cwdbuf[650].UUT3_I/U24/ZN (INV_X1)                  0.01 *     0.37 f
+  gen_cwdbuf[650].UUT3_I/regarray_reg[0][3]/D (DFF_X1)
+                                                          0.00 *     0.37 f
+  data arrival time                                                  0.37
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  gen_cwdbuf[650].UUT3_I/regarray_reg[0][3]/CK (DFF_X1)
+                                                          0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+1

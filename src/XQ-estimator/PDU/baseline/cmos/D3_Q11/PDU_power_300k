@@ -1,0 +1,42 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : PDU
+Version: P-2019.03
+Date   : Mon May 29 11:39:32 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+PDU                                    1.14e+03 1.01e+04 1.22e+05 1.14e+04 100.0
+  UUT3 (pdu_decoder)                    194.814  121.440 1.84e+04  334.647   2.9
+  UUT2 (pdu_pchmaptbl)                   37.769   24.640 2.29e+03   64.697   0.6
+  UUT1 (pdu_lqindexer)                   36.090   25.134 2.76e+03   63.988   0.6
+  UUT0 (pdu_ctrl)                         7.765    7.182  495.836   15.442   0.1
+1

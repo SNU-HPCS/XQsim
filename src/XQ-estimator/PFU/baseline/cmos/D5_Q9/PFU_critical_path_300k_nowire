@@ -1,0 +1,87 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'PFU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PFU
+Version: P-2019.03
+Date   : Sat May 20 16:34:45 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: UUT1/UUT1/regarray_reg[0][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pfarray_reg_reg[752]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UUT1/UUT1/regarray_reg[0][0]/CK (DFF_X1)                0.00 #     0.00 r
+  UUT1/UUT1/regarray_reg[0][0]/Q (DFF_X1)                 0.08       0.08 f
+  UUT1/UUT1/U18/ZN (OAI22_X1)                             0.04 *     0.12 r
+  UUT1/UUT1/U35/ZN (INV_X1)                               0.02 *     0.14 f
+  UUT1/UUT1/U16/ZN (NAND2_X4)                             0.02 *     0.17 r
+  UUT1/UUT1/dout[0]_BAR (fifo_reg_ADDR_BW1_DATA_BW4) <-
+                                                          0.00       0.17 r
+  UUT1/dout[0]_BAR (fifo_ADDR_BW1_DATA_BW4)               0.00       0.17 r
+  U3230/ZN (INV_X2)                                       0.02 *     0.18 f
+  U3181/ZN (INV_X4)                                       0.02 *     0.20 r
+  U3254/Z (BUF_X4)                                        0.02 *     0.22 r
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/IN1 (pfu_cwdgen_19)
+                                                          0.00       0.22 r
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/U6/ZN (OAI211_X1)
+                                                          0.02 *     0.24 f
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/U3/ZN (NAND3_X1)
+                                                          0.03 *     0.27 r
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/U12/ZN (NAND2_X2)
+                                                          0.02 *     0.29 f
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/U29/ZN (NOR2_X4)
+                                                          0.02 *     0.31 r
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/U20/ZN (INV_X2)
+                                                          0.01 *     0.32 f
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/U21/ZN (INV_X8)
+                                                          0.02 *     0.34 r
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k/cwd_pf[1] (pfu_cwdgen_19)
+                                                          0.00       0.34 r
+  UUT4/data_in[65] (demux_NUM_DATA18_DATA_BW144)          0.00       0.34 r
+  UUT4/U1271/ZN (AND2_X1)                                 0.06 *     0.40 r
+  UUT4/data_out[1506] (demux_NUM_DATA18_DATA_BW144)       0.00       0.40 r
+  gen_pfupdater[376].UUT5_I/mgdcwd[2] (pfu_pfupdater_271) <-
+                                                          0.00       0.40 r
+  gen_pfupdater[376].UUT5_I/U3/ZN (INV_X1)                0.01 *     0.42 f
+  gen_pfupdater[376].UUT5_I/U15/ZN (NAND2_X1)             0.01 *     0.43 r
+  gen_pfupdater[376].UUT5_I/U19/ZN (AND2_X1)              0.03 *     0.46 r
+  gen_pfupdater[376].UUT5_I/U24/ZN (NAND3_X1)             0.02 *     0.48 f
+  gen_pfupdater[376].UUT5_I/newpf[0] (pfu_pfupdater_271) <-
+                                                          0.00       0.48 f
+  U5202/ZN (NAND2_X1)                                     0.02 *     0.49 r
+  U5190/ZN (NAND2_X1)                                     0.01 *     0.50 f
+  pfarray_reg_reg[752]/D (DFF_X1)                         0.00 *     0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  pfarray_reg_reg[752]/CK (DFF_X1)                        0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.14
+
+
+1

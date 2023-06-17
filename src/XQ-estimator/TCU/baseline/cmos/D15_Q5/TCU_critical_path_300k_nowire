@@ -1,0 +1,79 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'TCU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TCU
+Version: P-2019.03
+Date   : Thu Mar 23 17:03:55 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: num_item_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_cwdbuf[4104].UUT3_I/regarray_reg[0][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  num_item_reg[1]/CK (DFF_X1)                             0.00 #     0.00 r
+  num_item_reg[1]/Q (DFF_X1) <-                           0.09       0.09 r
+  UUT0/num_item[1] (buffer_ctrl_ADDR_BW1) <-              0.00       0.09 r
+  UUT0/U5/ZN (NAND2_X2)                                   0.02 *     0.11 f
+  UUT0/U22/ZN (NAND2_X4)                                  0.02 *     0.13 r
+  UUT0/U8/ZN (INV_X8)                                     0.01 *     0.14 f
+  UUT0/reg_push (buffer_ctrl_ADDR_BW1) <-                 0.00       0.14 f
+  U3989/A (INV_X8) <-                                     0.00 *     0.14 f
+  U3989/ZN (INV_X8) <-                                    0.02       0.16 r
+  U4566/A (INV_X8) <-                                     0.00 *     0.16 r
+  U4566/ZN (INV_X8) <-                                    0.01       0.17 f
+  U4247/A (INV_X8) <-                                     0.00 *     0.17 f
+  U4247/ZN (INV_X8) <-                                    0.02       0.19 r
+  U3988/A (INV_X8) <-                                     0.00 *     0.19 r
+  U3988/ZN (INV_X8) <-                                    0.01       0.20 f
+  U4588/A (INV_X8) <-                                     0.00 *     0.20 f
+  U4588/ZN (INV_X8) <-                                    0.02       0.22 r
+  U4248/A (INV_X16) <-                                    0.00 *     0.22 r
+  U4248/ZN (INV_X16) <-                                   0.01       0.24 f
+  U4591/A (BUF_X16) <-                                    0.00 *     0.24 f
+  U4591/Z (BUF_X16) <-                                    0.03       0.26 f
+  U4000/A (INV_X16) <-                                    0.00 *     0.26 f
+  U4000/ZN (INV_X16) <-                                   0.02       0.29 r
+  gen_cwdbuf[4104].UUT3_I/wr_en_BAR (buffer_ADDR_BW1_DATA_BW4_2039) <-
+                                                          0.00       0.29 r
+  gen_cwdbuf[4104].UUT3_I/U6/ZN (OAI21_X1)                0.02 *     0.30 f
+  gen_cwdbuf[4104].UUT3_I/U7/ZN (INV_X1)                  0.04 *     0.34 r
+  gen_cwdbuf[4104].UUT3_I/U8/ZN (NOR2_X2)                 0.01 *     0.35 f
+  gen_cwdbuf[4104].UUT3_I/U20/ZN (AOI22_X1)               0.04 *     0.39 r
+  gen_cwdbuf[4104].UUT3_I/U21/ZN (INV_X1)                 0.01 *     0.40 f
+  gen_cwdbuf[4104].UUT3_I/regarray_reg[0][1]/D (DFF_X1)
+                                                          0.00 *     0.40 f
+  data arrival time                                                  0.40
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  gen_cwdbuf[4104].UUT3_I/regarray_reg[0][1]/CK (DFF_X1)
+                                                          0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.04
+
+
+1

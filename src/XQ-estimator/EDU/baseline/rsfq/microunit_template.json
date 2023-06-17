@@ -1,0 +1,138 @@
+{
+    "edu_ctrl": {
+        "type": "rtl_unit", 
+        "num": 1, 
+        "param": {
+            "NUM_PCH": "num_pch", 
+            "CODE_DIST": "code_dist"
+        },
+        "clk": "concurrent", 
+        "loop": false
+    },
+
+    "fifo_ctrl_pibuf": {
+        "type": "rtl_common",
+        "num": 1,
+        "param": {
+            "NUM_DATA": 2
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndroram_pibuf": {
+        "type": "custom_common",
+        "num": "num_pch", 
+        "param": {
+            "NUM_DATA": 2, 
+            "DATA_BW": "pibuf_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_pibuf": {
+        "type": "rtl_common",
+        "num": "num_pch", 
+        "param": {
+            "NUM_DATA": 2, 
+            "DATA_BW": "pibuf_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+    "srmem_eduloc": {
+        "type": "custom_common", 
+        "num": "aqloc_bw", 
+        "param": {
+            "NUM_DATA":  "num_pchaq"
+        }, 
+        "clk": "counter", 
+        "loop": true
+    },
+
+    "educell_predecoder": {
+        "type": "rtl_unit",
+        "num": "num_pch", 
+        "param": {
+        },
+        "clk": "concurrent", 
+        "loop": false
+    },
+
+    "ndronw_predec": {
+        "type": "custom_common",
+        "num": "num_educell",
+        "param": {
+            "DATA_BW": "predec_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "edu_nexterr": {
+        "type": "rtl_unit",
+        "num": "num_educell", 
+        "param": {
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "educell_esmunit_idx": {
+        "type": "rtl_unit",
+        "num": "num_educell", 
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "educell_decoder": {
+        "type": "rtl_unit", 
+        "num": "num_educell",
+        "param": {
+            "NUM_PCH": "num_pch",
+            "CODE_DIST": "code_dist"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "educell_syndir": {
+        "type": "rtl_unit",
+        "num": "num_educell", 
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "educell_spikegen": {
+        "type": "rtl_unit",
+        "num": "num_educell", 
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "educell_syndromegen": {
+        "type": "rtl_unit",
+        "num": "num_educell", 
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndronw_esm": {
+        "type": "custom_common",
+        "num": "num_educell",
+        "param": {
+            "DATA_BW": "aqmeas_th"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }
+}

@@ -1,0 +1,32 @@
+/* Config */
+{   "name": "nearfuture_4K_CMOS_Vopt", 
+
+    "arch_unit":{ /* microarchitecture & temperature & technology */
+        "QIM": {"uarch": "none",     "temp_tech": "300K_none_"},
+        "QID": {"uarch": "baseline", "temp_tech": "300K_CMOS_"},
+        "PDU": {"uarch": "baseline", "temp_tech": "300K_CMOS_"},
+        "PIU": {"uarch": "baseline", "temp_tech": "300K_CMOS_"},
+        "PSU": {"uarch": "baseline", "temp_tech": "4K_CMOS_Vopt"},
+        "TCU": {"uarch": "baseline", "temp_tech": "4K_CMOS_Vopt"},
+        "QXU": {"uarch": "none",     "temp_tech": "4K_none_"},
+        "EDU": {"uarch": "fast",     "temp_tech": "300K_CMOS_"},
+        "PFU": {"uarch": "baseline", "temp_tech": "300K_CMOS_"},
+        "LMU": {"uarch": "baseline", "temp_tech": "300K_CMOS_"}
+    },
+
+    "qubit_plane":{
+        "code_dist": 15, 
+        "block_type": "Distillation", /* Distillation or FastData */
+        "physical_error_rate": 0.001
+    },
+
+    "scale_constraint":{
+        "gate_latency":{ 
+            "sqgate_ns": 14,  /* ns */
+            "tqgate_ns": 26,  /* ns */
+            "meas_ns": 600     /* ns */
+        },
+        "4K_power_budget": 1500, /* mW */
+        "digital_cable_heat": 3.1 /* mW per Gbps */
+    }
+}

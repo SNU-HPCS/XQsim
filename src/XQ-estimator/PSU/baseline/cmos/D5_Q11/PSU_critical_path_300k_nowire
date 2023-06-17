@@ -1,0 +1,72 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'PSU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PSU
+Version: P-2019.03
+Date   : Sat May 20 13:35:31 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: UUT3/sel_pchrd_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mask_array_reg_reg[73]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UUT3/sel_pchrd_reg/CK (DFF_X1)                          0.00 #     0.00 r
+  UUT3/sel_pchrd_reg/QN (DFF_X1)                          0.08       0.08 f
+  UUT3/U94/ZN (INV_X4)                                    0.04 *     0.11 r
+  UUT3/U100/ZN (INV_X1)                                   0.02 *     0.13 f
+  UUT3/U107/ZN (INV_X4)                                   0.05 *     0.18 r
+  UUT3/U472/Z (MUX2_X1)                                   0.09 *     0.27 f
+  UUT3/dout_list[282] (srmem_double_NUM_RDPORT7_LEN_SRMEM3_DATA_BW59) <-
+                                                          0.00       0.27 f
+  U31879/ZN (INV_X2)                                      0.04 *     0.30 r
+  gen_maskgen[73].UUT5_I/pchdyn[17]_BAR (psu_maskgen_38) <-
+                                                          0.00       0.30 r
+  gen_maskgen[73].UUT5_I/U209/ZN (NAND2_X1)               0.02 *     0.32 f
+  gen_maskgen[73].UUT5_I/U210/ZN (NAND2_X1)               0.02 *     0.34 r
+  gen_maskgen[73].UUT5_I/U212/ZN (INV_X1)                 0.01 *     0.35 f
+  gen_maskgen[73].UUT5_I/U213/ZN (OR2_X1)                 0.05 *     0.40 f
+  gen_maskgen[73].UUT5_I/U214/ZN (OAI211_X1)              0.02 *     0.42 r
+  gen_maskgen[73].UUT5_I/U215/ZN (NAND4_X1)               0.03 *     0.45 f
+  gen_maskgen[73].UUT5_I/U218/ZN (NAND4_X1)               0.03 *     0.48 r
+  gen_maskgen[73].UUT5_I/U219/ZN (OAI211_X1)              0.03 *     0.51 f
+  gen_maskgen[73].UUT5_I/U220/ZN (NAND3_X1)               0.02 *     0.53 r
+  gen_maskgen[73].UUT5_I/U6/ZN (INV_X1)                   0.01 *     0.54 f
+  gen_maskgen[73].UUT5_I/U4/ZN (AOI21_X2)                 0.04 *     0.58 r
+  gen_maskgen[73].UUT5_I/mask[0] (psu_maskgen_38) <-      0.00       0.58 r
+  U50202/ZN (NAND2_X1)                                    0.02 *     0.60 f
+  U50201/ZN (NAND2_X1)                                    0.01 *     0.61 r
+  mask_array_reg_reg[73]/D (DFF_X1)                       0.00 *     0.61 r
+  data arrival time                                                  0.61
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  mask_array_reg_reg[73]/CK (DFF_X1)                      0.00       0.40 r
+  library setup time                                     -0.03       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+1

@@ -1,0 +1,45 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : PIU
+Version: P-2019.03
+Date   : Mon May 29 15:26:44 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+PIU                                    1.33e+03 1.48e+04 1.75e+05 1.63e+04 100.0
+  UUT6 (piu_pchinfo)                     32.179   37.509 8.08e+03   77.765   0.5
+  UUT5 (piu_dyndecoder)                  38.881   35.485 5.97e+03   80.339   0.5
+  UUT4 (piu_dynamic_ram)                213.758 4.96e+03 4.08e+04 5.22e+03  32.0
+  UUT3 (piu_static_rom)                   6.938    4.522  806.336   12.267   0.1
+  UUT2 (piu_nextsrc)                     28.288   25.570 4.62e+03   58.477   0.4
+  UUT1 (piu_pchindexer)                  40.288   29.239 1.06e+04   80.156   0.5
+  UUT0 (piu_ctrl)                        47.619   41.509 5.67e+03   94.798   0.6
+1

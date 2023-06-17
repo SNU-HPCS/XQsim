@@ -1,0 +1,101 @@
+{
+    "fifo_ctrl_opbuf": { /* fifo_ctrl for pfu_opbuf" */
+        "type": "rtl_common", 
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndroram_opbuf": {/* fifo_mem for pfu_opbuf */
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2,
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_opbuf": {
+        "type": "rtl_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2,
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "srmem_pchinfo1": {
+        "type": "custom_common",
+        "num": "pchinfo_bw",
+        "param": {
+            "NUM_DATA": "num_pch"
+        },
+        "clk": "counter", 
+        "loop": true
+    },
+
+    "srmem_pchinfo2": {
+        "type": "custom_common",
+        "num": "pchinfo_bw",
+        "param": {
+            "NUM_DATA": "num_pch"
+        },
+        "clk": "counter", 
+        "loop": true
+    }, 
+
+    "pfu_ctrl": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "sptree_cwdgen": {
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "DATA_BW": "cwdgen_in_bw",
+            "NUM_DATA": "num_pchdq"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+    "pfu_cwdgen": {
+        "type": "rtl_unit",
+        "num": "num_pchdq", 
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_cwdpatch": {
+        "type": "rtl_common", 
+        "num": "num_pchdq",
+        "param": {
+            "NUM_DATA": "num_pch",
+            "DATA_BW": "cwd_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "pfu_pfupdater": {
+        "type": "rtl_unit",
+        "num": "num_dq",
+        "param": {
+        },
+        "clk": "counter", 
+        "loop": false
+    }
+}

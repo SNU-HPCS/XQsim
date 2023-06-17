@@ -1,0 +1,161 @@
+{
+    "fifo_ctrl_opbuf": { /* fifo_ctrl for psu_opbuf" */
+        "type": "rtl_common", 
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndroram_opbuf": {/* fifo_mem for psu_opbuf */
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2,
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_opbuf": {
+        "type": "rtl_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2,
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+    
+    "srmem_pchinfo": { /* srmem for psu_pisrmem */
+        "type": "custom_common",
+        "num": "pchinfo_bw", 
+        "param": {
+            "NUM_DATA": "num_pch"
+        },
+        "clk": "counter",
+        "loop": true
+    }, 
+
+    "srmem_cnt": { /* srmem for psu_cntsrmem LQI/LQM/RUN_ESM */
+        "type": "custom_common",
+        "num": "cntsrmem_bw", 
+        "param": {
+            "NUM_DATA": 26
+        },
+        "clk": "counter",
+        "loop": true
+    },
+
+    "mux_cnt": { /* mux for psu_cntsrmem */
+        "type": "rtl_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 3,
+            "DATA_BW": "cntsrmem_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "psu_ctrl": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "CODE_DIST": "code_dist",
+            "NUM_QBCTRL": "num_qbctrl",
+            "NUM_UCC": "num_ucc"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "psu_opNloc": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "CODE_DIST": "code_dist",
+            "NUM_PCU": "num_pcu",
+            "NUM_UCC": "num_ucc"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "sptree_mgin": {
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "DATA_BW": "maskgen_in_bw",
+            "NUM_DATA": "num_mask"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "psu_maskgen": {
+        "type": "rtl_unit",
+        "num": "num_mask",
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_maskpch": {
+        "type": "rtl_common",
+        "num": "num_pchdmx",
+        "param": {
+            "NUM_DATA": "num_pchdmx_out",
+            "DATA_BW": "num_pcuqb"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_maskuc": {
+        "type": "rtl_common",
+        "num": "num_ucdmx",
+        "param": {
+            "NUM_DATA": "num_ucdmx_out",
+            "DATA_BW": "num_uccqb"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_maskqb": {
+        "type": "rtl_common",
+        "num": "num_qbdmx",
+        "param": {
+            "NUM_DATA": "num_qbdmx_out",
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "sptree_cwd": {
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "DATA_BW": "cwd_bw",
+            "NUM_DATA": "num_pq"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "psu_cwdgen": {
+        "type": "rtl_unit",
+        "num": "num_pq",
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    }
+}

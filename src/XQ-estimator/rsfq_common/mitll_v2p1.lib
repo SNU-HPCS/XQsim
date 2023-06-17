@@ -1,0 +1,52 @@
+library(mitll_v2p1) {
+  cell(mitll_bufft) {
+    area: 28;
+    pin(A) { direction: input; }
+    pin(Q) { direction: output;
+              function: "A"; }
+  }
+  cell(mitll_nott) {
+    area: 70;
+    pin(A) { direction: input; }
+    pin(Q) { direction: output;
+              function: "A'"; }
+  }
+  cell(mitll_andt) {
+    area: 70;
+    pin(A) { direction: input; }
+    pin(B) { direction: input; }
+    pin(Q) { direction: output;
+             function: "(A*B)"; }
+  }
+  cell(mitll_ort) {
+    area: 70;
+    pin(A) { direction: input; }
+    pin(B) { direction: input; }
+    pin(Q) { direction: output;
+             function: "(A+B)"; }
+  }
+  cell(mitll_xort) {
+    area: 70;
+    pin(A) { direction: input; }
+    pin(B) { direction: input; }
+    pin(Q) { direction: output;
+             function: "(A *B') + (A' * B)"; }
+  }
+   cell(mitll_xnort) {
+    area: 63;
+    pin(A) { direction: input; }
+    pin(B) { direction: input; }
+    pin(Q) { direction: output;
+             function: "((A *B') + (A' * B))'"; }
+  }
+  cell(mitll_dfft) {
+    area: 56;
+    ff(IQ, IQN) { clocked_on: C;
+                  next_state: A; }
+    pin(C) { direction: input;
+                 clock: true; }
+    pin(A) { direction: input; }
+    pin(Q) { direction: output;
+              function: "IQ"; }
+  }
+}

@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'TCU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TCU
+Version: P-2019.03
+Date   : Mon Mar 27 17:56:23 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: num_item_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_cwdbuf[1767].UUT3_I/regarray_reg[0][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  num_item_reg[1]/CK (DFF_X1)                             0.00 #     0.00 r
+  num_item_reg[1]/Q (DFF_X1)                              0.09       0.09 r
+  UUT0/num_item[1] (buffer_ctrl_ADDR_BW1)                 0.00       0.09 r
+  UUT0/U2/ZN (INV_X2)                                     0.01 *     0.10 f
+  UUT0/U3/ZN (NOR2_X2)                                    0.03 *     0.13 r
+  UUT0/U5/ZN (NOR2_X4)                                    0.02 *     0.15 f
+  UUT0/reg_push (buffer_ctrl_ADDR_BW1)                    0.00       0.15 f
+  U5445/ZN (INV_X2)                                       0.03 *     0.18 r
+  U5444/ZN (INV_X4)                                       0.03 *     0.21 f
+  U5345/ZN (INV_X4)                                       0.05 *     0.25 r
+  U3966/ZN (INV_X4)                                       0.02 *     0.27 f
+  U4678/ZN (INV_X4)                                       0.02 *     0.29 r
+  U4676/ZN (INV_X8)                                       0.01 *     0.30 f
+  U4677/Z (BUF_X16)                                       0.03 *     0.33 f
+  U5196/ZN (INV_X16)                                      0.03 *     0.36 r
+  gen_cwdbuf[1767].UUT3_I/wr_en_BAR (buffer_ADDR_BW1_DATA_BW4_5912)
+                                                          0.00       0.36 r
+  gen_cwdbuf[1767].UUT3_I/U6/ZN (OAI21_X1)                0.03 *     0.39 f
+  gen_cwdbuf[1767].UUT3_I/U7/ZN (INV_X1)                  0.03 *     0.42 r
+  gen_cwdbuf[1767].UUT3_I/U8/ZN (NOR2_X2)                 0.01 *     0.44 f
+  gen_cwdbuf[1767].UUT3_I/U32/ZN (AOI22_X1)               0.03 *     0.47 r
+  gen_cwdbuf[1767].UUT3_I/U33/ZN (INV_X1)                 0.01 *     0.48 f
+  gen_cwdbuf[1767].UUT3_I/regarray_reg[0][3]/D (DFF_X1)
+                                                          0.00 *     0.48 f
+  data arrival time                                                  0.48
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  gen_cwdbuf[1767].UUT3_I/regarray_reg[0][3]/CK (DFF_X1)
+                                                          0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+1

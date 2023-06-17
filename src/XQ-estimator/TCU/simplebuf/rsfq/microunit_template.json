@@ -1,0 +1,85 @@
+{
+    "buffer_ctrl": {
+        "type": "rtl_unit",
+        "num": 1,
+        "param": {
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "ndroram_opbuf": {
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2, 
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "demux_opbuf": {
+        "type": "rtl_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2, 
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "ndroram_timebuf": {
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2, 
+            "DATA_BW": "time_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "demux_timebuf": {
+        "type": "rtl_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": 2, 
+            "DATA_BW": "time_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndrobuf_cwdbuf": {
+        "type": "custom_common",
+        "num": "num_pq",
+        "param": {
+            "DATA_BW": "cwd_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "sptree_cwd": {
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "num_pq", 
+            "DATA_BW": 2
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "dffbuf_cwd": {
+        "type": "custom_common",
+        "num": "num_pq", 
+        "param": {
+            "DATA_BW": "cwd_bw"
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    }
+}

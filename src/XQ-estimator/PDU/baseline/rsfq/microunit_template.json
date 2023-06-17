@@ -1,0 +1,64 @@
+{
+    "pdu_ctrl": {
+        "type": "rtl_unit",
+        "num": 1,
+        "param": {
+            "NUM_LQ": "num_lq"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "pdu_lqindexer": {
+        "type": "rtl_unit",
+        "num": 1,
+        "param": {
+            "NUM_LQ": "num_lq"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "ndroram_pchmap": { /* pch_maptable */
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "num_lq",
+            "DATA_BW": "pchmap_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+    "demux_pchmap": { /* pch_maptable */
+        "type": "rtl_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "num_lq",
+            "DATA_BW": "pchmap_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "pdu_decoder": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_LQ": "num_lq",
+            "NUM_PCH": "num_pch"
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "pdu_decoder": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_LQ": "num_lq",
+            "NUM_PCH": "num_pch"
+        }, 
+        "clk": "concurrent",
+        "loop": false
+    }
+}

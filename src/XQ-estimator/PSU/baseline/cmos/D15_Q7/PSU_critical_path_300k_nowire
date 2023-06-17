@@ -1,0 +1,88 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'PSU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PSU
+Version: P-2019.03
+Date   : Fri May 19 21:31:01 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: pivalid_list_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cwdarray_out_reg[9897]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pivalid_list_reg_reg[1]/CK (DFF_X1)                     0.00 #     0.00 r
+  pivalid_list_reg_reg[1]/Q (DFF_X1) <-                   0.09       0.09 r
+  UUT6/pivalid_list[1] (psu_maskext) <-                   0.00       0.09 r
+  UUT6/U10771/ZN (INV_X1)                                 0.01 *     0.10 f
+  UUT6/U10770/ZN (NOR2_X2)                                0.03 *     0.13 r
+  UUT6/U5132/ZN (NAND2_X2)                                0.03 *     0.16 f
+  UUT6/U11721/ZN (NOR2_X2)                                0.05 *     0.21 r
+  UUT6/U7233/ZN (INV_X1)                                  0.03 *     0.24 f
+  UUT6/U7234/ZN (NAND4_X4)                                0.03 *     0.27 r
+  UUT6/U11614/ZN (NOR2_X4)                                0.02 *     0.28 f
+  UUT6/U11057/ZN (INV_X4)                                 0.03 *     0.31 r
+  UUT6/U1069/ZN (INV_X16)                                 0.02 *     0.32 f
+  UUT6/U11164/ZN (NAND2_X1)                               0.02 *     0.34 r
+  UUT6/U11163/ZN (NAND2_X1)                               0.02 *     0.36 f
+  UUT6/U10866/ZN (NOR2_X2)                                0.05 *     0.41 r
+  UUT6/U11662/ZN (INV_X8)                                 0.02 *     0.44 f
+  UUT6/gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[5].UUT2_iu_ju/data_in[2] (demux_NUM_DATA9_DATA_BW8_165)
+                                                          0.00       0.44 f
+  UUT6/gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[5].UUT2_iu_ju/U16/ZN (AND2_X4)
+                                                          0.04 *     0.48 f
+  UUT6/gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[5].UUT2_iu_ju/data_out[50] (demux_NUM_DATA9_DATA_BW8_165)
+                                                          0.00       0.48 f
+  UUT6/gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[53].gen_qbext_g_k[2].UUT4_iq_jq_kq/data_in[0] (demux_NUM_DATA2_DATA_BW1_10411)
+                                                          0.00       0.48 f
+  UUT6/gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[53].gen_qbext_g_k[2].UUT4_iq_jq_kq/data_out[0] (demux_NUM_DATA2_DATA_BW1_10411)
+                                                          0.00       0.48 f
+  UUT6/mask_ext_array[2474] (psu_maskext) <-              0.00       0.48 f
+  UUT7/mask_ext_array[2474] (psu_cwdarrgen) <-            0.00       0.48 f
+  UUT7/U18806/ZN (NAND2_X2)                               0.02 *     0.50 r
+  UUT7/U18810/ZN (OAI22_X2)                               0.02 *     0.52 f
+  UUT7/cwdarray[9898] (psu_cwdarrgen) <-                  0.00       0.52 f
+  U161584/A1 (NOR2_X1) <-                                 0.00 *     0.52 f
+  U161584/ZN (NOR2_X1) <-                                 0.03       0.55 r
+  U161587/A1 (NAND3_X1) <-                                0.00 *     0.55 r
+  U161587/ZN (NAND3_X1) <-                                0.02       0.57 f
+  U213178/A1 (NAND2_X1) <-                                0.00 *     0.57 f
+  U213178/ZN (NAND2_X1) <-                                0.02       0.58 r
+  U213177/A1 (NAND2_X2) <-                                0.00 *     0.58 r
+  U213177/ZN (NAND2_X2) <-                                0.02       0.60 f
+  U207084/A1 (OAI22_X1) <-                                0.00 *     0.60 f
+  U207084/ZN (OAI22_X1) <-                                0.03       0.63 r
+  cwdarray_out_reg[9897]/D (DFF_X1)                       0.00 *     0.63 r
+  data arrival time                                                  0.63
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  cwdarray_out_reg[9897]/CK (DFF_X1)                      0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.27
+
+
+1

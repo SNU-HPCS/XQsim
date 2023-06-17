@@ -1,0 +1,472 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : PSU
+Version: P-2019.03
+Date   : Mon May 29 06:49:36 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+PSU                                    3.41e+03 5.20e+04 8.29e+05 5.62e+04 100.0
+  UUT7 (psu_cwdarrgen)                  166.976   23.372 9.08e+04  281.105   0.5
+  UUT6 (psu_maskext)                    186.814   70.695 6.18e+04  319.329   0.6
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_0)
+                                          0.686    0.452  321.936    1.460   0.0
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_1)
+                                          0.689    0.452  293.658    1.435   0.0
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_2)
+                                          0.665    0.452  297.854    1.414   0.0
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_3)
+                                          0.667    0.452  330.326    1.449   0.0
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_4)
+                                          0.764    0.452  351.229    1.567   0.0
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_5)
+                                          0.885    0.451  448.170    1.784   0.0
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_6)
+                                          0.736    0.451  347.140    1.533   0.0
+    gen_qbext_g.gen_qbext_g_i[11].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_7)
+                                          0.674    0.451  297.854    1.423   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_8)
+                                          0.649    0.451  293.659    1.393   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_9)
+                                          0.647    0.453  321.933    1.422   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_10)
+                                          0.669    0.452  293.659    1.415   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_11)
+                                          0.691    0.455  321.934    1.467   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_12)
+                                          0.664    0.452  330.326    1.447   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_13)
+                                          0.673    0.453  321.935    1.447   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_14)
+                                          0.660    0.452  317.741    1.430   0.0
+    gen_qbext_g.gen_qbext_g_i[10].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_15)
+                                          0.672    0.453  321.935    1.447   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_16)
+                                          0.682    0.451  293.659    1.426   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_17)
+                                          0.703    0.456  321.926    1.481   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_18)
+                                          0.670    0.451  293.659    1.415   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_19)
+                                          0.682    0.455  321.933    1.459   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_20)
+                                          0.645    0.451  293.659    1.390   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_21)
+                                          0.658    0.454  321.933    1.434   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_22)
+                                          0.689    0.451  293.659    1.434   0.0
+    gen_qbext_g.gen_qbext_g_i[9].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_23)
+                                          0.765    0.452  351.335    1.568   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_24)
+                                          0.679    0.477  321.936    1.478   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_25)
+                                          0.689    0.478  321.935    1.489   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_26)
+                                          0.659    0.477  293.659    1.430   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_27)
+                                          0.821    0.477  370.673    1.668   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_28)
+                                          0.642    0.478  293.659    1.413   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_29)
+                                          0.648    0.478  321.935    1.449   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_30)
+                                          0.857    0.454  397.868    1.708   0.0
+    gen_qbext_g.gen_qbext_g_i[8].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_31)
+                                          0.694    0.463  321.936    1.478   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_32)
+                                          0.702    0.456  293.659    1.451   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_33)
+                                          0.714    0.459  321.929    1.495   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_34)
+                                          0.826    0.451  427.161    1.704   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_35)
+                                          0.831    0.453  380.624    1.665   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_36)
+                                          0.666    0.451  321.936    1.439   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_37)
+                                          0.816    0.453  380.693    1.650   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_38)
+                                          0.694    0.451  321.936    1.466   0.0
+    gen_qbext_g.gen_qbext_g_i[7].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_39)
+                                          0.722    0.452  321.935    1.496   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_40)
+                                          0.666    0.474  370.099    1.511   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_41)
+                                          0.764    0.474  351.226    1.589   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_42)
+                                          0.914    0.471  399.967    1.785   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_43)
+                                          0.892    0.472  409.986    1.775   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_44)
+                                          0.673    0.451  293.659    1.418   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_45)
+                                          0.764    0.453  351.227    1.568   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_46)
+                                          0.666    0.451  293.659    1.411   0.0
+    gen_qbext_g.gen_qbext_g_i[6].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_47)
+                                          0.689    0.453  321.935    1.464   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_48)
+                                          0.813    0.451  388.979    1.653   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_49)
+                                          0.666    0.453  321.929    1.442   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_50)
+                                          0.899    0.470  409.988    1.779   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_51)
+                                          1.069    0.470  515.320    2.054   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_52)
+                                          0.751    0.473  341.315    1.566   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_53)
+                                          0.830    0.475  427.228    1.732   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_54)
+                                          0.903    0.454  456.627    1.814   0.0
+    gen_qbext_g.gen_qbext_g_i[5].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_55)
+                                          0.910    0.456  400.069    1.765   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_56)
+                                          0.657    0.456  321.936    1.435   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_57)
+                                          0.669    0.464  321.923    1.455   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_58)
+                                          0.664    0.461  293.659    1.418   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_59)
+                                          0.992    0.464  429.350    1.885   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_60)
+                                          0.695    0.476  321.936    1.493   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_61)
+                                          0.682    0.478  321.935    1.481   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_62)
+                                          0.666    0.477  293.659    1.437   0.0
+    gen_qbext_g.gen_qbext_g_i[4].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_63)
+                                          0.659    0.480  321.935    1.460   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_64)
+                                          0.685    0.461  293.659    1.439   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_65)
+                                          0.750    0.460  351.336    1.561   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_66)
+                                          0.800    0.461  380.589    1.641   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_67)
+                                          0.652    0.463  321.936    1.437   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_68)
+                                          0.647    0.463  321.936    1.432   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_69)
+                                          0.821    0.461  418.837    1.700   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_70)
+                                          0.761    0.476  351.296    1.589   0.0
+    gen_qbext_g.gen_qbext_g_i[3].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_71)
+                                          0.782    0.478  341.315    1.601   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_72)
+                                          0.738    0.479  341.315    1.558   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_73)
+                                          0.650    0.479  321.936    1.450   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_74)
+                                          0.643    0.479  321.936    1.443   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_75)
+                                          0.655    0.480  321.935    1.457   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_76)
+                                          0.751    0.477  351.229    1.579   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_77)
+                                          0.841    0.475  380.522    1.696   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_78)
+                                          0.737    0.479  341.315    1.557   0.0
+    gen_qbext_g.gen_qbext_g_i[2].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_79)
+                                          0.653    0.479  321.936    1.454   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_80)
+                                          1.063    0.464  448.745    1.976   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_81)
+                                          0.745    0.475  351.279    1.572   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_82)
+                                          1.062    0.455  505.297    2.023   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_83)
+                                          0.863    0.461  466.646    1.790   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_84)
+                                          0.801    0.457  380.693    1.638   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_85)
+                                          1.067    0.456  458.763    1.982   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_86)
+                                          0.743    0.457  351.227    1.551   0.0
+    gen_qbext_g.gen_qbext_g_i[1].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_87)
+                                          0.741    0.457  341.314    1.539   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_88)
+                                          0.666    0.463  293.659    1.422   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[3].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_89)
+                                          0.753    0.461  399.392    1.614   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_90)
+                                          0.642    0.455  293.659    1.391   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[2].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_91)
+                                          0.653    0.455  321.936    1.430   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_92)
+                                          0.667    0.455  293.611    1.416   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[1].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_93)
+                                          0.673    0.456  321.935    1.450   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT5_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_94)
+                                          0.681    0.455  293.659    1.430   0.0
+    gen_qbext_g.gen_qbext_g_i[0].gen_qbext_g_j[0].gen_qbext_g_k[0].UUT4_iq_jq_kq (demux_NUM_DATA9_DATA_BW1_95)
+                                          0.675    0.456  321.935    1.453   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_0)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_1)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_2)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_3)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_4)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_5)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_6)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[11].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_7)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_8)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_9)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_10)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_11)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_12)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_13)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_14)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[10].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_15)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_16)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_17)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_18)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_19)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_20)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_21)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_22)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[9].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_23)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_24)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_25)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_26)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_27)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_28)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_29)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_30)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[8].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_31)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_32)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_33)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_34)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_35)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_36)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_37)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_38)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[7].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_39)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_40)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_41)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_42)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_43)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_44)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_45)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_46)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[6].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_47)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_48)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_49)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_50)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_51)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_52)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_53)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_54)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[5].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_55)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_56)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_57)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_58)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_59)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_60)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_61)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_62)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[4].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_63)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_64)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_65)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_66)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_67)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_68)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_69)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_70)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[3].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_71)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_72)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_73)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_74)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_75)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_76)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_77)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_78)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[2].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_79)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_80)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_81)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_82)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_83)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_84)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_85)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_86)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[1].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_87)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[3].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_88)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[3].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_89)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[2].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_90)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[2].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_91)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[1].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_92)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[1].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_93)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[0].UUT3_iu_ju (demux_NUM_DATA2_DATA_BW1_94)
+                                          0.000    0.000    0.000    0.000   0.0
+    gen_ucext_g.gen_ucext_g_i[0].gen_ucext_g_j[0].UUT2_iu_ju (demux_NUM_DATA2_DATA_BW1_95)
+                                          0.000    0.000    0.000    0.000   0.0
+  gen_maskgen[15].UUT5_I (psu_maskgen_0)
+                                          2.559    2.552 4.09e+03    9.198   0.0
+  gen_maskgen[14].UUT5_I (psu_maskgen_1)
+                                          2.813    2.553 3.39e+03    8.760   0.0
+  gen_maskgen[13].UUT5_I (psu_maskgen_2)
+                                          2.423    2.141 4.06e+03    8.627   0.0
+  gen_maskgen[12].UUT5_I (psu_maskgen_3)
+                                          2.517    2.117 3.37e+03    8.003   0.0
+  gen_maskgen[11].UUT5_I (psu_maskgen_4)
+                                          2.384    2.523 3.96e+03    8.867   0.0
+  gen_maskgen[10].UUT5_I (psu_maskgen_5)
+                                          2.770    2.682 3.43e+03    8.880   0.0
+  gen_maskgen[9].UUT5_I (psu_maskgen_6)
+                                          2.345    2.273 4.30e+03    8.917   0.0
+  gen_maskgen[8].UUT5_I (psu_maskgen_7)
+                                          2.706    2.356 3.42e+03    8.480   0.0
+  gen_maskgen[7].UUT5_I (psu_maskgen_8)
+                                          2.744    2.872 4.15e+03    9.767   0.0
+  gen_maskgen[6].UUT5_I (psu_maskgen_9)
+                                          3.101    3.024 3.65e+03    9.775   0.0
+  gen_maskgen[5].UUT5_I (psu_maskgen_10)
+                                          2.829    2.832 4.37e+03   10.028   0.0
+  gen_maskgen[4].UUT5_I (psu_maskgen_11)
+                                          3.032    2.698 3.59e+03    9.321   0.0
+  gen_maskgen[3].UUT5_I (psu_maskgen_12)
+                                          2.974    3.147 4.17e+03   10.288   0.0
+  gen_maskgen[2].UUT5_I (psu_maskgen_13)
+                                          3.193    3.063 3.40e+03    9.658   0.0
+  gen_maskgen[1].UUT5_I (psu_maskgen_14)
+                                          3.114    3.103 4.12e+03   10.332   0.0
+  gen_maskgen[0].UUT5_I (psu_maskgen_15)
+                                          3.133    2.962 3.52e+03    9.612   0.0
+  UUT4 (psu_opNloc)                      12.586    5.117 3.12e+03   20.822   0.0
+  UUT3 (srmem_double_NUM_RDPORT4_LEN_SRMEM3_DATA_BW56)
+                                       1.02e+03 1.76e+04 1.95e+05 1.88e+04  33.4
+    UUT1 (srmem_single_NUM_RDPORT4_LEN_SRMEM3_DATA_BW56_0)
+                                        314.082 8.74e+03 8.94e+04 9.14e+03  16.3
+      UUT0 (srmem_single_ctrl_NUM_RDPORT4_LEN_SRMEM3_DATA_BW56_0)
+                                         38.389   17.708 9.65e+03   65.750   0.1
+    UUT0 (srmem_single_NUM_RDPORT4_LEN_SRMEM3_DATA_BW56_1)
+                                        641.606 8.73e+03 9.42e+04 9.46e+03  16.8
+      UUT0 (srmem_single_ctrl_NUM_RDPORT4_LEN_SRMEM3_DATA_BW56_1)
+                                        139.966   79.604 8.85e+03  228.417   0.4
+  UUT2 (psu_cntsrmem)                    84.934 4.84e+03 3.94e+04 4.96e+03   8.8
+  UUT1 (psu_ctrl)                         4.284    4.166 2.17e+03   10.623   0.0
+  UUT0 (fifo_ADDR_BW1_DATA_BW4)          13.335  251.838 3.29e+03  268.466   0.5
+    UUT1 (fifo_reg_ADDR_BW1_DATA_BW4)    11.037  248.704 2.88e+03  262.624   0.5
+    UUT0 (fifo_ctrl_ADDR_BW1)             2.298    3.134  408.794    5.842   0.0
+1

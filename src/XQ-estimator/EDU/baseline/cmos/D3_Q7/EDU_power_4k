@@ -1,0 +1,2362 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : EDU
+Version: P-2019.03
+Date   : Wed May 31 04:05:12 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+EDU                                    9.66e+03 1.75e+05 2.50e+06 1.87e+05 100.0
+  UUT3 (edu_token_setup)                  0.201    0.158 2.55e+03    2.905   0.0
+  gen_educell_i[11].gen_educell_j[19].UUT3_i_j (edu_nexterr_0)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[11].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW11_AQCOL19)
+                                         23.618  495.475 6.57e+03  525.660   0.3
+    UUT6 (educell_esmunit_idx_0)       1.81e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_0)          0.000    0.000   81.153 8.12e-02   0.0
+    UUT3 (educell_spikegen_0)          1.04e-02 9.44e-03  213.698    0.234   0.0
+    UUT2 (educell_decoder_0)           9.17e-03 6.37e-03  244.657    0.260   0.0
+    UUT1 (educell_predecoder_0)        1.06e-02 9.14e-03  362.075    0.382   0.0
+  gen_educell_i[11].gen_educell_j[18].UUT3_i_j (edu_nexterr_1)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW11_AQCOL18)
+                                         22.074  550.276 7.65e+03  579.996   0.3
+    UUT6 (educell_esmunit_idx_1)       2.00e-02 7.91e-03  136.883    0.165   0.0
+    UUT5 (educell_syndromegen_1)       5.28e-03 4.51e-03  249.992    0.260   0.0
+    UUT4 (educell_syndir_1)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_1)          2.18e-02 1.65e-02  261.059    0.299   0.0
+    UUT2 (educell_decoder_1)           8.47e-03 6.28e-03  290.725    0.305   0.0
+    UUT1 (educell_predecoder_1)        8.56e-03 9.13e-03  459.971    0.478   0.0
+  gen_educell_i[11].gen_educell_j[17].UUT3_i_j (edu_nexterr_2)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW11_AQCOL17)
+                                         24.141  551.745 7.74e+03  583.629   0.3
+    UUT6 (educell_esmunit_idx_2)       1.85e-02 6.87e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_2)       7.81e-03 7.01e-03  249.867    0.265   0.0
+    UUT4 (educell_syndir_2)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_2)          1.10e-02 9.42e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_2)           8.71e-03 6.21e-03  277.781    0.293   0.0
+    UUT1 (educell_predecoder_2)        1.03e-02 1.14e-02  491.481    0.513   0.0
+  gen_educell_i[11].gen_educell_j[16].UUT3_i_j (edu_nexterr_3)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW11_AQCOL16)
+                                         24.341  569.232 7.78e+03  601.350   0.3
+    UUT6 (educell_esmunit_idx_3)       2.28e-02 1.00e-02  165.587    0.198   0.0
+    UUT5 (educell_syndromegen_3)          0.000    0.000  149.744    0.150   0.0
+    UUT4 (educell_syndir_3)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_3)          1.13e-02 9.17e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_3)           9.69e-03 9.08e-03  301.043    0.320   0.0
+    UUT1 (educell_predecoder_3)        7.48e-03 1.03e-02  630.334    0.648   0.0
+  gen_educell_i[11].gen_educell_j[15].UUT3_i_j (edu_nexterr_4)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[11].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW11_AQCOL15)
+                                         23.194  567.629 7.75e+03  598.574   0.3
+    UUT6 (educell_esmunit_idx_4)       1.82e-02 6.87e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_4)       1.02e-02 4.55e-03  250.264    0.265   0.0
+    UUT4 (educell_syndir_4)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_4)          7.81e-03 6.91e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_4)           5.21e-03 2.27e-03  280.668    0.288   0.0
+    UUT1 (educell_predecoder_4)        1.11e-02 1.10e-02  735.639    0.758   0.0
+  gen_educell_i[11].gen_educell_j[14].UUT3_i_j (edu_nexterr_5)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW11_AQCOL14)
+                                         23.223  550.705 7.50e+03  581.424   0.3
+    UUT6 (educell_esmunit_idx_5)       1.31e-02 4.60e-03  145.378    0.163   0.0
+    UUT5 (educell_syndromegen_5)       5.32e-03 4.51e-03  249.992    0.260   0.0
+    UUT4 (educell_syndir_5)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_5)          1.09e-02 9.20e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_5)           6.60e-03 6.29e-03  309.215    0.322   0.0
+    UUT1 (educell_predecoder_5)        3.81e-03 3.57e-03  454.864    0.462   0.0
+  gen_educell_i[11].gen_educell_j[13].UUT3_i_j (edu_nexterr_6)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW11_AQCOL13)
+                                         22.873  547.859 7.45e+03  578.182   0.3
+    UUT6 (educell_esmunit_idx_6)       1.82e-02 6.95e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_6)          0.000    0.000  155.895    0.156   0.0
+    UUT4 (educell_syndir_6)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_6)          1.16e-02 9.05e-03  234.023    0.255   0.0
+    UUT2 (educell_decoder_6)           5.09e-03 2.27e-03  280.743    0.288   0.0
+    UUT1 (educell_predecoder_6)        8.36e-03 1.01e-02  514.249    0.533   0.0
+  gen_educell_i[11].gen_educell_j[12].UUT3_i_j (edu_nexterr_7)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW11_AQCOL12)
+                                         24.954  568.300 7.72e+03  600.971   0.3
+    UUT6 (educell_esmunit_idx_7)       1.27e-02 4.59e-03  145.378    0.163   0.0
+    UUT5 (educell_syndromegen_7)          0.000    0.000  149.744    0.150   0.0
+    UUT4 (educell_syndir_7)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_7)          1.09e-02 9.17e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_7)           5.18e-03 2.27e-03  301.107    0.309   0.0
+    UUT1 (educell_predecoder_7)        2.94e-03 5.64e-03  630.395    0.639   0.0
+  gen_educell_i[11].gen_educell_j[11].UUT3_i_j (edu_nexterr_8)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[11].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW11_AQCOL11)
+                                         23.836  569.201 8.03e+03  601.071   0.3
+    UUT6 (educell_esmunit_idx_8)       1.83e-02 6.86e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_8)       1.03e-02 4.55e-03  250.264    0.265   0.0
+    UUT4 (educell_syndir_8)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_8)          8.10e-03 6.92e-03  242.523    0.258   0.0
+    UUT2 (educell_decoder_8)           1.19e-02 8.93e-03  314.115    0.335   0.0
+    UUT1 (educell_predecoder_8)        1.09e-02 1.23e-02  735.587    0.759   0.0
+  gen_educell_i[11].gen_educell_j[10].UUT3_i_j (edu_nexterr_9)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW11_AQCOL10)
+                                         24.263  553.068 7.57e+03  584.901   0.3
+    UUT6 (educell_esmunit_idx_9)       2.07e-02 8.45e-03  136.892    0.166   0.0
+    UUT5 (educell_syndromegen_9)       5.43e-03 4.51e-03  249.992    0.260   0.0
+    UUT4 (educell_syndir_9)               0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_9)          1.08e-02 9.59e-03  234.017    0.254   0.0
+    UUT2 (educell_decoder_9)           8.77e-03 6.81e-03  313.024    0.329   0.0
+    UUT1 (educell_predecoder_9)        5.45e-03 4.67e-03  454.774    0.465   0.0
+  gen_educell_i[11].gen_educell_j[9].UUT3_i_j (edu_nexterr_10)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW11_AQCOL9)
+                                         24.301  553.225 7.67e+03  585.194   0.3
+    UUT6 (educell_esmunit_idx_10)      1.93e-02 7.75e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_10)      5.09e-03 4.51e-03  239.765    0.249   0.0
+    UUT4 (educell_syndir_10)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_10)         1.06e-02 9.17e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_10)          9.18e-03 6.90e-03  283.674    0.300   0.0
+    UUT1 (educell_predecoder_10)       7.35e-03 1.01e-02  507.021    0.525   0.0
+  gen_educell_i[11].gen_educell_j[8].UUT3_i_j (edu_nexterr_11)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW11_AQCOL8)
+                                         23.864  586.624 7.90e+03  618.385   0.3
+    UUT6 (educell_esmunit_idx_11)      1.85e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_11)         0.000    0.000  149.744    0.150   0.0
+    UUT4 (educell_syndir_11)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_11)         7.96e-03 6.93e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_11)          1.19e-02 8.53e-03  312.776    0.333   0.0
+    UUT1 (educell_predecoder_11)       4.84e-03 6.13e-03  630.435    0.641   0.0
+  gen_educell_i[11].gen_educell_j[7].UUT3_i_j (edu_nexterr_12)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[11].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW11_AQCOL7)
+                                         25.003  567.323 8.04e+03  600.369   0.3
+    UUT6 (educell_esmunit_idx_12)      1.81e-02 6.87e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_12)      1.05e-02 4.55e-03  250.284    0.265   0.0
+    UUT4 (educell_syndir_12)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_12)         1.02e-02 9.16e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_12)          1.66e-02 1.03e-02  327.387    0.354   0.0
+    UUT1 (educell_predecoder_12)       1.57e-02 1.67e-02  735.594    0.768   0.0
+  gen_educell_i[11].gen_educell_j[6].UUT3_i_j (edu_nexterr_13)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW11_AQCOL6)
+                                         25.173  551.139 7.59e+03  583.901   0.3
+    UUT6 (educell_esmunit_idx_13)      2.04e-02 8.35e-03  136.905    0.166   0.0
+    UUT5 (educell_syndromegen_13)      5.49e-03 4.52e-03  249.965    0.260   0.0
+    UUT4 (educell_syndir_13)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_13)         1.19e-02 9.62e-03  234.014    0.256   0.0
+    UUT2 (educell_decoder_13)          1.34e-02 1.18e-02  336.198    0.361   0.0
+    UUT1 (educell_predecoder_13)       7.58e-03 9.01e-03  454.799    0.471   0.0
+  gen_educell_i[11].gen_educell_j[5].UUT3_i_j (edu_nexterr_14)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW11_AQCOL5)
+                                         24.935  550.090 7.58e+03  582.609   0.3
+    UUT6 (educell_esmunit_idx_14)      2.07e-02 8.45e-03  136.905    0.166   0.0
+    UUT5 (educell_syndromegen_14)      3.33e-04 1.42e-04  151.955    0.152   0.0
+    UUT4 (educell_syndir_14)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_14)         8.37e-03 7.34e-03  242.514    0.258   0.0
+    UUT2 (educell_decoder_14)          9.28e-03 7.04e-03  277.279    0.294   0.0
+    UUT1 (educell_predecoder_14)       1.26e-02 1.16e-02  506.983    0.531   0.0
+  gen_educell_i[11].gen_educell_j[4].UUT3_i_j (edu_nexterr_15)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[11].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW11_AQCOL4)
+                                         24.329  568.917 7.90e+03  601.141   0.3
+    UUT6 (educell_esmunit_idx_15)      2.04e-02 8.22e-03  136.891    0.166   0.0
+    UUT5 (educell_syndromegen_15)         0.000    0.000  175.030    0.175   0.0
+    UUT4 (educell_syndir_15)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_15)         1.01e-02 9.11e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_15)          8.40e-03 6.55e-03  285.135    0.300   0.0
+    UUT1 (educell_predecoder_15)       1.62e-02 1.56e-02  650.920    0.683   0.0
+  gen_educell_i[11].gen_educell_j[3].UUT3_i_j (edu_nexterr_16)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[11].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW11_AQCOL3)
+                                         25.216  570.382 7.90e+03  603.496   0.3
+    UUT6 (educell_esmunit_idx_16)      1.79e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_16)      1.02e-02 4.55e-03  250.264    0.265   0.0
+    UUT4 (educell_syndir_16)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_16)         7.59e-03 6.91e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_16)          6.40e-03 3.66e-03  299.708    0.310   0.0
+    UUT1 (educell_predecoder_16)       9.60e-03 9.45e-03  666.382    0.685   0.0
+  gen_educell_i[11].gen_educell_j[2].UUT3_i_j (edu_nexterr_17)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW11_AQCOL2)
+                                         24.905  551.052 7.52e+03  583.481   0.3
+    UUT6 (educell_esmunit_idx_17)      1.80e-02 6.92e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_17)      5.01e-03 4.50e-03  249.992    0.260   0.0
+    UUT4 (educell_syndir_17)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_17)         1.00e-02 9.15e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_17)          1.47e-02 1.31e-02  327.341    0.355   0.0
+    UUT1 (educell_predecoder_17)       3.35e-03 3.98e-03  385.779    0.393   0.0
+  gen_educell_i[11].gen_educell_j[1].UUT3_i_j (edu_nexterr_18)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[11].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW11_AQCOL1)
+                                         24.171  550.377 7.57e+03  582.115   0.3
+    UUT6 (educell_esmunit_idx_18)      1.95e-02 7.75e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_18)      5.06e-03 4.51e-03  249.992    0.260   0.0
+    UUT4 (educell_syndir_18)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_18)         1.03e-02 9.16e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_18)          6.26e-03 3.81e-03  287.983    0.298   0.0
+    UUT1 (educell_predecoder_18)       5.52e-03 6.57e-03  491.481    0.504   0.0
+  gen_educell_i[11].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW11_AQCOL0)
+                                         22.719  515.467 7.24e+03  545.427   0.3
+    UUT6 (educell_esmunit_idx_19)      1.81e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_19)         0.000    0.000   81.153 8.12e-02   0.0
+    UUT3 (educell_spikegen_19)         1.02e-02 9.16e-03  213.698    0.233   0.0
+    UUT2 (educell_decoder_19)          1.22e-02 9.82e-03  253.512    0.276   0.0
+    UUT1 (educell_predecoder_19)       2.06e-03 1.94e-03  561.363    0.565   0.0
+  gen_educell_i[10].gen_educell_j[19].UUT3_i_j (edu_nexterr_20)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW10_AQCOL19)
+                                         23.855  549.034 7.79e+03  580.676   0.3
+    UUT6 (educell_esmunit_idx_20)      1.82e-02 6.97e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_20)      5.03e-03 4.54e-03  157.035    0.167   0.0
+    UUT4 (educell_syndir_20)              0.000    0.000   55.140 5.51e-02   0.0
+    UUT3 (educell_spikegen_20)         2.09e-02 1.62e-02  261.070    0.298   0.0
+    UUT2 (educell_decoder_20)          1.27e-02 1.10e-02  302.273    0.326   0.0
+    UUT1 (educell_predecoder_20)       1.32e-02 1.41e-02  607.233    0.635   0.0
+  gen_educell_i[10].gen_educell_j[18].UUT3_i_j (edu_nexterr_21)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW10_AQCOL18)
+                                         23.939  583.317 8.29e+03  615.546   0.3
+    UUT6 (educell_esmunit_idx_21)      2.28e-02 9.53e-03  136.899    0.169   0.0
+    UUT5 (educell_syndromegen_21)      1.03e-02 9.01e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_21)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_21)         1.14e-02 1.01e-02  274.663    0.296   0.0
+    UUT2 (educell_decoder_21)          1.30e-02 1.23e-02  298.817    0.324   0.0
+    UUT1 (educell_predecoder_21)       3.16e-03 4.75e-03  271.401    0.279   0.0
+  gen_educell_i[10].gen_educell_j[17].UUT3_i_j (edu_nexterr_22)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW10_AQCOL17)
+                                         23.143  583.929 8.12e+03  615.195   0.3
+    UUT6 (educell_esmunit_idx_22)      2.03e-02 8.52e-03  136.886    0.166   0.0
+    UUT5 (educell_syndromegen_22)      1.03e-02 9.06e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_22)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_22)         1.10e-02 9.66e-03  274.669    0.295   0.0
+    UUT2 (educell_decoder_22)          1.14e-02 1.03e-02  310.631    0.332   0.0
+    UUT1 (educell_predecoder_22)       3.01e-03 5.11e-03  222.943    0.231   0.0
+  gen_educell_i[10].gen_educell_j[16].UUT3_i_j (edu_nexterr_23)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW10_AQCOL16)
+                                         24.707  636.795 8.86e+03  670.361   0.4
+    UUT6 (educell_esmunit_idx_23)      2.02e-02 7.96e-03  136.883    0.165   0.0
+    UUT5 (educell_syndromegen_23)      1.02e-02 9.07e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_23)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_23)         8.10e-03 7.40e-03  283.168    0.299   0.0
+    UUT2 (educell_decoder_23)          1.74e-02 1.31e-02  365.340    0.396   0.0
+    UUT1 (educell_predecoder_23)       9.56e-03 1.20e-02  534.609    0.556   0.0
+  gen_educell_i[10].gen_educell_j[15].UUT3_i_j (edu_nexterr_24)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW10_AQCOL15)
+                                         24.661  636.371 9.26e+03  670.294   0.4
+    UUT6 (educell_esmunit_idx_24)      1.84e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_24)      1.53e-02 9.10e-03  454.814    0.479   0.0
+    UUT4 (educell_syndir_24)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_24)         1.01e-02 9.18e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_24)          1.60e-02 8.58e-03  388.161    0.413   0.0
+    UUT1 (educell_predecoder_24)       1.54e-02 1.60e-02  793.253    0.825   0.0
+  gen_educell_i[10].gen_educell_j[14].UUT3_i_j (edu_nexterr_25)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW10_AQCOL14)
+                                         24.600  587.532 8.23e+03  620.361   0.3
+    UUT6 (educell_esmunit_idx_25)      1.83e-02 6.95e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_25)      1.01e-02 9.06e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_25)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_25)         1.04e-02 9.04e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_25)          8.49e-03 1.06e-02  339.841    0.359   0.0
+    UUT1 (educell_predecoder_25)       2.18e-03 2.57e-03  271.476    0.276   0.0
+  gen_educell_i[10].gen_educell_j[13].UUT3_i_j (edu_nexterr_26)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW10_AQCOL13)
+                                         24.036  584.431 8.00e+03  616.466   0.3
+    UUT6 (educell_esmunit_idx_26)      1.82e-02 6.95e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_26)      1.02e-02 9.06e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_26)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_26)         1.05e-02 9.23e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_26)          5.31e-03 4.61e-03  344.271    0.354   0.0
+    UUT1 (educell_predecoder_26)       1.57e-03 3.07e-03  222.996    0.228   0.0
+  gen_educell_i[10].gen_educell_j[12].UUT3_i_j (edu_nexterr_27)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW10_AQCOL12)
+                                         24.821  637.018 8.93e+03  670.769   0.4
+    UUT6 (educell_esmunit_idx_27)      1.82e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_27)      1.06e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_27)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_27)         1.09e-02 9.23e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_27)          1.45e-02 1.10e-02  373.838    0.399   0.0
+    UUT1 (educell_predecoder_27)       6.35e-03 9.10e-03  534.682    0.550   0.0
+  gen_educell_i[10].gen_educell_j[11].UUT3_i_j (edu_nexterr_28)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW10_AQCOL11)
+                                         25.250  637.963 9.36e+03  672.570   0.4
+    UUT6 (educell_esmunit_idx_28)      1.83e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_28)      1.51e-02 9.09e-03  454.814    0.479   0.0
+    UUT4 (educell_syndir_28)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_28)         1.05e-02 9.18e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_28)          1.41e-02 1.12e-02  394.595    0.420   0.0
+    UUT1 (educell_predecoder_28)       1.32e-02 1.68e-02  793.296    0.823   0.0
+  gen_educell_i[10].gen_educell_j[10].UUT3_i_j (edu_nexterr_29)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW10_AQCOL10)
+                                         24.351  583.347 8.41e+03  616.113   0.3
+    UUT6 (educell_esmunit_idx_29)      2.46e-02 1.13e-02  136.897    0.173   0.0
+    UUT5 (educell_syndromegen_29)      1.03e-02 9.03e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_29)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_29)         9.15e-03 7.67e-03  283.166    0.300   0.0
+    UUT2 (educell_decoder_29)          9.61e-03 1.03e-02  321.932    0.342   0.0
+    UUT1 (educell_predecoder_29)       1.30e-03 2.31e-03  271.400    0.275   0.0
+  gen_educell_i[10].gen_educell_j[9].UUT3_i_j (edu_nexterr_30)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW10_AQCOL9)
+                                         25.463  584.615 8.16e+03  618.242   0.3
+    UUT6 (educell_esmunit_idx_30)      2.02e-02 8.47e-03  136.880    0.166   0.0
+    UUT5 (educell_syndromegen_30)      1.01e-02 9.09e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_30)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_30)         7.77e-03 7.37e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_30)          1.36e-02 1.20e-02  334.150    0.360   0.0
+    UUT1 (educell_predecoder_30)       1.30e-03 2.84e-03  222.942    0.227   0.0
+  gen_educell_i[10].gen_educell_j[8].UUT3_i_j (edu_nexterr_31)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW10_AQCOL8)
+                                         24.733  636.602 8.94e+03  670.276   0.4
+    UUT6 (educell_esmunit_idx_31)      2.05e-02 7.91e-03  136.887    0.165   0.0
+    UUT5 (educell_syndromegen_31)      1.05e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_31)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_31)         1.15e-02 9.47e-03  274.666    0.296   0.0
+    UUT2 (educell_decoder_31)          1.16e-02 9.94e-03  386.507    0.408   0.0
+    UUT1 (educell_predecoder_31)       6.55e-03 9.20e-03  534.594    0.550   0.0
+  gen_educell_i[10].gen_educell_j[7].UUT3_i_j (edu_nexterr_32)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW10_AQCOL7)
+                                         26.583  638.742 9.45e+03  674.778   0.4
+    UUT6 (educell_esmunit_idx_32)      2.00e-02 8.10e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_32)      1.56e-02 9.62e-03  454.808    0.480   0.0
+    UUT4 (educell_syndir_32)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_32)         1.08e-02 9.10e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_32)          1.87e-02 1.40e-02  396.703    0.429   0.0
+    UUT1 (educell_predecoder_32)       2.03e-02 2.09e-02  793.184    0.834   0.0
+  gen_educell_i[10].gen_educell_j[6].UUT3_i_j (edu_nexterr_33)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW10_AQCOL6)
+                                         26.085  587.495 8.24e+03  621.825   0.3
+    UUT6 (educell_esmunit_idx_33)      2.04e-02 8.26e-03  136.887    0.166   0.0
+    UUT5 (educell_syndromegen_33)      1.05e-02 9.09e-03  283.212    0.303   0.0
+    UUT4 (educell_syndir_33)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_33)         1.05e-02 9.23e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_33)          1.04e-02 1.06e-02  274.709    0.296   0.0
+    UUT1 (educell_predecoder_33)       4.17e-03 5.66e-03  271.449    0.281   0.0
+  gen_educell_i[10].gen_educell_j[5].UUT3_i_j (edu_nexterr_34)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW10_AQCOL5)
+                                         25.750  604.168 8.28e+03  638.194   0.3
+    UUT6 (educell_esmunit_idx_34)      2.13e-02 1.05e-02  147.000    0.179   0.0
+    UUT5 (educell_syndromegen_34)      1.04e-02 9.06e-03  283.212    0.303   0.0
+    UUT4 (educell_syndir_34)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_34)         8.63e-03 7.38e-03  283.163    0.299   0.0
+    UUT2 (educell_decoder_34)          4.25e-03 5.85e-03  272.894    0.283   0.0
+    UUT1 (educell_predecoder_34)       3.24e-03 4.72e-03  222.934    0.231   0.0
+  gen_educell_i[10].gen_educell_j[4].UUT3_i_j (edu_nexterr_35)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW10_AQCOL4)
+                                         26.960  655.599 9.21e+03  691.770   0.4
+    UUT6 (educell_esmunit_idx_35)      1.96e-02 7.77e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_35)      1.05e-02 9.08e-03  283.212    0.303   0.0
+    UUT4 (educell_syndir_35)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_35)         1.12e-02 9.05e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_35)          1.39e-02 9.30e-03  386.746    0.410   0.0
+    UUT1 (educell_predecoder_35)       9.01e-03 1.02e-02  534.633    0.554   0.0
+  gen_educell_i[10].gen_educell_j[3].UUT3_i_j (edu_nexterr_36)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[10].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW10_AQCOL3)
+                                         28.225  641.301 9.67e+03  679.194   0.4
+    UUT6 (educell_esmunit_idx_36)      1.96e-02 7.86e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_36)      1.53e-02 9.09e-03  454.814    0.479   0.0
+    UUT4 (educell_syndir_36)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_36)         7.63e-03 6.94e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_36)          1.09e-02 8.78e-03  421.868    0.442   0.0
+    UUT1 (educell_predecoder_36)       1.12e-02 1.24e-02  793.234    0.817   0.0
+  gen_educell_i[10].gen_educell_j[2].UUT3_i_j (edu_nexterr_37)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW10_AQCOL2)
+                                         23.560  602.021 8.20e+03  633.779   0.3
+    UUT6 (educell_esmunit_idx_37)      1.96e-02 7.81e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_37)      1.01e-02 9.07e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_37)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_37)         1.07e-02 9.23e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_37)          1.13e-02 1.00e-02  338.955    0.360   0.0
+    UUT1 (educell_predecoder_37)       1.30e-03 1.52e-03  271.469    0.274   0.0
+  gen_educell_i[10].gen_educell_j[1].UUT3_i_j (edu_nexterr_38)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[10].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW10_AQCOL1)
+                                         24.609  585.753 8.12e+03  618.486   0.3
+    UUT6 (educell_esmunit_idx_38)      1.97e-02 7.76e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_38)      1.03e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_38)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_38)         1.09e-02 9.24e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_38)          1.15e-02 1.14e-02  323.071    0.346   0.0
+    UUT1 (educell_predecoder_38)       8.87e-04 1.88e-03  222.983    0.226   0.0
+  gen_educell_i[10].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW10_AQCOL0)
+                                         24.385  550.453 7.80e+03  582.635   0.3
+    UUT6 (educell_esmunit_idx_39)      1.80e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_39)      5.20e-03 4.53e-03  163.189    0.173   0.0
+    UUT4 (educell_syndir_39)              0.000    0.000   55.140 5.51e-02   0.0
+    UUT3 (educell_spikegen_39)         8.02e-03 6.80e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_39)          6.22e-03 3.27e-03  294.122    0.304   0.0
+    UUT1 (educell_predecoder_39)       3.50e-03 5.18e-03  476.334    0.485   0.0
+  gen_educell_i[9].gen_educell_j[19].UUT3_i_j (edu_nexterr_40)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[9].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW9_AQCOL19)
+                                         24.789  551.316 7.53e+03  583.640   0.3
+    UUT6 (educell_esmunit_idx_40)      1.81e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_40)      2.90e-03 2.75e-03  169.939    0.176   0.0
+    UUT4 (educell_syndir_40)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_40)         8.56e-03 6.92e-03  251.101    0.267   0.0
+    UUT2 (educell_decoder_40)          9.02e-03 6.24e-03  264.168    0.279   0.0
+    UUT1 (educell_predecoder_40)       8.84e-03 1.05e-02  440.028    0.459   0.0
+  gen_educell_i[9].gen_educell_j[18].UUT3_i_j (edu_nexterr_41)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[9].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW9_AQCOL18)
+                                         25.872  604.592 8.42e+03  638.884   0.3
+    UUT6 (educell_esmunit_idx_41)      1.81e-02 6.92e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_41)      1.06e-02 9.10e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_41)              0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_41)         5.42e-03 4.54e-03  291.671    0.302   0.0
+    UUT2 (educell_decoder_41)          1.12e-02 9.91e-03  310.629    0.332   0.0
+    UUT1 (educell_predecoder_41)       2.96e-03 5.11e-03  222.943    0.231   0.0
+  gen_educell_i[9].gen_educell_j[17].UUT3_i_j (edu_nexterr_42)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW9_AQCOL17)
+                                         26.782  621.717 8.40e+03  656.896   0.4
+    UUT6 (educell_esmunit_idx_42)      2.13e-02 8.68e-03  136.886    0.167   0.0
+    UUT5 (educell_syndromegen_42)      1.01e-02 9.06e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_42)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_42)         1.04e-02 9.06e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_42)          1.59e-02 1.48e-02  301.718    0.332   0.0
+    UUT1 (educell_predecoder_42)       3.16e-03 4.74e-03  271.401    0.279   0.0
+  gen_educell_i[9].gen_educell_j[16].UUT3_i_j (edu_nexterr_43)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[9].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW9_AQCOL16)
+                                         25.798  638.541 8.97e+03  673.310   0.4
+    UUT6 (educell_esmunit_idx_43)      1.98e-02 7.92e-03  136.881    0.165   0.0
+    UUT5 (educell_syndromegen_43)      1.04e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_43)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_43)         8.41e-03 7.41e-03  283.170    0.299   0.0
+    UUT2 (educell_decoder_43)          1.88e-02 1.23e-02  388.186    0.419   0.0
+    UUT1 (educell_predecoder_43)       9.03e-03 1.25e-02  605.870    0.627   0.0
+  gen_educell_i[9].gen_educell_j[15].UUT3_i_j (edu_nexterr_44)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW9_AQCOL15)
+                                         26.655  654.947 9.48e+03  691.087   0.4
+    UUT6 (educell_esmunit_idx_44)      1.82e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_44)      1.02e-02 9.09e-03  416.720    0.436   0.0
+    UUT4 (educell_syndir_44)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_44)         7.73e-03 6.99e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_44)          1.10e-02 1.03e-02  403.439    0.425   0.0
+    UUT1 (educell_predecoder_44)       1.54e-02 1.50e-02  739.630    0.770   0.0
+  gen_educell_i[9].gen_educell_j[14].UUT3_i_j (edu_nexterr_45)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[9].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW9_AQCOL14)
+                                         25.910  603.520 8.32e+03  637.753   0.3
+    UUT6 (educell_esmunit_idx_45)      1.83e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_45)      1.02e-02 9.07e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_45)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_45)         1.12e-02 9.18e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_45)          1.04e-02 1.02e-02  364.475    0.385   0.0
+    UUT1 (educell_predecoder_45)       1.58e-03 3.03e-03  222.996    0.228   0.0
+  gen_educell_i[9].gen_educell_j[13].UUT3_i_j (edu_nexterr_46)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW9_AQCOL13)
+                                         24.721  583.996 8.27e+03  616.992   0.3
+    UUT6 (educell_esmunit_idx_46)      1.81e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_46)      1.04e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_46)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_46)         1.05e-02 9.04e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_46)          1.23e-02 1.12e-02  310.241    0.334   0.0
+    UUT1 (educell_predecoder_46)       2.04e-03 2.56e-03  271.476    0.276   0.0
+  gen_educell_i[9].gen_educell_j[12].UUT3_i_j (edu_nexterr_47)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[9].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW9_AQCOL12)
+                                         24.729  672.559 9.19e+03  706.479   0.4
+    UUT6 (educell_esmunit_idx_47)      1.84e-02 7.19e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_47)      1.03e-02 9.09e-03  283.279    0.303   0.0
+    UUT4 (educell_syndir_47)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_47)         1.12e-02 9.05e-03  283.308    0.304   0.0
+    UUT2 (educell_decoder_47)          1.03e-02 6.78e-03  394.604    0.412   0.0
+    UUT1 (educell_predecoder_47)       5.26e-03 7.50e-03  626.351    0.639   0.0
+  gen_educell_i[9].gen_educell_j[11].UUT3_i_j (edu_nexterr_48)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW9_AQCOL11)
+                                         23.746  636.093 9.10e+03  668.939   0.4
+    UUT6 (educell_esmunit_idx_48)      1.94e-02 7.81e-03  136.883    0.164   0.0
+    UUT5 (educell_syndromegen_48)      1.02e-02 9.08e-03  416.720    0.436   0.0
+    UUT4 (educell_syndir_48)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_48)         1.02e-02 9.28e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_48)          1.76e-02 1.36e-02  405.767    0.437   0.0
+    UUT1 (educell_predecoder_48)       1.14e-02 1.40e-02  739.603    0.765   0.0
+  gen_educell_i[9].gen_educell_j[10].UUT3_i_j (edu_nexterr_49)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[9].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW9_AQCOL10)
+                                         23.822  586.032 8.09e+03  617.945   0.3
+    UUT6 (educell_esmunit_idx_49)      2.05e-02 8.46e-03  136.880    0.166   0.0
+    UUT5 (educell_syndromegen_49)      1.02e-02 9.09e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_49)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_49)         1.16e-02 9.70e-03  274.671    0.296   0.0
+    UUT2 (educell_decoder_49)          7.49e-03 6.23e-03  313.923    0.328   0.0
+    UUT1 (educell_predecoder_49)       1.26e-03 2.86e-03  222.942    0.227   0.0
+  gen_educell_i[9].gen_educell_j[9].UUT3_i_j (edu_nexterr_50)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW9_AQCOL9)
+                                         24.489  603.131 8.36e+03  635.984   0.3
+    UUT6 (educell_esmunit_idx_50)      1.89e-02 7.38e-03  136.879    0.163   0.0
+    UUT5 (educell_syndromegen_50)      1.04e-02 9.11e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_50)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_50)         8.96e-03 7.01e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_50)          8.90e-03 1.12e-02  322.904    0.343   0.0
+    UUT1 (educell_predecoder_50)       1.24e-03 2.35e-03  271.400    0.275   0.0
+  gen_educell_i[9].gen_educell_j[8].UUT3_i_j (edu_nexterr_51)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[9].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW9_AQCOL8)
+                                         25.996  638.159 9.23e+03  673.384   0.4
+    UUT6 (educell_esmunit_idx_51)      1.96e-02 7.85e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_51)      1.01e-02 9.05e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_51)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_51)         1.10e-02 9.28e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_51)          1.82e-02 1.30e-02  396.689    0.428   0.0
+    UUT1 (educell_predecoder_51)       6.19e-03 8.38e-03  626.337    0.641   0.0
+  gen_educell_i[9].gen_educell_j[7].UUT3_i_j (edu_nexterr_52)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW9_AQCOL7)
+                                         26.066  657.475 9.53e+03  693.076   0.4
+    UUT6 (educell_esmunit_idx_52)      2.03e-02 8.35e-03  136.901    0.166   0.0
+    UUT5 (educell_syndromegen_52)      1.06e-02 9.85e-03  416.726    0.437   0.0
+    UUT4 (educell_syndir_52)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_52)         5.61e-03 5.18e-03  291.663    0.302   0.0
+    UUT2 (educell_decoder_52)          2.09e-02 1.55e-02  358.506    0.395   0.0
+    UUT1 (educell_predecoder_52)       1.94e-02 2.01e-02  739.563    0.779   0.0
+  gen_educell_i[9].gen_educell_j[6].UUT3_i_j (edu_nexterr_53)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[9].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW9_AQCOL6)
+                                         24.857  584.386 8.65e+03  617.893   0.3
+    UUT6 (educell_esmunit_idx_53)      1.80e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_53)      1.03e-02 9.01e-03  283.212    0.302   0.0
+    UUT4 (educell_syndir_53)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_53)         1.08e-02 9.22e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_53)          6.81e-03 8.18e-03  283.006    0.298   0.0
+    UUT1 (educell_predecoder_53)       3.20e-03 4.64e-03  222.934    0.231   0.0
+  gen_educell_i[9].gen_educell_j[5].UUT3_i_j (edu_nexterr_54)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW9_AQCOL5)
+                                         26.750  606.634 8.35e+03  641.733   0.3
+    UUT6 (educell_esmunit_idx_54)      2.08e-02 8.41e-03  136.905    0.166   0.0
+    UUT5 (educell_syndromegen_54)      1.02e-02 9.07e-03  283.212    0.302   0.0
+    UUT4 (educell_syndir_54)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_54)         5.74e-03 5.14e-03  291.663    0.303   0.0
+    UUT2 (educell_decoder_54)          1.20e-02 1.06e-02  323.158    0.346   0.0
+    UUT1 (educell_predecoder_54)       3.99e-03 5.61e-03  271.449    0.281   0.0
+  gen_educell_i[9].gen_educell_j[4].UUT3_i_j (edu_nexterr_55)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[9].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW9_AQCOL4)
+                                         25.499  639.536 9.16e+03  674.196   0.4
+    UUT6 (educell_esmunit_idx_55)      2.08e-02 8.54e-03  136.892    0.166   0.0
+    UUT5 (educell_syndromegen_55)      1.03e-02 9.07e-03  283.212    0.303   0.0
+    UUT4 (educell_syndir_55)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_55)         8.02e-03 6.94e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_55)          2.00e-02 1.61e-02  432.045    0.468   0.0
+    UUT1 (educell_predecoder_55)       1.17e-02 1.63e-02  626.265    0.654   0.0
+  gen_educell_i[9].gen_educell_j[3].UUT3_i_j (edu_nexterr_56)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW9_AQCOL3)
+                                         25.910  640.614 9.23e+03  675.750   0.4
+    UUT6 (educell_esmunit_idx_56)      1.82e-02 6.95e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_56)      1.02e-02 9.09e-03  416.720    0.436   0.0
+    UUT4 (educell_syndir_56)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_56)         7.97e-03 7.01e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_56)          1.38e-02 9.49e-03  402.550    0.426   0.0
+    UUT1 (educell_predecoder_56)       1.03e-02 1.02e-02  739.589    0.760   0.0
+  gen_educell_i[9].gen_educell_j[2].UUT3_i_j (edu_nexterr_57)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[9].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW9_AQCOL2)
+                                         25.867  588.675 8.25e+03  622.794   0.3
+    UUT6 (educell_esmunit_idx_57)      2.00e-02 8.15e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_57)      1.06e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_57)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_57)         1.03e-02 9.23e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_57)          1.83e-02 1.44e-02  333.173    0.366   0.0
+    UUT1 (educell_predecoder_57)       8.89e-04 1.84e-03  222.983    0.226   0.0
+  gen_educell_i[9].gen_educell_j[1].UUT3_i_j (edu_nexterr_58)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[9].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW9_AQCOL1)
+                                         24.521  585.042 8.17e+03  617.730   0.3
+    UUT6 (educell_esmunit_idx_58)      1.83e-02 6.95e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_58)      1.01e-02 9.08e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_58)              0.000    0.000  109.982    0.110   0.0
+    UUT3 (educell_spikegen_58)         1.03e-02 9.25e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_58)          9.02e-03 8.87e-03  364.952    0.383   0.0
+    UUT1 (educell_predecoder_58)       1.24e-03 1.49e-03  271.469    0.274   0.0
+  gen_educell_i[9].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW9_AQCOL0)
+                                         24.840  553.323 7.68e+03  585.841   0.3
+    UUT6 (educell_esmunit_idx_59)      1.94e-02 7.74e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_59)         0.000    0.000  169.780    0.170   0.0
+    UUT4 (educell_syndir_59)              0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_59)         1.56e-02 1.14e-02  259.467    0.286   0.0
+    UUT2 (educell_decoder_59)          6.33e-03 3.41e-03  290.271    0.300   0.0
+    UUT1 (educell_predecoder_59)       1.70e-03 3.08e-03  486.123    0.491   0.0
+  gen_educell_i[8].gen_educell_j[19].UUT3_i_j (edu_nexterr_60)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[8].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW8_AQCOL19)
+                                         23.907  618.229 9.08e+03  651.213   0.3
+    UUT6 (educell_esmunit_idx_60)      1.83e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_60)      7.68e-03 6.89e-03  245.924    0.260   0.0
+    UUT4 (educell_syndir_60)              0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_60)         7.89e-03 6.82e-03  262.847    0.278   0.0
+    UUT2 (educell_decoder_60)          1.07e-02 8.41e-03  390.326    0.409   0.0
+    UUT1 (educell_predecoder_60)       2.11e-02 1.79e-02  970.004    1.009   0.0
+  gen_educell_i[8].gen_educell_j[18].UUT3_i_j (edu_nexterr_61)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW8_AQCOL18)
+                                         25.317  689.269 9.82e+03  724.411   0.4
+    UUT6 (educell_esmunit_idx_61)      1.80e-02 7.20e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_61)      1.60e-02 1.14e-02  487.286    0.515   0.0
+    UUT4 (educell_syndir_61)              0.000    0.000  188.284    0.188   0.0
+    UUT3 (educell_spikegen_61)         8.82e-03 6.78e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_61)          2.70e-02 2.03e-02  482.208    0.530   0.0
+    UUT1 (educell_predecoder_61)       1.47e-02 1.42e-02  674.896    0.704   0.0
+  gen_educell_i[8].gen_educell_j[17].UUT3_i_j (edu_nexterr_62)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW8_AQCOL17)
+                                         24.926  688.973 9.85e+03  723.750   0.4
+    UUT6 (educell_esmunit_idx_62)      1.97e-02 7.76e-03  136.881    0.164   0.0
+    UUT5 (educell_syndromegen_62)      2.71e-02 1.14e-02  519.574    0.558   0.0
+    UUT4 (educell_syndir_62)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_62)         1.08e-02 9.27e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_62)          1.60e-02 1.44e-02  497.737    0.528   0.0
+    UUT1 (educell_predecoder_62)       1.23e-02 1.39e-02  536.191    0.562   0.0
+  gen_educell_i[8].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW8_AQCOL16)
+                                         23.257  671.066 9.44e+03  703.760   0.4
+    UUT6 (educell_esmunit_idx_63)      1.79e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_63)      1.29e-02 1.14e-02  389.445    0.414   0.0
+    UUT4 (educell_syndir_63)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_63)         1.02e-02 9.05e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_63)          1.82e-02 1.31e-02  396.568    0.428   0.0
+    UUT1 (educell_predecoder_63)       1.62e-02 1.78e-02  729.062    0.763   0.0
+  gen_educell_i[8].gen_educell_j[15].UUT3_i_j (edu_nexterr_64)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[8].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW8_AQCOL15)
+                                         24.911  672.505 9.74e+03  707.158   0.4
+    UUT6 (educell_esmunit_idx_64)      1.79e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_64)      1.58e-02 1.14e-02  398.714    0.426   0.0
+    UUT4 (educell_syndir_64)              0.000    0.000  141.000    0.141   0.0
+    UUT3 (educell_spikegen_64)         1.06e-02 9.34e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_64)          1.01e-02 6.78e-03  406.138    0.423   0.0
+    UUT1 (educell_predecoder_64)       2.12e-02 1.78e-02 1.04e+03    1.075   0.0
+  gen_educell_i[8].gen_educell_j[14].UUT3_i_j (edu_nexterr_65)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW8_AQCOL14)
+                                         24.994  689.271 9.87e+03  724.135   0.4
+    UUT6 (educell_esmunit_idx_65)      1.83e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_65)      1.30e-02 1.15e-02  467.928    0.492   0.0
+    UUT4 (educell_syndir_65)              0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_65)         1.07e-02 9.30e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_65)          2.46e-02 1.91e-02  482.423    0.526   0.0
+    UUT1 (educell_predecoder_65)       1.26e-02 1.27e-02  674.943    0.700   0.0
+  gen_educell_i[8].gen_educell_j[13].UUT3_i_j (edu_nexterr_66)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW8_AQCOL13)
+                                         27.174  692.869 9.88e+03  729.924   0.4
+    UUT6 (educell_esmunit_idx_66)      1.81e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_66)      2.95e-02 1.37e-02  529.676    0.573   0.0
+    UUT4 (educell_syndir_66)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_66)         1.00e-02 9.26e-03  294.996    0.314   0.0
+    UUT2 (educell_decoder_66)          1.42e-02 9.08e-03  479.732    0.503   0.0
+    UUT1 (educell_predecoder_66)       1.48e-02 1.38e-02  559.098    0.588   0.0
+  gen_educell_i[8].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW8_AQCOL12)
+                                         29.099  677.083 9.85e+03  716.035   0.4
+    UUT6 (educell_esmunit_idx_67)      1.80e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_67)      1.31e-02 1.14e-02  389.445    0.414   0.0
+    UUT4 (educell_syndir_67)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_67)         1.04e-02 9.03e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_67)          1.52e-02 1.10e-02  408.471    0.435   0.0
+    UUT1 (educell_predecoder_67)       1.12e-02 1.28e-02  711.979    0.736   0.0
+  gen_educell_i[8].gen_educell_j[11].UUT3_i_j (edu_nexterr_68)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[8].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW8_AQCOL11)
+                                         23.222  671.531 9.92e+03  704.671   0.4
+    UUT6 (educell_esmunit_idx_68)      1.81e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_68)      1.27e-02 9.16e-03  388.612    0.410   0.0
+    UUT4 (educell_syndir_68)              0.000    0.000  141.000    0.141   0.0
+    UUT3 (educell_spikegen_68)         1.05e-02 9.33e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_68)          1.17e-02 8.04e-03  403.252    0.423   0.0
+    UUT1 (educell_predecoder_68)       2.06e-02 2.03e-02 1.03e+03    1.074   0.0
+  gen_educell_i[8].gen_educell_j[10].UUT3_i_j (edu_nexterr_69)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW8_AQCOL10)
+                                         26.403  688.113 1.02e+04  724.708   0.4
+    UUT6 (educell_esmunit_idx_69)      1.95e-02 7.77e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_69)      1.30e-02 1.14e-02  467.928    0.492   0.0
+    UUT4 (educell_syndir_69)              0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_69)         7.81e-03 6.94e-03  303.496    0.318   0.0
+    UUT2 (educell_decoder_69)          2.78e-02 2.36e-02  532.293    0.584   0.0
+    UUT1 (educell_predecoder_69)       1.15e-02 1.24e-02  674.865    0.699   0.0
+  gen_educell_i[8].gen_educell_j[9].UUT3_i_j (edu_nexterr_70)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW8_AQCOL9)
+                                         23.801  687.667 9.67e+03  721.138   0.4
+    UUT6 (educell_esmunit_idx_70)      2.02e-02 8.02e-03  136.887    0.165   0.0
+    UUT5 (educell_syndromegen_70)      2.57e-02 1.14e-02  519.574    0.557   0.0
+    UUT4 (educell_syndir_70)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_70)         1.07e-02 9.63e-03  294.991    0.315   0.0
+    UUT2 (educell_decoder_70)          1.53e-02 1.57e-02  500.148    0.531   0.0
+    UUT1 (educell_predecoder_70)       1.13e-02 1.33e-02  559.087    0.584   0.0
+  gen_educell_i[8].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW8_AQCOL8)
+                                         24.845  670.549 9.58e+03  704.975   0.4
+    UUT6 (educell_esmunit_idx_71)      1.80e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_71)      2.31e-02 9.12e-03  426.469    0.459   0.0
+    UUT4 (educell_syndir_71)              0.000    0.000  149.240    0.149   0.0
+    UUT3 (educell_spikegen_71)         8.77e-03 6.85e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_71)          1.70e-02 1.68e-02  451.678    0.485   0.0
+    UUT1 (educell_predecoder_71)       1.47e-02 1.68e-02  729.059    0.761   0.0
+  gen_educell_i[8].gen_educell_j[7].UUT3_i_j (edu_nexterr_72)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[8].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW8_AQCOL7)
+                                         26.081  671.852 9.88e+03  707.814   0.4
+    UUT6 (educell_esmunit_idx_72)      1.79e-02 7.01e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_72)      1.32e-02 9.13e-03  388.618    0.411   0.0
+    UUT4 (educell_syndir_72)              0.000    0.000  105.240    0.105   0.0
+    UUT3 (educell_spikegen_72)         7.89e-03 6.75e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_72)          6.55e-03 3.45e-03  391.060    0.401   0.0
+    UUT1 (educell_predecoder_72)       2.42e-02 2.12e-02 1.04e+03    1.081   0.0
+  gen_educell_i[8].gen_educell_j[6].UUT3_i_j (edu_nexterr_73)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW8_AQCOL6)
+                                         24.054  706.079 1.02e+04  740.355   0.4
+    UUT6 (educell_esmunit_idx_73)      2.01e-02 8.01e-03  136.893    0.165   0.0
+    UUT5 (educell_syndromegen_73)      1.65e-02 1.14e-02  487.280    0.515   0.0
+    UUT4 (educell_syndir_73)              0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_73)         1.09e-02 9.42e-03  294.987    0.315   0.0
+    UUT2 (educell_decoder_73)          2.35e-02 1.63e-02  502.911    0.543   0.0
+    UUT1 (educell_predecoder_73)       1.53e-02 1.55e-02  674.959    0.706   0.0
+  gen_educell_i[8].gen_educell_j[5].UUT3_i_j (edu_nexterr_74)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW8_AQCOL5)
+                                         24.600  689.698 9.67e+03  723.964   0.4
+    UUT6 (educell_esmunit_idx_74)      2.07e-02 8.63e-03  136.892    0.166   0.0
+    UUT5 (educell_syndromegen_74)      2.88e-02 1.38e-02  529.679    0.572   0.0
+    UUT4 (educell_syndir_74)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_74)         7.97e-03 7.07e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_74)          1.36e-02 1.09e-02  441.461    0.466   0.0
+    UUT1 (educell_predecoder_74)       1.60e-02 1.43e-02  559.115    0.590   0.0
+  gen_educell_i[8].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW8_AQCOL4)
+                                         23.889  671.188 9.51e+03  704.588   0.4
+    UUT6 (educell_esmunit_idx_75)      1.81e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_75)      1.03e-02 9.12e-03  379.336    0.399   0.0
+    UUT4 (educell_syndir_75)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_75)         8.10e-03 6.87e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_75)          2.59e-02 1.96e-02  467.245    0.513   0.0
+    UUT1 (educell_predecoder_75)       1.78e-02 2.03e-02  711.880    0.750   0.0
+  gen_educell_i[8].gen_educell_j[3].UUT3_i_j (edu_nexterr_76)
+                                          0.000    0.000  294.905    0.295   0.0
+  gen_educell_i[8].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW8_AQCOL3)
+                                         23.682  672.017 9.69e+03  705.388   0.4
+    UUT6 (educell_esmunit_idx_76)      1.81e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_76)      1.31e-02 9.15e-03  388.612    0.411   0.0
+    UUT4 (educell_syndir_76)              0.000    0.000  105.240    0.105   0.0
+    UUT3 (educell_spikegen_76)         1.02e-02 9.19e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_76)          9.19e-03 5.70e-03  372.931    0.388   0.0
+    UUT1 (educell_predecoder_76)       1.59e-02 1.52e-02 1.03e+03    1.064   0.0
+  gen_educell_i[8].gen_educell_j[2].UUT3_i_j (edu_nexterr_77)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW8_AQCOL2)
+                                         25.599  689.244 1.01e+04  724.957   0.4
+    UUT6 (educell_esmunit_idx_77)      1.95e-02 7.81e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_77)      2.63e-02 1.14e-02  524.311    0.562   0.0
+    UUT4 (educell_syndir_77)              0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_77)         1.06e-02 9.16e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_77)          1.69e-02 1.06e-02  609.281    0.637   0.0
+    UUT1 (educell_predecoder_77)       8.47e-03 9.39e-03  674.815    0.693   0.0
+  gen_educell_i[8].gen_educell_j[1].UUT3_i_j (edu_nexterr_78)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[8].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW8_AQCOL1)
+                                         23.661  688.874 9.67e+03  722.202   0.4
+    UUT6 (educell_esmunit_idx_78)      1.78e-02 6.92e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_78)      2.64e-02 1.14e-02  519.574    0.557   0.0
+    UUT4 (educell_syndir_78)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_78)         8.07e-03 7.04e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_78)          1.06e-02 9.62e-03  455.060    0.475   0.0
+    UUT1 (educell_predecoder_78)       9.34e-03 9.78e-03  579.617    0.599   0.0
+  gen_educell_i[8].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW8_AQCOL0)
+                                         22.856  636.367 8.71e+03  667.936   0.4
+    UUT6 (educell_esmunit_idx_79)      1.79e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_79)      1.05e-02 9.19e-03  279.367    0.299   0.0
+    UUT4 (educell_syndir_79)              0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_79)         1.04e-02 9.26e-03  254.347    0.274   0.0
+    UUT2 (educell_decoder_79)          1.21e-02 1.01e-02  403.352    0.426   0.0
+    UUT1 (educell_predecoder_79)       9.83e-03 1.13e-02  633.989    0.655   0.0
+  gen_educell_i[7].gen_educell_j[19].UUT3_i_j (edu_nexterr_80)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[7].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW7_AQCOL19)
+                                         26.398  620.856 8.78e+03  656.033   0.4
+    UUT6 (educell_esmunit_idx_80)      1.79e-02 6.92e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_80)      1.05e-02 6.82e-03  292.312    0.310   0.0
+    UUT4 (educell_syndir_80)              0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_80)         1.04e-02 9.24e-03  254.347    0.274   0.0
+    UUT2 (educell_decoder_80)          1.34e-02 9.30e-03  418.278    0.441   0.0
+    UUT1 (educell_predecoder_80)       1.08e-02 1.01e-02  637.051    0.658   0.0
+  gen_educell_i[7].gen_educell_j[18].UUT3_i_j (edu_nexterr_81)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[7].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW7_AQCOL18)
+                                         26.056  728.468 1.02e+04  764.728   0.4
+    UUT6 (educell_esmunit_idx_81)      1.80e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_81)      3.92e-02 1.37e-02  517.700    0.571   0.0
+    UUT4 (educell_syndir_81)              0.000    0.000  178.778    0.179   0.0
+    UUT3 (educell_spikegen_81)         9.94e-03 9.29e-03  294.996    0.314   0.0
+    UUT2 (educell_decoder_81)          1.70e-02 1.41e-02  626.344    0.657   0.0
+    UUT1 (educell_predecoder_81)       7.09e-03 8.25e-03  542.746    0.558   0.0
+  gen_educell_i[7].gen_educell_j[17].UUT3_i_j (edu_nexterr_82)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[7].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW7_AQCOL17)
+                                         27.514  693.104 1.01e+04  730.686   0.4
+    UUT6 (educell_esmunit_idx_82)      1.86e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_82)      1.61e-02 1.14e-02  487.286    0.515   0.0
+    UUT4 (educell_syndir_82)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_82)         8.81e-03 6.90e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_82)          2.17e-02 1.22e-02  413.294    0.447   0.0
+    UUT1 (educell_predecoder_82)       9.13e-03 9.69e-03  578.127    0.597   0.0
+  gen_educell_i[7].gen_educell_j[16].UUT3_i_j (edu_nexterr_83)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW7_AQCOL16)
+                                         24.359  675.367 9.43e+03  709.159   0.4
+    UUT6 (educell_esmunit_idx_83)      1.82e-02 6.95e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_83)      1.29e-02 9.12e-03  388.613    0.411   0.0
+    UUT4 (educell_syndir_83)              0.000    0.000  130.695    0.131   0.0
+    UUT3 (educell_spikegen_83)         1.02e-02 9.17e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_83)          7.17e-03 4.54e-03  420.999    0.433   0.0
+    UUT1 (educell_predecoder_83)       7.64e-03 9.35e-03  665.260    0.682   0.0
+  gen_educell_i[7].gen_educell_j[15].UUT3_i_j (edu_nexterr_84)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW7_AQCOL15)
+                                         24.241  674.977 9.62e+03  708.835   0.4
+    UUT6 (educell_esmunit_idx_84)      1.81e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_84)      2.09e-02 9.12e-03  430.620    0.461   0.0
+    UUT4 (educell_syndir_84)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_84)         7.93e-03 7.04e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_84)          7.47e-03 5.27e-03  414.045    0.427   0.0
+    UUT1 (educell_predecoder_84)       1.40e-02 1.42e-02  837.222    0.865   0.0
+  gen_educell_i[7].gen_educell_j[14].UUT3_i_j (edu_nexterr_85)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[7].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW7_AQCOL14)
+                                         27.341  723.907 9.92e+03  761.170   0.4
+    UUT6 (educell_esmunit_idx_85)      1.98e-02 8.04e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_85)      4.26e-02 1.37e-02  517.700    0.574   0.0
+    UUT4 (educell_syndir_85)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_85)         1.09e-02 9.75e-03  294.995    0.316   0.0
+    UUT2 (educell_decoder_85)          1.30e-02 8.12e-03  483.854    0.505   0.0
+    UUT1 (educell_predecoder_85)       3.24e-03 4.28e-03  542.701    0.550   0.0
+  gen_educell_i[7].gen_educell_j[13].UUT3_i_j (edu_nexterr_86)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[7].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW7_AQCOL13)
+                                         25.759  706.877 9.87e+03  742.503   0.4
+    UUT6 (educell_esmunit_idx_86)      2.00e-02 8.09e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_86)      1.54e-02 1.14e-02  487.286    0.514   0.0
+    UUT4 (educell_syndir_86)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_86)         1.04e-02 9.27e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_86)          2.49e-02 1.48e-02  430.222    0.470   0.0
+    UUT1 (educell_predecoder_86)       5.85e-03 6.56e-03  557.755    0.570   0.0
+  gen_educell_i[7].gen_educell_j[12].UUT3_i_j (edu_nexterr_87)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW7_AQCOL12)
+                                         23.359  688.513 9.51e+03  721.380   0.4
+    UUT6 (educell_esmunit_idx_87)      1.80e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_87)      1.30e-02 9.12e-03  388.612    0.411   0.0
+    UUT4 (educell_syndir_87)              0.000    0.000  130.695    0.131   0.0
+    UUT3 (educell_spikegen_87)         1.06e-02 9.32e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_87)          1.28e-02 9.27e-03  378.975    0.401   0.0
+    UUT1 (educell_predecoder_87)       5.89e-03 7.00e-03  665.272    0.678   0.0
+  gen_educell_i[7].gen_educell_j[11].UUT3_i_j (edu_nexterr_88)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW7_AQCOL11)
+                                         22.954  653.898 9.38e+03  686.227   0.4
+    UUT6 (educell_esmunit_idx_88)      1.82e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_88)      2.38e-02 9.15e-03  430.619    0.464   0.0
+    UUT4 (educell_syndir_88)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_88)         8.04e-03 6.94e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_88)          1.18e-02 9.74e-03  428.925    0.450   0.0
+    UUT1 (educell_predecoder_88)       5.45e-03 6.31e-03  837.240    0.849   0.0
+  gen_educell_i[7].gen_educell_j[10].UUT3_i_j (edu_nexterr_89)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[7].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW7_AQCOL10)
+                                         24.924  723.290 1.01e+04  758.271   0.4
+    UUT6 (educell_esmunit_idx_89)      1.82e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_89)      3.66e-02 1.14e-02  507.598    0.556   0.0
+    UUT4 (educell_syndir_89)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_89)         1.06e-02 9.22e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_89)          9.31e-03 7.03e-03  555.751    0.572   0.0
+    UUT1 (educell_predecoder_89)          0.000    0.000  542.706    0.543   0.0
+  gen_educell_i[7].gen_educell_j[9].UUT3_i_j (edu_nexterr_90)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[7].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW7_AQCOL9)
+                                         25.753  726.305 1.00e+04  762.097   0.4
+    UUT6 (educell_esmunit_idx_90)      1.82e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_90)      1.56e-02 1.14e-02  487.286    0.514   0.0
+    UUT4 (educell_syndir_90)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_90)         8.99e-03 6.77e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_90)          1.80e-02 2.12e-02  454.481    0.494   0.0
+    UUT1 (educell_predecoder_90)       2.59e-03 2.30e-03  557.763    0.563   0.0
+  gen_educell_i[7].gen_educell_j[8].UUT3_i_j (edu_nexterr_91)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW7_AQCOL8)
+                                         23.313  688.171 9.25e+03  720.739   0.4
+    UUT6 (educell_esmunit_idx_91)      1.85e-02 7.12e-03  136.878    0.163   0.0
+    UUT5 (educell_syndromegen_91)      1.29e-02 9.12e-03  388.612    0.411   0.0
+    UUT4 (educell_syndir_91)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_91)         8.41e-03 6.97e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_91)          5.07e-03 2.27e-03  359.818    0.367   0.0
+    UUT1 (educell_predecoder_91)          0.000    0.000  665.282    0.665   0.0
+  gen_educell_i[7].gen_educell_j[7].UUT3_i_j (edu_nexterr_92)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW7_AQCOL7)
+                                         24.165  654.861 9.78e+03  688.804   0.4
+    UUT6 (educell_esmunit_idx_92)      1.81e-02 6.92e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_92)      3.33e-02 1.15e-02  529.465    0.574   0.0
+    UUT4 (educell_syndir_92)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_92)         1.13e-02 9.40e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_92)          1.17e-02 8.79e-03  405.415    0.426   0.0
+    UUT1 (educell_predecoder_92)       1.82e-02 1.55e-02  837.184    0.871   0.0
+  gen_educell_i[7].gen_educell_j[6].UUT3_i_j (edu_nexterr_93)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[7].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW7_AQCOL6)
+                                         24.683  706.181 9.81e+03  740.670   0.4
+    UUT6 (educell_esmunit_idx_93)      2.22e-02 9.28e-03  136.897    0.168   0.0
+    UUT5 (educell_syndromegen_93)      3.73e-02 1.14e-02  507.598    0.556   0.0
+    UUT4 (educell_syndir_93)              0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_93)         6.58e-03 5.50e-03  311.985    0.324   0.0
+    UUT2 (educell_decoder_93)          2.57e-02 1.80e-02  507.457    0.551   0.0
+    UUT1 (educell_predecoder_93)       7.99e-03 7.86e-03  542.729    0.559   0.0
+  gen_educell_i[7].gen_educell_j[5].UUT3_i_j (edu_nexterr_94)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[7].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW7_AQCOL5)
+                                         24.975  705.837 9.86e+03  740.671   0.4
+    UUT6 (educell_esmunit_idx_94)      2.00e-02 7.90e-03  136.885    0.165   0.0
+    UUT5 (educell_syndromegen_94)      1.80e-02 1.37e-02  497.389    0.529   0.0
+    UUT4 (educell_syndir_94)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_94)         1.08e-02 9.75e-03  294.992    0.316   0.0
+    UUT2 (educell_decoder_94)          1.68e-02 1.40e-02  494.784    0.526   0.0
+    UUT1 (educell_predecoder_94)       9.75e-03 1.01e-02  557.751    0.578   0.0
+  gen_educell_i[7].gen_educell_j[4].UUT3_i_j (edu_nexterr_95)
+                                          0.000    0.000  302.783    0.303   0.0
+  gen_educell_i[7].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW7_AQCOL4)
+                                         26.038  706.686 9.64e+03  742.360   0.4
+    UUT6 (educell_esmunit_idx_95)      1.82e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_95)      1.02e-02 9.10e-03  369.253    0.389   0.0
+    UUT4 (educell_syndir_95)              0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_95)         1.08e-02 9.00e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_95)          1.56e-02 1.04e-02  403.241    0.429   0.0
+    UUT1 (educell_predecoder_95)       1.14e-02 1.04e-02  665.301    0.687   0.0
+  gen_educell_i[7].gen_educell_j[3].UUT3_i_j (edu_nexterr_96)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW7_AQCOL3)
+                                         25.033  674.604 1.01e+04  709.743   0.4
+    UUT6 (educell_esmunit_idx_96)      1.82e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_96)      2.44e-02 1.14e-02  548.976    0.585   0.0
+    UUT4 (educell_syndir_96)              0.000    0.000  118.447    0.118   0.0
+    UUT3 (educell_spikegen_96)         1.06e-02 9.27e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_96)          1.12e-02 8.14e-03  569.529    0.589   0.0
+    UUT1 (educell_predecoder_96)       1.73e-02 1.55e-02  862.310    0.895   0.0
+  gen_educell_i[7].gen_educell_j[2].UUT3_i_j (edu_nexterr_97)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[7].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW7_AQCOL2)
+                                         25.090  690.786 9.75e+03  725.621   0.4
+    UUT6 (educell_esmunit_idx_97)      1.82e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_97)      3.93e-02 1.37e-02  517.700    0.571   0.0
+    UUT4 (educell_syndir_97)              0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_97)         1.02e-02 9.24e-03  294.996    0.314   0.0
+    UUT2 (educell_decoder_97)          1.56e-02 1.18e-02  464.171    0.491   0.0
+    UUT1 (educell_predecoder_97)       8.66e-03 9.12e-03  542.701    0.560   0.0
+  gen_educell_i[7].gen_educell_j[1].UUT3_i_j (edu_nexterr_98)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[7].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW7_AQCOL1)
+                                         25.910  691.882 1.00e+04  727.808   0.4
+    UUT6 (educell_esmunit_idx_98)      1.81e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_98)      1.53e-02 1.14e-02  487.286    0.514   0.0
+    UUT4 (educell_syndir_98)              0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_98)         7.88e-03 7.04e-03  303.496    0.318   0.0
+    UUT2 (educell_decoder_98)          1.63e-02 1.60e-02  653.001    0.685   0.0
+    UUT1 (educell_predecoder_98)       9.33e-03 9.50e-03  557.795    0.577   0.0
+  gen_educell_i[7].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW7_AQCOL0)
+                                         24.023  619.321 8.52e+03  651.864   0.3
+    UUT6 (educell_esmunit_idx_99)      2.06e-02 9.78e-03  155.488    0.186   0.0
+    UUT5 (educell_syndromegen_99)      1.03e-02 9.18e-03  256.026    0.276   0.0
+    UUT4 (educell_syndir_99)              0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_99)         1.08e-02 1.02e-02  254.344    0.275   0.0
+    UUT2 (educell_decoder_99)          7.31e-03 4.92e-03  337.251    0.349   0.0
+    UUT1 (educell_predecoder_99)       6.89e-03 1.02e-02  609.478    0.627   0.0
+  gen_educell_i[6].gen_educell_j[19].UUT3_i_j (edu_nexterr_100)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW6_AQCOL19)
+                                         23.541  551.663 7.73e+03  582.933   0.3
+    UUT6 (educell_esmunit_idx_100)     1.82e-02 7.12e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_100)     1.63e-04 1.42e-04  169.782    0.170   0.0
+    UUT4 (educell_syndir_100)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_100)        7.49e-03 7.00e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_100)         1.41e-02 9.11e-03  340.712    0.364   0.0
+    UUT1 (educell_predecoder_100)      1.64e-02 1.67e-02  613.391    0.647   0.0
+  gen_educell_i[6].gen_educell_j[18].UUT3_i_j (edu_nexterr_101)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW6_AQCOL18)
+                                         22.965  583.589 8.10e+03  614.655   0.3
+    UUT6 (educell_esmunit_idx_101)     1.83e-02 7.49e-03  136.878    0.163   0.0
+    UUT5 (educell_syndromegen_101)     1.05e-02 9.07e-03  283.204    0.303   0.0
+    UUT4 (educell_syndir_101)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_101)        1.05e-02 9.20e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_101)         1.05e-02 1.31e-02  339.851    0.364   0.0
+    UUT1 (educell_predecoder_101)      3.21e-03 3.89e-03  271.473    0.279   0.0
+  gen_educell_i[6].gen_educell_j[17].UUT3_i_j (edu_nexterr_102)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW6_AQCOL17)
+                                         24.736  585.179 7.98e+03  617.893   0.3
+    UUT6 (educell_esmunit_idx_102)     1.82e-02 7.36e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_102)     1.29e-02 1.14e-02  293.307    0.318   0.0
+    UUT4 (educell_syndir_102)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_102)        1.00e-02 9.36e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_102)         8.15e-03 6.92e-03  344.295    0.359   0.0
+    UUT1 (educell_predecoder_102)      2.58e-03 3.68e-03  222.968    0.229   0.0
+  gen_educell_i[6].gen_educell_j[16].UUT3_i_j (edu_nexterr_103)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW6_AQCOL16)
+                                         23.919  637.328 8.88e+03  670.129   0.4
+    UUT6 (educell_esmunit_idx_103)     1.79e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_103)     1.01e-02 9.07e-03  283.204    0.302   0.0
+    UUT4 (educell_syndir_103)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_103)        9.98e-03 9.22e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_103)         1.67e-02 1.36e-02  390.193    0.420   0.0
+    UUT1 (educell_predecoder_103)      7.46e-03 8.92e-03  534.629    0.551   0.0
+  gen_educell_i[6].gen_educell_j[15].UUT3_i_j (edu_nexterr_104)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW6_AQCOL15)
+                                         26.323  638.912 9.45e+03  674.684   0.4
+    UUT6 (educell_esmunit_idx_104)     2.08e-02 8.72e-03  136.880    0.166   0.0
+    UUT5 (educell_syndromegen_104)     1.63e-02 9.62e-03  454.811    0.481   0.0
+    UUT4 (educell_syndir_104)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_104)        1.05e-02 9.63e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_104)         1.29e-02 9.98e-03  394.612    0.418   0.0
+    UUT1 (educell_predecoder_104)      1.51e-02 1.55e-02  793.181    0.824   0.0
+  gen_educell_i[6].gen_educell_j[14].UUT3_i_j (edu_nexterr_105)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW6_AQCOL14)
+                                         24.981  584.983 8.15e+03  618.118   0.3
+    UUT6 (educell_esmunit_idx_105)     1.82e-02 7.21e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_105)     1.03e-02 9.06e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_105)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_105)        7.54e-03 6.95e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_105)         1.41e-02 1.21e-02  342.144    0.368   0.0
+    UUT1 (educell_predecoder_105)      1.33e-03 2.25e-03  271.492    0.275   0.0
+  gen_educell_i[6].gen_educell_j[13].UUT3_i_j (edu_nexterr_106)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW6_AQCOL13)
+                                         24.888  586.480 7.97e+03  619.334   0.3
+    UUT6 (educell_esmunit_idx_106)     2.01e-02 8.36e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_106)     1.05e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_106)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_106)        7.76e-03 6.99e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_106)         1.32e-02 1.07e-02  334.117    0.358   0.0
+    UUT1 (educell_predecoder_106)      1.14e-03 2.24e-03  222.992    0.226   0.0
+  gen_educell_i[6].gen_educell_j[12].UUT3_i_j (edu_nexterr_107)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW6_AQCOL12)
+                                         25.750  639.417 8.96e+03  674.127   0.4
+    UUT6 (educell_esmunit_idx_107)     2.07e-02 8.65e-03  136.880    0.166   0.0
+    UUT5 (educell_syndromegen_107)     1.03e-02 9.10e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_107)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_107)        8.14e-03 7.45e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_107)         1.03e-02 8.35e-03  386.449    0.405   0.0
+    UUT1 (educell_predecoder_107)      3.36e-03 4.17e-03  534.645    0.542   0.0
+  gen_educell_i[6].gen_educell_j[11].UUT3_i_j (edu_nexterr_108)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW6_AQCOL11)
+                                         23.986  637.284 9.37e+03  670.638   0.4
+    UUT6 (educell_esmunit_idx_108)     1.81e-02 7.14e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_108)     1.87e-02 9.14e-03  509.471    0.537   0.0
+    UUT4 (educell_syndir_108)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_108)        7.85e-03 6.94e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_108)         1.35e-02 9.36e-03  396.682    0.420   0.0
+    UUT1 (educell_predecoder_108)      7.86e-03 9.33e-03  793.184    0.810   0.0
+  gen_educell_i[6].gen_educell_j[10].UUT3_i_j (edu_nexterr_109)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW6_AQCOL10)
+                                         25.205  603.329 8.21e+03  636.745   0.3
+    UUT6 (educell_esmunit_idx_109)     1.82e-02 7.28e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_109)     1.01e-02 9.12e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_109)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_109)        7.75e-03 7.03e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_109)         1.15e-02 1.13e-02  294.889    0.318   0.0
+    UUT1 (educell_predecoder_109)         0.000    0.000  271.493    0.271   0.0
+  gen_educell_i[6].gen_educell_j[9].UUT3_i_j (edu_nexterr_110)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW6_AQCOL9)
+                                         25.684  589.121 8.13e+03  622.934   0.3
+    UUT6 (educell_esmunit_idx_110)     1.79e-02 7.18e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_110)     1.06e-02 9.25e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_110)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_110)        1.04e-02 9.27e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_110)         5.83e-03 7.49e-03  293.046    0.306   0.0
+    UUT1 (educell_predecoder_110)         0.000    0.000  222.995    0.223   0.0
+  gen_educell_i[6].gen_educell_j[8].UUT3_i_j (edu_nexterr_111)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW6_AQCOL8)
+                                         24.760  656.579 9.06e+03  690.399   0.4
+    UUT6 (educell_esmunit_idx_111)     1.83e-02 7.16e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_111)     1.03e-02 9.23e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_111)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_111)        8.37e-03 6.81e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_111)         1.02e-02 4.57e-03  386.651    0.401   0.0
+    UUT1 (educell_predecoder_111)         0.000    0.000  534.650    0.535   0.0
+  gen_educell_i[6].gen_educell_j[7].UUT3_i_j (edu_nexterr_112)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW6_AQCOL7)
+                                         26.452  640.000 9.42e+03  675.868   0.4
+    UUT6 (educell_esmunit_idx_112)     2.00e-02 8.14e-03  136.890    0.165   0.0
+    UUT5 (educell_syndromegen_112)     1.60e-02 9.83e-03  454.804    0.481   0.0
+    UUT4 (educell_syndir_112)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_112)        7.80e-03 7.40e-03  283.165    0.298   0.0
+    UUT2 (educell_decoder_112)         1.53e-02 1.32e-02  469.220    0.498   0.0
+    UUT1 (educell_predecoder_112)      1.63e-02 1.84e-02  793.298    0.828   0.0
+  gen_educell_i[6].gen_educell_j[6].UUT3_i_j (edu_nexterr_113)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW6_AQCOL6)
+                                         26.187  587.886 8.30e+03  622.374   0.3
+    UUT6 (educell_esmunit_idx_113)     2.01e-02 8.24e-03  136.885    0.165   0.0
+    UUT5 (educell_syndromegen_113)     1.06e-02 9.09e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_113)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_113)        8.29e-03 7.44e-03  283.167    0.299   0.0
+    UUT2 (educell_decoder_113)         1.28e-02 1.22e-02  339.005    0.364   0.0
+    UUT1 (educell_predecoder_113)      1.71e-03 2.87e-03  271.423    0.276   0.0
+  gen_educell_i[6].gen_educell_j[5].UUT3_i_j (edu_nexterr_114)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW6_AQCOL5)
+                                         25.794  586.567 8.05e+03  620.410   0.3
+    UUT6 (educell_esmunit_idx_114)     2.02e-02 8.21e-03  136.885    0.165   0.0
+    UUT5 (educell_syndromegen_114)     1.04e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_114)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_114)        8.36e-03 7.43e-03  283.167    0.299   0.0
+    UUT2 (educell_decoder_114)         1.25e-02 1.42e-02  323.160    0.350   0.0
+    UUT1 (educell_predecoder_114)      1.53e-03 2.89e-03  222.962    0.227   0.0
+  gen_educell_i[6].gen_educell_j[4].UUT3_i_j (edu_nexterr_115)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW6_AQCOL4)
+                                         26.194  639.438 9.21e+03  674.845   0.4
+    UUT6 (educell_esmunit_idx_115)     1.80e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_115)     1.02e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_115)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_115)        7.78e-03 6.96e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_115)         1.33e-02 1.03e-02  428.614    0.452   0.0
+    UUT1 (educell_predecoder_115)      4.80e-03 6.71e-03  534.629    0.546   0.0
+  gen_educell_i[6].gen_educell_j[3].UUT3_i_j (edu_nexterr_116)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[6].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW6_AQCOL3)
+                                         27.016  640.971 9.32e+03  677.311   0.4
+    UUT6 (educell_esmunit_idx_116)     1.99e-02 7.96e-03  136.883    0.165   0.0
+    UUT5 (educell_syndromegen_116)     1.59e-02 9.10e-03  454.814    0.480   0.0
+    UUT4 (educell_syndir_116)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_116)        8.00e-03 7.49e-03  283.169    0.299   0.0
+    UUT2 (educell_decoder_116)         1.02e-02 7.70e-03  390.864    0.409   0.0
+    UUT1 (educell_predecoder_116)      1.78e-02 1.83e-02  793.270    0.829   0.0
+  gen_educell_i[6].gen_educell_j[2].UUT3_i_j (edu_nexterr_117)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW6_AQCOL2)
+                                         24.138  584.500 8.21e+03  616.848   0.3
+    UUT6 (educell_esmunit_idx_117)     1.82e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_117)     1.04e-02 9.10e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_117)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_117)        1.07e-02 9.18e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_117)         7.87e-03 1.10e-02  369.895    0.389   0.0
+    UUT1 (educell_predecoder_117)      4.23e-03 4.70e-03  271.439    0.280   0.0
+  gen_educell_i[6].gen_educell_j[1].UUT3_i_j (edu_nexterr_118)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[6].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW6_AQCOL1)
+                                         24.802  586.125 8.12e+03  619.050   0.3
+    UUT6 (educell_esmunit_idx_118)     2.25e-02 9.85e-03  136.888    0.169   0.0
+    UUT5 (educell_syndromegen_118)     1.05e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_118)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_118)        1.09e-02 1.01e-02  274.668    0.296   0.0
+    UUT2 (educell_decoder_118)         9.57e-03 1.12e-02  312.147    0.333   0.0
+    UUT1 (educell_predecoder_118)      2.83e-03 4.63e-03  222.964    0.230   0.0
+  gen_educell_i[6].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW6_AQCOL0)
+                                         23.625  552.224 7.57e+03  583.415   0.3
+    UUT6 (educell_esmunit_idx_119)     2.31e-02 1.00e-02  165.585    0.199   0.0
+    UUT5 (educell_syndromegen_119)        0.000    0.000  161.618    0.162   0.0
+    UUT4 (educell_syndir_119)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_119)        1.04e-02 9.12e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_119)         1.02e-02 7.54e-03  314.617    0.332   0.0
+    UUT1 (educell_predecoder_119)      8.33e-03 1.02e-02  476.313    0.495   0.0
+  gen_educell_i[5].gen_educell_j[19].UUT3_i_j (edu_nexterr_120)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[5].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW5_AQCOL19)
+                                         24.582  551.954 7.54e+03  584.080   0.3
+    UUT6 (educell_esmunit_idx_120)     1.81e-02 7.18e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_120)     1.65e-04 1.74e-04  169.782    0.170   0.0
+    UUT4 (educell_syndir_120)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_120)        8.08e-03 6.94e-03  242.523    0.258   0.0
+    UUT2 (educell_decoder_120)         8.32e-03 7.76e-03  312.624    0.329   0.0
+    UUT1 (educell_predecoder_120)      9.69e-03 9.42e-03  439.968    0.459   0.0
+  gen_educell_i[5].gen_educell_j[18].UUT3_i_j (edu_nexterr_121)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[5].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW5_AQCOL18)
+                                         23.758  583.791 8.03e+03  615.575   0.3
+    UUT6 (educell_esmunit_idx_121)     1.81e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_121)     1.03e-02 9.06e-03  283.204    0.303   0.0
+    UUT4 (educell_syndir_121)             0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_121)        1.07e-02 9.24e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_121)         9.55e-03 9.69e-03  354.397    0.374   0.0
+    UUT1 (educell_predecoder_121)      2.47e-03 3.66e-03  222.968    0.229   0.0
+  gen_educell_i[5].gen_educell_j[17].UUT3_i_j (edu_nexterr_122)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW5_AQCOL17)
+                                         23.410  585.630 7.99e+03  617.030   0.3
+    UUT6 (educell_esmunit_idx_122)     1.80e-02 7.28e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_122)     1.03e-02 9.07e-03  283.204    0.303   0.0
+    UUT4 (educell_syndir_122)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_122)        1.06e-02 9.25e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_122)         1.34e-02 1.33e-02  310.249    0.337   0.0
+    UUT1 (educell_predecoder_122)      3.29e-03 3.93e-03  271.473    0.279   0.0
+  gen_educell_i[5].gen_educell_j[16].UUT3_i_j (edu_nexterr_123)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[5].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW5_AQCOL16)
+                                         27.693  639.016 9.06e+03  675.770   0.4
+    UUT6 (educell_esmunit_idx_123)     1.82e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_123)     1.04e-02 9.07e-03  283.204    0.303   0.0
+    UUT4 (educell_syndir_123)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_123)        1.05e-02 9.20e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_123)         1.24e-02 9.28e-03  394.627    0.416   0.0
+    UUT1 (educell_predecoder_123)      8.90e-03 1.12e-02  605.938    0.626   0.0
+  gen_educell_i[5].gen_educell_j[15].UUT3_i_j (edu_nexterr_124)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW5_AQCOL15)
+                                         24.573  637.865 9.20e+03  671.635   0.4
+    UUT6 (educell_esmunit_idx_124)     1.82e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_124)     1.06e-02 9.86e-03  416.720    0.437   0.0
+    UUT4 (educell_syndir_124)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_124)        7.83e-03 6.99e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_124)         1.68e-02 1.18e-02  405.741    0.434   0.0
+    UUT1 (educell_predecoder_124)      1.50e-02 1.39e-02  739.558    0.768   0.0
+  gen_educell_i[5].gen_educell_j[14].UUT3_i_j (edu_nexterr_125)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[5].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW5_AQCOL14)
+                                         24.869  586.729 8.08e+03  619.679   0.3
+    UUT6 (educell_esmunit_idx_125)     1.83e-02 7.22e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_125)     1.04e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_125)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_125)        1.10e-02 9.24e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_125)         1.22e-02 9.82e-03  334.116    0.356   0.0
+    UUT1 (educell_predecoder_125)      1.14e-03 2.24e-03  222.992    0.226   0.0
+  gen_educell_i[5].gen_educell_j[13].UUT3_i_j (edu_nexterr_126)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW5_AQCOL13)
+                                         24.028  586.066 8.11e+03  618.208   0.3
+    UUT6 (educell_esmunit_idx_126)     2.02e-02 7.82e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_126)     1.10e-02 9.09e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_126)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_126)        7.89e-03 6.99e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_126)         8.20e-03 9.27e-03  322.846    0.340   0.0
+    UUT1 (educell_predecoder_126)      1.55e-03 2.25e-03  271.492    0.275   0.0
+  gen_educell_i[5].gen_educell_j[12].UUT3_i_j (edu_nexterr_127)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[5].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW5_AQCOL12)
+                                         24.601  638.759 9.07e+03  672.435   0.4
+    UUT6 (educell_esmunit_idx_127)     1.55e-02 6.90e-03  155.480    0.178   0.0
+    UUT5 (educell_syndromegen_127)     1.05e-02 9.09e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_127)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_127)        1.03e-02 9.20e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_127)         1.58e-02 1.17e-02  396.685    0.424   0.0
+    UUT1 (educell_predecoder_127)      6.04e-03 8.00e-03  605.924    0.620   0.0
+  gen_educell_i[5].gen_educell_j[11].UUT3_i_j (edu_nexterr_128)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW5_AQCOL11)
+                                         28.319  638.994 9.38e+03  676.697   0.4
+    UUT6 (educell_esmunit_idx_128)     1.80e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_128)     1.02e-02 9.10e-03  416.720    0.436   0.0
+    UUT4 (educell_syndir_128)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_128)        8.05e-03 7.01e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_128)         1.38e-02 1.11e-02  358.487    0.383   0.0
+    UUT1 (educell_predecoder_128)      5.19e-03 6.32e-03  739.542    0.751   0.0
+  gen_educell_i[5].gen_educell_j[10].UUT3_i_j (edu_nexterr_129)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[5].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW5_AQCOL10)
+                                         24.812  603.697 8.10e+03  636.605   0.3
+    UUT6 (educell_esmunit_idx_129)     1.80e-02 7.24e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_129)     1.06e-02 9.11e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_129)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_129)        1.08e-02 9.20e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_129)         4.15e-03 4.63e-03  282.943    0.292   0.0
+    UUT1 (educell_predecoder_129)         0.000    0.000  222.995    0.223   0.0
+  gen_educell_i[5].gen_educell_j[9].UUT3_i_j (edu_nexterr_130)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW5_AQCOL9)
+                                         23.590  584.953 8.12e+03  616.659   0.3
+    UUT6 (educell_esmunit_idx_130)     1.81e-02 7.17e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_130)     1.03e-02 9.09e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_130)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_130)        5.33e-03 4.72e-03  291.671    0.302   0.0
+    UUT2 (educell_decoder_130)         7.68e-03 4.71e-03  323.053    0.335   0.0
+    UUT1 (educell_predecoder_130)         0.000    0.000  271.493    0.271   0.0
+  gen_educell_i[5].gen_educell_j[8].UUT3_i_j (edu_nexterr_131)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[5].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW5_AQCOL8)
+                                         23.823  636.170 8.97e+03  668.963   0.4
+    UUT6 (educell_esmunit_idx_131)     1.82e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_131)     1.03e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_131)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_131)        1.01e-02 9.17e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_131)         7.65e-03 4.52e-03  411.746    0.424   0.0
+    UUT1 (educell_predecoder_131)      2.52e-03 3.01e-03  605.939    0.611   0.0
+  gen_educell_i[5].gen_educell_j[7].UUT3_i_j (edu_nexterr_132)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW5_AQCOL7)
+                                         26.644  638.371 9.30e+03  674.319   0.4
+    UUT6 (educell_esmunit_idx_132)     1.81e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_132)     1.06e-02 1.03e-02  416.727    0.438   0.0
+    UUT4 (educell_syndir_132)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_132)        1.08e-02 9.23e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_132)         1.67e-02 1.24e-02  402.551    0.432   0.0
+    UUT1 (educell_predecoder_132)      1.58e-02 1.52e-02  739.677    0.771   0.0
+  gen_educell_i[5].gen_educell_j[6].UUT3_i_j (edu_nexterr_133)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[5].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW5_AQCOL6)
+                                         24.129  584.946 8.11e+03  617.186   0.3
+    UUT6 (educell_esmunit_idx_133)     1.80e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_133)     1.04e-02 9.10e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_133)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_133)        5.08e-03 4.71e-03  291.671    0.301   0.0
+    UUT2 (educell_decoder_133)         1.65e-02 1.27e-02  323.148    0.352   0.0
+    UUT1 (educell_predecoder_133)      2.37e-03 2.90e-03  222.962    0.228   0.0
+  gen_educell_i[5].gen_educell_j[5].UUT3_i_j (edu_nexterr_134)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW5_AQCOL5)
+                                         26.058  586.456 8.47e+03  620.981   0.3
+    UUT6 (educell_esmunit_idx_134)     1.83e-02 7.22e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_134)     1.06e-02 9.01e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_134)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_134)        7.46e-03 7.02e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_134)         1.09e-02 1.17e-02  364.978    0.388   0.0
+    UUT1 (educell_predecoder_134)      1.87e-03 2.89e-03  271.423    0.276   0.0
+  gen_educell_i[5].gen_educell_j[4].UUT3_i_j (edu_nexterr_135)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[5].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW5_AQCOL4)
+                                         26.353  638.683 8.97e+03  674.001   0.4
+    UUT6 (educell_esmunit_idx_135)     2.40e-02 1.12e-02  165.600    0.201   0.0
+    UUT5 (educell_syndromegen_135)     1.04e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_135)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_135)        1.09e-02 9.67e-03  274.665    0.295   0.0
+    UUT2 (educell_decoder_135)         1.18e-02 8.68e-03  390.858    0.411   0.0
+    UUT1 (educell_predecoder_135)      8.76e-03 1.17e-02  605.900    0.626   0.0
+  gen_educell_i[5].gen_educell_j[3].UUT3_i_j (edu_nexterr_136)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW5_AQCOL3)
+                                         26.184  639.891 9.43e+03  675.502   0.4
+    UUT6 (educell_esmunit_idx_136)     1.84e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_136)     1.02e-02 9.08e-03  416.720    0.436   0.0
+    UUT4 (educell_syndir_136)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_136)        8.13e-03 6.96e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_136)         1.19e-02 1.24e-02  460.811    0.485   0.0
+    UUT1 (educell_predecoder_136)      1.57e-02 1.67e-02  739.608    0.772   0.0
+  gen_educell_i[5].gen_educell_j[2].UUT3_i_j (edu_nexterr_137)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[5].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW5_AQCOL2)
+                                         24.972  603.225 8.16e+03  636.357   0.3
+    UUT6 (educell_esmunit_idx_137)     2.01e-02 7.96e-03  136.880    0.165   0.0
+    UUT5 (educell_syndromegen_137)     1.05e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_137)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_137)        8.06e-03 7.46e-03  283.170    0.299   0.0
+    UUT2 (educell_decoder_137)         9.26e-03 1.06e-02  312.145    0.332   0.0
+    UUT1 (educell_predecoder_137)      3.11e-03 4.68e-03  222.964    0.231   0.0
+  gen_educell_i[5].gen_educell_j[1].UUT3_i_j (edu_nexterr_138)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[5].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW5_AQCOL1)
+                                         24.614  584.844 8.10e+03  617.560   0.3
+    UUT6 (educell_esmunit_idx_138)     1.81e-02 7.42e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_138)     1.03e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_138)             0.000    0.000  109.982    0.110   0.0
+    UUT3 (educell_spikegen_138)        1.03e-02 9.19e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_138)         1.01e-02 7.82e-03  349.792    0.368   0.0
+    UUT1 (educell_predecoder_138)      3.55e-03 4.70e-03  271.439    0.280   0.0
+  gen_educell_i[5].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW5_AQCOL0)
+                                         23.901  551.959 7.71e+03  583.566   0.3
+    UUT6 (educell_esmunit_idx_139)     1.52e-02 6.86e-03  155.480    0.178   0.0
+    UUT5 (educell_syndromegen_139)        0.000    0.000  169.780    0.170   0.0
+    UUT4 (educell_syndir_139)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_139)        7.86e-03 6.91e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_139)         1.14e-02 8.05e-03  321.801    0.341   0.0
+    UUT1 (educell_predecoder_139)      5.03e-03 8.10e-03  486.123    0.499   0.0
+  gen_educell_i[4].gen_educell_j[19].UUT3_i_j (edu_nexterr_140)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[4].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW4_AQCOL19)
+                                         25.271  620.481 8.91e+03  654.663   0.4
+    UUT6 (educell_esmunit_idx_140)     1.81e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_140)     8.04e-03 6.88e-03  245.926    0.261   0.0
+    UUT4 (educell_syndir_140)             0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_140)        1.07e-02 9.28e-03  254.347    0.274   0.0
+    UUT2 (educell_decoder_140)         1.00e-02 6.64e-03  343.116    0.360   0.0
+    UUT1 (educell_predecoder_140)      2.38e-02 2.06e-02  969.904    1.014   0.0
+  gen_educell_i[4].gen_educell_j[18].UUT3_i_j (edu_nexterr_141)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW4_AQCOL18)
+                                         26.698  708.335 1.01e+04  745.095   0.4
+    UUT6 (educell_esmunit_idx_141)     1.80e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_141)     1.55e-02 1.14e-02  487.286    0.514   0.0
+    UUT4 (educell_syndir_141)             0.000    0.000  188.284    0.188   0.0
+    UUT3 (educell_spikegen_141)        8.05e-03 7.05e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_141)         2.64e-02 2.09e-02  482.421    0.530   0.0
+    UUT1 (educell_predecoder_141)      1.19e-02 1.22e-02  674.902    0.699   0.0
+  gen_educell_i[4].gen_educell_j[17].UUT3_i_j (edu_nexterr_142)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW4_AQCOL17)
+                                         25.413  690.431 9.80e+03  725.645   0.4
+    UUT6 (educell_esmunit_idx_142)     2.05e-02 9.14e-03  165.582    0.195   0.0
+    UUT5 (educell_syndromegen_142)     2.75e-02 1.15e-02  519.574    0.559   0.0
+    UUT4 (educell_syndir_142)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_142)        1.05e-02 9.19e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_142)         1.69e-02 1.12e-02  479.754    0.508   0.0
+    UUT1 (educell_predecoder_142)      1.03e-02 1.15e-02  536.113    0.558   0.0
+  gen_educell_i[4].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW4_AQCOL16)
+                                         24.634  673.361 9.50e+03  707.491   0.4
+    UUT6 (educell_esmunit_idx_143)     1.85e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_143)     1.03e-02 9.12e-03  379.342    0.399   0.0
+    UUT4 (educell_syndir_143)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_143)        1.06e-02 9.28e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_143)         1.91e-02 1.31e-02  408.465    0.441   0.0
+    UUT1 (educell_predecoder_143)      1.41e-02 1.55e-02  729.168    0.759   0.0
+  gen_educell_i[4].gen_educell_j[15].UUT3_i_j (edu_nexterr_144)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[4].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW4_AQCOL15)
+                                         24.714  672.149 9.74e+03  706.606   0.4
+    UUT6 (educell_esmunit_idx_144)     1.81e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_144)     1.55e-02 1.14e-02  398.714    0.426   0.0
+    UUT4 (educell_syndir_144)             0.000    0.000  141.000    0.141   0.0
+    UUT3 (educell_spikegen_144)        1.02e-02 9.25e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_144)         9.29e-03 5.84e-03  386.946    0.402   0.0
+    UUT1 (educell_predecoder_144)      1.47e-02 1.37e-02 1.04e+03    1.064   0.0
+  gen_educell_i[4].gen_educell_j[14].UUT3_i_j (edu_nexterr_145)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW4_AQCOL14)
+                                         24.714  705.479 1.02e+04  740.380   0.4
+    UUT6 (educell_esmunit_idx_145)     1.84e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_145)     3.02e-02 1.14e-02  524.311    0.566   0.0
+    UUT4 (educell_syndir_145)             0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_145)        7.92e-03 6.98e-03  303.496    0.318   0.0
+    UUT2 (educell_decoder_145)         2.55e-02 2.16e-02  515.953    0.563   0.0
+    UUT1 (educell_predecoder_145)      9.50e-03 9.97e-03  674.774    0.694   0.0
+  gen_educell_i[4].gen_educell_j[13].UUT3_i_j (edu_nexterr_146)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW4_AQCOL13)
+                                         24.064  689.114 9.82e+03  722.996   0.4
+    UUT6 (educell_esmunit_idx_146)     1.80e-02 6.92e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_146)     2.95e-02 1.14e-02  519.574    0.560   0.0
+    UUT4 (educell_syndir_146)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_146)        1.09e-02 9.31e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_146)         1.42e-02 1.39e-02  514.093    0.542   0.0
+    UUT1 (educell_predecoder_146)      9.74e-03 9.39e-03  579.617    0.599   0.0
+  gen_educell_i[4].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW4_AQCOL12)
+                                         25.513  671.562 9.64e+03  706.710   0.4
+    UUT6 (educell_esmunit_idx_147)     1.84e-02 9.01e-03  146.980    0.174   0.0
+    UUT5 (educell_syndromegen_147)     2.50e-02 9.13e-03  426.469    0.461   0.0
+    UUT4 (educell_syndir_147)             0.000    0.000  149.240    0.149   0.0
+    UUT3 (educell_spikegen_147)        7.86e-03 6.96e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_147)         1.27e-02 1.46e-02  435.374    0.463   0.0
+    UUT1 (educell_predecoder_147)      1.17e-02 1.27e-02  711.843    0.736   0.0
+  gen_educell_i[4].gen_educell_j[11].UUT3_i_j (edu_nexterr_148)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[4].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW4_AQCOL11)
+                                         24.274  672.320 9.70e+03  706.291   0.4
+    UUT6 (educell_esmunit_idx_148)     1.32e-02 4.61e-03  145.378    0.163   0.0
+    UUT5 (educell_syndromegen_148)     1.29e-02 9.17e-03  388.612    0.411   0.0
+    UUT4 (educell_syndir_148)             0.000    0.000  105.240    0.105   0.0
+    UUT3 (educell_spikegen_148)        1.11e-02 9.22e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_148)         5.20e-03 2.27e-03  365.123    0.373   0.0
+    UUT1 (educell_predecoder_148)      7.74e-03 8.31e-03 1.03e+03    1.049   0.0
+  gen_educell_i[4].gen_educell_j[10].UUT3_i_j (edu_nexterr_149)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW4_AQCOL10)
+                                         25.766  707.732 1.01e+04  743.637   0.4
+    UUT6 (educell_esmunit_idx_149)     1.84e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_149)     2.61e-02 1.14e-02  524.311    0.562   0.0
+    UUT4 (educell_syndir_149)             0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_149)        1.08e-02 9.19e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_149)         2.03e-02 1.21e-02  486.558    0.519   0.0
+    UUT1 (educell_predecoder_149)      5.43e-03 5.98e-03  674.771    0.686   0.0
+  gen_educell_i[4].gen_educell_j[9].UUT3_i_j (edu_nexterr_150)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW4_AQCOL9)
+                                         25.877  691.717 9.90e+03  727.492   0.4
+    UUT6 (educell_esmunit_idx_150)     1.80e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_150)     2.72e-02 1.14e-02  519.574    0.558   0.0
+    UUT4 (educell_syndir_150)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_150)        7.96e-03 6.79e-03  303.496    0.318   0.0
+    UUT2 (educell_decoder_150)         9.46e-03 6.81e-03  441.424    0.458   0.0
+    UUT1 (educell_predecoder_150)      5.22e-03 6.00e-03  552.687    0.564   0.0
+  gen_educell_i[4].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW4_AQCOL8)
+                                         27.255  692.029 9.90e+03  729.182   0.4
+    UUT6 (educell_esmunit_idx_151)     1.81e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_151)     1.02e-02 9.13e-03  379.343    0.399   0.0
+    UUT4 (educell_syndir_151)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_151)        1.10e-02 9.07e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_151)         1.47e-02 1.33e-02  471.161    0.499   0.0
+    UUT1 (educell_predecoder_151)      7.66e-03 8.98e-03  729.133    0.746   0.0
+  gen_educell_i[4].gen_educell_j[7].UUT3_i_j (edu_nexterr_152)
+                                          0.000    0.000  294.905    0.295   0.0
+  gen_educell_i[4].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW4_AQCOL7)
+                                         27.456  673.671 9.87e+03  711.000   0.4
+    UUT6 (educell_esmunit_idx_152)     1.81e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_152)     1.30e-02 9.14e-03  388.612    0.411   0.0
+    UUT4 (educell_syndir_152)             0.000    0.000  105.240    0.105   0.0
+    UUT3 (educell_spikegen_152)        5.32e-03 4.72e-03  291.671    0.302   0.0
+    UUT2 (educell_decoder_152)         1.05e-02 6.88e-03  372.917    0.390   0.0
+    UUT1 (educell_predecoder_152)      1.89e-02 1.83e-02 1.04e+03    1.073   0.0
+  gen_educell_i[4].gen_educell_j[6].UUT3_i_j (edu_nexterr_153)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW4_AQCOL6)
+                                         25.459  708.954 1.05e+04  744.907   0.4
+    UUT6 (educell_esmunit_idx_153)     2.00e-02 8.22e-03  136.885    0.165   0.0
+    UUT5 (educell_syndromegen_153)     2.71e-02 1.14e-02  524.311    0.563   0.0
+    UUT4 (educell_syndir_153)             0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_153)        8.54e-03 7.42e-03  303.492    0.319   0.0
+    UUT2 (educell_decoder_153)         2.25e-02 1.33e-02  677.985    0.714   0.0
+    UUT1 (educell_predecoder_153)      1.16e-02 1.38e-02  674.867    0.700   0.0
+  gen_educell_i[4].gen_educell_j[5].UUT3_i_j (edu_nexterr_154)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW4_AQCOL5)
+                                         26.389  690.838 9.76e+03  726.982   0.4
+    UUT6 (educell_esmunit_idx_154)     1.97e-02 7.96e-03  136.890    0.165   0.0
+    UUT5 (educell_syndromegen_154)     2.90e-02 1.37e-02  529.676    0.572   0.0
+    UUT4 (educell_syndir_154)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_154)        8.07e-03 7.44e-03  303.489    0.319   0.0
+    UUT2 (educell_decoder_154)         1.33e-02 1.21e-02  455.081    0.480   0.0
+    UUT1 (educell_predecoder_154)      1.03e-02 1.19e-02  552.807    0.575   0.0
+  gen_educell_i[4].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW4_AQCOL4)
+                                         27.735  676.865 9.80e+03  714.397   0.4
+    UUT6 (educell_esmunit_idx_155)     1.80e-02 6.99e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_155)     1.29e-02 9.12e-03  398.701    0.421   0.0
+    UUT4 (educell_syndir_155)             0.000    0.000  149.240    0.149   0.0
+    UUT3 (educell_spikegen_155)        1.06e-02 9.33e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_155)         1.30e-02 1.21e-02  433.471    0.459   0.0
+    UUT1 (educell_predecoder_155)      1.33e-02 1.54e-02  711.866    0.741   0.0
+  gen_educell_i[4].gen_educell_j[3].UUT3_i_j (edu_nexterr_156)
+                                          0.000    0.000  294.905    0.295   0.0
+  gen_educell_i[4].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW4_AQCOL3)
+                                         26.129  690.683 9.96e+03  726.775   0.4
+    UUT6 (educell_esmunit_idx_156)     1.99e-02 7.92e-03  136.880    0.165   0.0
+    UUT5 (educell_syndromegen_156)     1.27e-02 9.08e-03  388.612    0.410   0.0
+    UUT4 (educell_syndir_156)             0.000    0.000  105.240    0.105   0.0
+    UUT3 (educell_spikegen_156)        1.09e-02 9.75e-03  274.670    0.295   0.0
+    UUT2 (educell_decoder_156)         1.10e-02 8.11e-03  379.545    0.399   0.0
+    UUT1 (educell_predecoder_156)      2.82e-02 2.31e-02 1.03e+03    1.084   0.0
+  gen_educell_i[4].gen_educell_j[2].UUT3_i_j (edu_nexterr_157)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW4_AQCOL2)
+                                         27.922  707.634 1.02e+04  745.712   0.4
+    UUT6 (educell_esmunit_idx_157)     1.81e-02 7.24e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_157)     2.65e-02 1.14e-02  524.311    0.562   0.0
+    UUT4 (educell_syndir_157)             0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_157)        1.06e-02 9.32e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_157)         3.34e-02 2.71e-02  585.968    0.646   0.0
+    UUT1 (educell_predecoder_157)      1.75e-02 1.74e-02  674.859    0.710   0.0
+  gen_educell_i[4].gen_educell_j[1].UUT3_i_j (edu_nexterr_158)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[4].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW4_AQCOL1)
+                                         25.861  707.263 9.80e+03  742.925   0.4
+    UUT6 (educell_esmunit_idx_158)     1.79e-02 7.21e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_158)     2.65e-02 1.14e-02  519.574    0.557   0.0
+    UUT4 (educell_syndir_158)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_158)        1.08e-02 9.23e-03  294.996    0.315   0.0
+    UUT2 (educell_decoder_158)         1.35e-02 9.06e-03  424.695    0.447   0.0
+    UUT1 (educell_predecoder_158)      1.63e-02 1.55e-02  579.659    0.611   0.0
+  gen_educell_i[4].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW4_AQCOL0)
+                                         24.179  621.815 8.98e+03  654.978   0.4
+    UUT6 (educell_esmunit_idx_159)     1.81e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_159)     7.80e-03 6.88e-03  269.265    0.284   0.0
+    UUT4 (educell_syndir_159)             0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_159)        8.17e-03 6.82e-03  262.847    0.278   0.0
+    UUT2 (educell_decoder_159)         1.76e-02 1.38e-02  462.175    0.494   0.0
+    UUT1 (educell_predecoder_159)      1.59e-02 1.76e-02  633.984    0.667   0.0
+  gen_educell_i[3].gen_educell_j[19].UUT3_i_j (edu_nexterr_160)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[3].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW3_AQCOL19)
+                                         24.652  603.226 8.66e+03  636.536   0.3
+    UUT6 (educell_esmunit_idx_160)     1.84e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_160)     1.06e-02 6.83e-03  292.311    0.310   0.0
+    UUT4 (educell_syndir_160)             0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_160)        5.09e-03 4.71e-03  271.347    0.281   0.0
+    UUT2 (educell_decoder_160)         1.77e-02 1.20e-02  383.480    0.413   0.0
+    UUT1 (educell_predecoder_160)      1.27e-02 1.26e-02  637.042    0.662   0.0
+  gen_educell_i[3].gen_educell_j[18].UUT3_i_j (edu_nexterr_161)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[3].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW3_AQCOL18)
+                                         27.150  692.439 9.82e+03  729.407   0.4
+    UUT6 (educell_esmunit_idx_161)     1.84e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_161)     3.63e-02 1.14e-02  507.598    0.555   0.0
+    UUT4 (educell_syndir_161)             0.000    0.000  178.778    0.179   0.0
+    UUT3 (educell_spikegen_161)        8.04e-03 7.03e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_161)         1.68e-02 1.14e-02  493.980    0.522   0.0
+    UUT1 (educell_predecoder_161)      8.84e-03 1.02e-02  542.688    0.562   0.0
+  gen_educell_i[3].gen_educell_j[17].UUT3_i_j (edu_nexterr_162)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[3].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW3_AQCOL17)
+                                         27.940  693.471 1.01e+04  731.518   0.4
+    UUT6 (educell_esmunit_idx_162)     1.79e-02 6.92e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_162)     1.51e-02 1.14e-02  487.286    0.514   0.0
+    UUT4 (educell_syndir_162)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_162)        7.88e-03 7.01e-03  303.496    0.318   0.0
+    UUT2 (educell_decoder_162)         2.81e-02 1.55e-02  430.217    0.474   0.0
+    UUT1 (educell_predecoder_162)      1.04e-02 1.13e-02  578.144    0.600   0.0
+  gen_educell_i[3].gen_educell_j[16].UUT3_i_j (edu_nexterr_163)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW3_AQCOL16)
+                                         24.145  673.335 9.28e+03  706.763   0.4
+    UUT6 (educell_esmunit_idx_163)     1.81e-02 7.10e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_163)     1.34e-02 9.14e-03  388.612    0.411   0.0
+    UUT4 (educell_syndir_163)             0.000    0.000  130.695    0.131   0.0
+    UUT3 (educell_spikegen_163)        1.07e-02 9.31e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_163)         1.59e-02 1.07e-02  378.999    0.406   0.0
+    UUT1 (educell_predecoder_163)      1.16e-02 1.41e-02  665.246    0.691   0.0
+  gen_educell_i[3].gen_educell_j[15].UUT3_i_j (edu_nexterr_164)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW3_AQCOL15)
+                                         25.114  656.075 9.50e+03  690.692   0.4
+    UUT6 (educell_esmunit_idx_164)     1.82e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_164)     2.03e-02 9.14e-03  430.619    0.460   0.0
+    UUT4 (educell_syndir_164)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_164)        1.07e-02 9.20e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_164)         1.27e-02 1.11e-02  428.900    0.453   0.0
+    UUT1 (educell_predecoder_164)      9.65e-03 9.17e-03  837.324    0.856   0.0
+  gen_educell_i[3].gen_educell_j[14].UUT3_i_j (edu_nexterr_165)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[3].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW3_AQCOL14)
+                                         25.260  691.173 1.02e+04  726.628   0.4
+    UUT6 (educell_esmunit_idx_165)     2.00e-02 7.96e-03  136.901    0.165   0.0
+    UUT5 (educell_syndromegen_165)     3.73e-02 1.14e-02  507.598    0.556   0.0
+    UUT4 (educell_syndir_165)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_165)        1.05e-02 9.60e-03  294.982    0.315   0.0
+    UUT2 (educell_decoder_165)         1.31e-02 1.13e-02  565.906    0.590   0.0
+    UUT1 (educell_predecoder_165)      3.33e-03 3.56e-03  542.682    0.550   0.0
+  gen_educell_i[3].gen_educell_j[13].UUT3_i_j (edu_nexterr_166)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[3].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW3_AQCOL13)
+                                         27.452  694.703 1.05e+04  732.668   0.4
+    UUT6 (educell_esmunit_idx_166)     1.80e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_166)     1.53e-02 1.13e-02  487.286    0.514   0.0
+    UUT4 (educell_syndir_166)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_166)        7.79e-03 6.93e-03  303.496    0.318   0.0
+    UUT2 (educell_decoder_166)         1.94e-02 2.25e-02  454.464    0.496   0.0
+    UUT1 (educell_predecoder_166)      5.69e-03 6.18e-03  557.799    0.570   0.0
+  gen_educell_i[3].gen_educell_j[12].UUT3_i_j (edu_nexterr_167)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW3_AQCOL12)
+                                         24.687  672.825 9.26e+03  706.771   0.4
+    UUT6 (educell_esmunit_idx_167)     1.83e-02 7.13e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_167)     1.33e-02 9.15e-03  388.612    0.411   0.0
+    UUT4 (educell_syndir_167)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_167)        8.00e-03 6.97e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_167)         6.25e-03 3.51e-03  359.869    0.370   0.0
+    UUT1 (educell_predecoder_167)      3.79e-03 4.68e-03  665.346    0.674   0.0
+  gen_educell_i[3].gen_educell_j[11].UUT3_i_j (edu_nexterr_168)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW3_AQCOL11)
+                                         26.121  655.916 9.56e+03  691.600   0.4
+    UUT6 (educell_esmunit_idx_168)     1.82e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_168)     2.07e-02 9.13e-03  430.619    0.460   0.0
+    UUT4 (educell_syndir_168)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_168)        1.09e-02 9.20e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_168)         9.29e-03 6.02e-03  405.429    0.421   0.0
+    UUT1 (educell_predecoder_168)      7.89e-03 7.90e-03  837.241    0.853   0.0
+  gen_educell_i[3].gen_educell_j[10].UUT3_i_j (edu_nexterr_169)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[3].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW3_AQCOL10)
+                                         27.105  711.295 1.02e+04  748.569   0.4
+    UUT6 (educell_esmunit_idx_169)     1.82e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_169)     3.83e-02 1.14e-02  507.598    0.557   0.0
+    UUT4 (educell_syndir_169)             0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_169)        8.05e-03 6.95e-03  303.496    0.318   0.0
+    UUT2 (educell_decoder_169)         1.40e-02 1.04e-02  497.271    0.522   0.0
+    UUT1 (educell_predecoder_169)      2.78e-03 2.68e-03  542.705    0.548   0.0
+  gen_educell_i[3].gen_educell_j[9].UUT3_i_j (edu_nexterr_170)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[3].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW3_AQCOL9)
+                                         25.787  690.814 1.05e+04  727.061   0.4
+    UUT6 (educell_esmunit_idx_170)     1.85e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_170)     1.60e-02 1.13e-02  487.286    0.515   0.0
+    UUT4 (educell_syndir_170)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_170)        8.38e-03 7.02e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_170)         1.65e-02 1.02e-02  494.729    0.521   0.0
+    UUT1 (educell_predecoder_170)      5.17e-03 5.59e-03  557.765    0.569   0.0
+  gen_educell_i[3].gen_educell_j[8].UUT3_i_j (edu_nexterr_171)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW3_AQCOL8)
+                                         24.120  671.917 9.42e+03  705.454   0.4
+    UUT6 (educell_esmunit_idx_171)     1.79e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_171)     1.31e-02 1.14e-02  379.356    0.404   0.0
+    UUT4 (educell_syndir_171)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_171)        1.09e-02 9.31e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_171)         1.23e-02 7.76e-03  403.227    0.423   0.0
+    UUT1 (educell_predecoder_171)      2.78e-03 2.86e-03  665.282    0.671   0.0
+  gen_educell_i[3].gen_educell_j[7].UUT3_i_j (edu_nexterr_172)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW3_AQCOL7)
+                                         24.596  656.044 9.64e+03  690.275   0.4
+    UUT6 (educell_esmunit_idx_172)     1.79e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_172)     2.07e-02 9.86e-03  506.392    0.537   0.0
+    UUT4 (educell_syndir_172)             0.000    0.000  118.447    0.118   0.0
+    UUT3 (educell_spikegen_172)        8.30e-03 6.98e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_172)         1.77e-02 1.41e-02  520.490    0.552   0.0
+    UUT1 (educell_predecoder_172)      2.78e-02 2.64e-02  857.375    0.912   0.0
+  gen_educell_i[3].gen_educell_j[6].UUT3_i_j (edu_nexterr_173)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[3].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW3_AQCOL6)
+                                         26.728  709.438 1.02e+04  746.325   0.4
+    UUT6 (educell_esmunit_idx_173)     2.03e-02 8.01e-03  136.895    0.165   0.0
+    UUT5 (educell_syndromegen_173)     4.10e-02 1.14e-02  507.598    0.560   0.0
+    UUT4 (educell_syndir_173)             0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_173)        8.05e-03 7.43e-03  303.486    0.319   0.0
+    UUT2 (educell_decoder_173)         1.98e-02 1.67e-02  464.261    0.501   0.0
+    UUT1 (educell_predecoder_173)      1.66e-02 1.65e-02  542.672    0.576   0.0
+  gen_educell_i[3].gen_educell_j[5].UUT3_i_j (edu_nexterr_174)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[3].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW3_AQCOL5)
+                                         25.005  689.579 1.00e+04  724.609   0.4
+    UUT6 (educell_esmunit_idx_174)     1.83e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_174)     1.55e-02 1.14e-02  487.433    0.514   0.0
+    UUT4 (educell_syndir_174)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_174)        1.06e-02 9.20e-03  303.641    0.323   0.0
+    UUT2 (educell_decoder_174)         2.39e-02 2.29e-02  636.739    0.684   0.0
+    UUT1 (educell_predecoder_174)      1.65e-02 1.85e-02  557.808    0.593   0.0
+  gen_educell_i[3].gen_educell_j[4].UUT3_i_j (edu_nexterr_175)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW3_AQCOL4)
+                                         24.999  672.497 9.47e+03  706.968   0.4
+    UUT6 (educell_esmunit_idx_175)     1.80e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_175)     1.05e-02 9.11e-03  369.262    0.389   0.0
+    UUT4 (educell_syndir_175)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_175)        5.42e-03 4.54e-03  291.671    0.302   0.0
+    UUT2 (educell_decoder_175)         9.75e-03 7.22e-03  380.194    0.397   0.0
+    UUT1 (educell_predecoder_175)      1.49e-02 1.85e-02  665.294    0.699   0.0
+  gen_educell_i[3].gen_educell_j[3].UUT3_i_j (edu_nexterr_176)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW3_AQCOL3)
+                                         24.813  654.815 9.47e+03  689.094   0.4
+    UUT6 (educell_esmunit_idx_176)     1.79e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_176)     2.14e-02 1.47e-02  483.088    0.519   0.0
+    UUT4 (educell_syndir_176)             0.000    0.000  118.447    0.118   0.0
+    UUT3 (educell_spikegen_176)        9.90e-03 9.45e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_176)         1.14e-02 1.04e-02  414.921    0.437   0.0
+    UUT1 (educell_predecoder_176)      1.56e-02 1.47e-02  837.295    0.868   0.0
+  gen_educell_i[3].gen_educell_j[2].UUT3_i_j (edu_nexterr_177)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[3].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW3_AQCOL2)
+                                         26.129  691.108 9.77e+03  727.004   0.4
+    UUT6 (educell_esmunit_idx_177)     1.79e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_177)     3.78e-02 1.14e-02  507.598    0.557   0.0
+    UUT4 (educell_syndir_177)             0.000    0.000  173.261    0.173   0.0
+    UUT3 (educell_spikegen_177)        8.22e-03 6.96e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_177)         1.65e-02 1.12e-02  453.735    0.481   0.0
+    UUT1 (educell_predecoder_177)      6.30e-03 8.93e-03  542.739    0.558   0.0
+  gen_educell_i[3].gen_educell_j[1].UUT3_i_j (edu_nexterr_178)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[3].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW3_AQCOL1)
+                                         24.819  691.465 9.74e+03  726.020   0.4
+    UUT6 (educell_esmunit_idx_178)     1.82e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_178)     1.51e-02 1.14e-02  487.286    0.514   0.0
+    UUT4 (educell_syndir_178)             0.000    0.000  169.657    0.170   0.0
+    UUT3 (educell_spikegen_178)        8.32e-03 6.98e-03  303.496    0.319   0.0
+    UUT2 (educell_decoder_178)         1.54e-02 8.43e-03  482.673    0.506   0.0
+    UUT1 (educell_predecoder_178)      8.46e-03 9.67e-03  557.787    0.576   0.0
+  gen_educell_i[3].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW3_AQCOL0)
+                                         23.566  618.777 8.51e+03  650.857   0.3
+    UUT6 (educell_esmunit_idx_179)     1.81e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_179)     1.02e-02 9.18e-03  256.027    0.275   0.0
+    UUT4 (educell_syndir_179)             0.000    0.000   52.714 5.27e-02   0.0
+    UUT3 (educell_spikegen_179)        1.04e-02 9.34e-03  254.347    0.274   0.0
+    UUT2 (educell_decoder_179)         9.26e-03 5.70e-03  342.413    0.357   0.0
+    UUT1 (educell_predecoder_179)      5.91e-03 6.21e-03  609.518    0.622   0.0
+  gen_educell_i[2].gen_educell_j[19].UUT3_i_j (edu_nexterr_180)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW2_AQCOL19)
+                                         23.946  554.137 7.77e+03  585.852   0.3
+    UUT6 (educell_esmunit_idx_180)     1.95e-02 7.73e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_180)        0.000    0.000  169.780    0.170   0.0
+    UUT4 (educell_syndir_180)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_180)        1.09e-02 9.22e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_180)         8.74e-03 6.84e-03  312.760    0.328   0.0
+    UUT1 (educell_predecoder_180)      1.21e-02 1.32e-02  603.184    0.629   0.0
+  gen_educell_i[2].gen_educell_j[18].UUT3_i_j (edu_nexterr_181)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW2_AQCOL18)
+                                         25.258  583.801 8.31e+03  617.367   0.3
+    UUT6 (educell_esmunit_idx_181)     1.80e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_181)     1.03e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_181)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_181)        1.06e-02 9.04e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_181)         1.50e-02 1.32e-02  342.149    0.370   0.0
+    UUT1 (educell_predecoder_181)      3.55e-03 5.55e-03  271.428    0.281   0.0
+  gen_educell_i[2].gen_educell_j[17].UUT3_i_j (edu_nexterr_182)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW2_AQCOL17)
+                                         24.976  601.586 8.13e+03  634.696   0.3
+    UUT6 (educell_esmunit_idx_182)     1.99e-02 7.83e-03  136.884    0.165   0.0
+    UUT5 (educell_syndromegen_182)     1.03e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_182)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_182)        1.00e-02 9.03e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_182)         1.39e-02 1.19e-02  334.135    0.360   0.0
+    UUT1 (educell_predecoder_182)      2.82e-03 4.83e-03  222.951    0.231   0.0
+  gen_educell_i[2].gen_educell_j[16].UUT3_i_j (edu_nexterr_183)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW2_AQCOL16)
+                                         26.576  639.700 9.00e+03  675.274   0.4
+    UUT6 (educell_esmunit_idx_183)     1.80e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_183)     1.03e-02 9.09e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_183)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_183)        1.07e-02 9.23e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_183)         1.11e-02 9.90e-03  386.493    0.407   0.0
+    UUT1 (educell_predecoder_183)      9.47e-03 1.03e-02  534.622    0.554   0.0
+  gen_educell_i[2].gen_educell_j[15].UUT3_i_j (edu_nexterr_184)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW2_AQCOL15)
+                                         25.329  637.071 9.47e+03  671.870   0.4
+    UUT6 (educell_esmunit_idx_184)     1.81e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_184)     1.90e-02 1.14e-02  464.916    0.495   0.0
+    UUT4 (educell_syndir_184)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_184)        1.03e-02 9.25e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_184)         1.48e-02 1.09e-02  396.653    0.422   0.0
+    UUT1 (educell_predecoder_184)      1.05e-02 1.14e-02  793.340    0.815   0.0
+  gen_educell_i[2].gen_educell_j[14].UUT3_i_j (edu_nexterr_185)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW2_AQCOL14)
+                                         27.327  587.607 8.25e+03  623.184   0.3
+    UUT6 (educell_esmunit_idx_185)     1.79e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_185)     1.02e-02 9.06e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_185)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_185)        1.05e-02 9.21e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_185)         1.20e-02 1.24e-02  294.917    0.319   0.0
+    UUT1 (educell_predecoder_185)      1.23e-03 1.51e-03  271.458    0.274   0.0
+  gen_educell_i[2].gen_educell_j[13].UUT3_i_j (edu_nexterr_186)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW2_AQCOL13)
+                                         24.590  601.343 8.10e+03  634.035   0.3
+    UUT6 (educell_esmunit_idx_186)     1.81e-02 7.35e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_186)     1.04e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_186)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_186)        1.12e-02 9.08e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_186)         4.92e-03 5.77e-03  282.980    0.294   0.0
+    UUT1 (educell_predecoder_186)      7.85e-04 1.48e-03  222.987    0.225   0.0
+  gen_educell_i[2].gen_educell_j[12].UUT3_i_j (edu_nexterr_187)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW2_AQCOL12)
+                                         24.338  636.594 8.95e+03  669.879   0.4
+    UUT6 (educell_esmunit_idx_187)     1.85e-02 6.95e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_187)     1.03e-02 9.07e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_187)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_187)        8.38e-03 6.76e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_187)         1.16e-02 6.73e-03  386.739    0.405   0.0
+    UUT1 (educell_predecoder_187)      4.57e-03 6.06e-03  534.561    0.545   0.0
+  gen_educell_i[2].gen_educell_j[11].UUT3_i_j (edu_nexterr_188)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW2_AQCOL11)
+                                         24.199  637.284 9.40e+03  670.886   0.4
+    UUT6 (educell_esmunit_idx_188)     1.97e-02 7.89e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_188)     1.79e-02 1.14e-02  464.916    0.494   0.0
+    UUT4 (educell_syndir_188)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_188)        8.39e-03 7.24e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_188)         9.04e-03 6.19e-03  411.747    0.427   0.0
+    UUT1 (educell_predecoder_188)      9.86e-03 1.07e-02  793.186    0.814   0.0
+  gen_educell_i[2].gen_educell_j[10].UUT3_i_j (edu_nexterr_189)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW2_AQCOL10)
+                                         24.279  584.432 8.44e+03  617.153   0.3
+    UUT6 (educell_esmunit_idx_189)     2.00e-02 7.94e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_189)     1.06e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_189)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_189)        5.61e-03 4.91e-03  291.671    0.302   0.0
+    UUT2 (educell_decoder_189)         1.25e-02 1.00e-02  338.954    0.361   0.0
+    UUT1 (educell_predecoder_189)      4.88e-04 7.58e-04  271.491    0.273   0.0
+  gen_educell_i[2].gen_educell_j[9].UUT3_i_j (edu_nexterr_190)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW2_AQCOL9)
+                                         24.658  588.120 8.21e+03  620.988   0.3
+    UUT6 (educell_esmunit_idx_190)     1.99e-02 7.98e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_190)     1.04e-02 9.09e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_190)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_190)        5.69e-03 5.14e-03  291.671    0.302   0.0
+    UUT2 (educell_decoder_190)         1.89e-02 1.41e-02  333.171    0.366   0.0
+    UUT1 (educell_predecoder_190)      4.88e-04 9.30e-04  222.994    0.224   0.0
+  gen_educell_i[2].gen_educell_j[8].UUT3_i_j (edu_nexterr_191)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW2_AQCOL8)
+                                         24.586  654.255 9.18e+03  688.018   0.4
+    UUT6 (educell_esmunit_idx_191)     1.81e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_191)     1.06e-02 9.10e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_191)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_191)        8.73e-03 6.87e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_191)         6.15e-03 5.51e-03  418.446    0.430   0.0
+    UUT1 (educell_predecoder_191)      2.19e-03 3.00e-03  534.650    0.540   0.0
+  gen_educell_i[2].gen_educell_j[7].UUT3_i_j (edu_nexterr_192)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW2_AQCOL7)
+                                         24.922  636.504 9.24e+03  670.664   0.4
+    UUT6 (educell_esmunit_idx_192)     1.83e-02 7.32e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_192)     1.63e-02 9.62e-03  454.806    0.481   0.0
+    UUT4 (educell_syndir_192)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_192)        8.45e-03 6.97e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_192)         1.39e-02 1.22e-02  390.880    0.417   0.0
+    UUT1 (educell_predecoder_192)      2.86e-02 2.90e-02  793.319    0.851   0.0
+  gen_educell_i[2].gen_educell_j[6].UUT3_i_j (edu_nexterr_193)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW2_AQCOL6)
+                                         23.487  584.031 8.16e+03  615.678   0.3
+    UUT6 (educell_esmunit_idx_193)     1.81e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_193)     1.02e-02 9.06e-03  283.215    0.303   0.0
+    UUT4 (educell_syndir_193)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_193)        1.06e-02 9.17e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_193)         1.01e-02 1.45e-02  369.944    0.394   0.0
+    UUT1 (educell_predecoder_193)      5.66e-03 7.45e-03  271.354    0.284   0.0
+  gen_educell_i[2].gen_educell_j[5].UUT3_i_j (edu_nexterr_194)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW2_AQCOL5)
+                                         23.298  584.028 7.96e+03  615.290   0.3
+    UUT6 (educell_esmunit_idx_194)     2.00e-02 7.96e-03  136.895    0.165   0.0
+    UUT5 (educell_syndromegen_194)     1.03e-02 9.09e-03  283.215    0.303   0.0
+    UUT4 (educell_syndir_194)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_194)        8.20e-03 7.44e-03  283.161    0.299   0.0
+    UUT2 (educell_decoder_194)         1.22e-02 1.46e-02  312.201    0.339   0.0
+    UUT1 (educell_predecoder_194)      4.47e-03 7.91e-03  222.918    0.235   0.0
+  gen_educell_i[2].gen_educell_j[4].UUT3_i_j (edu_nexterr_195)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW2_AQCOL4)
+                                         26.216  637.523 8.95e+03  672.692   0.4
+    UUT6 (educell_esmunit_idx_195)     2.29e-02 1.01e-02  136.907    0.170   0.0
+    UUT5 (educell_syndromegen_195)     1.06e-02 9.07e-03  283.215    0.303   0.0
+    UUT4 (educell_syndir_195)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_195)        1.07e-02 1.01e-02  274.659    0.295   0.0
+    UUT2 (educell_decoder_195)         1.68e-02 1.19e-02  413.415    0.442   0.0
+    UUT1 (educell_predecoder_195)      1.60e-02 2.12e-02  534.606    0.572   0.0
+  gen_educell_i[2].gen_educell_j[3].UUT3_i_j (edu_nexterr_196)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[2].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW2_AQCOL3)
+                                         27.195  638.580 9.61e+03  675.384   0.4
+    UUT6 (educell_esmunit_idx_196)     1.87e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_196)     1.57e-02 9.62e-03  454.813    0.480   0.0
+    UUT4 (educell_syndir_196)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_196)        7.75e-03 6.95e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_196)         8.87e-03 6.66e-03  378.820    0.394   0.0
+    UUT1 (educell_predecoder_196)      1.89e-02 1.72e-02  793.238    0.829   0.0
+  gen_educell_i[2].gen_educell_j[2].UUT3_i_j (edu_nexterr_197)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[2].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW2_AQCOL2)
+                                         24.237  585.048 8.07e+03  617.357   0.3
+    UUT6 (educell_esmunit_idx_197)     1.80e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_197)     1.02e-02 9.07e-03  283.204    0.302   0.0
+    UUT4 (educell_syndir_197)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_197)        9.97e-03 9.27e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_197)         1.16e-02 8.86e-03  378.366    0.399   0.0
+    UUT1 (educell_predecoder_197)      2.65e-03 3.35e-03  271.471    0.277   0.0
+  gen_educell_i[2].gen_educell_j[1].UUT3_i_j (edu_nexterr_198)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[2].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW2_AQCOL1)
+                                         23.853  583.476 8.03e+03  615.357   0.3
+    UUT6 (educell_esmunit_idx_198)     1.84e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_198)     1.03e-02 9.09e-03  283.204    0.303   0.0
+    UUT4 (educell_syndir_198)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_198)        1.08e-02 9.21e-03  274.671    0.295   0.0
+    UUT2 (educell_decoder_198)         1.01e-02 1.08e-02  321.810    0.343   0.0
+    UUT1 (educell_predecoder_198)      2.19e-03 3.77e-03  222.992    0.229   0.0
+  gen_educell_i[2].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW2_AQCOL0)
+                                         24.244  552.041 7.80e+03  584.080   0.3
+    UUT6 (educell_esmunit_idx_199)     1.86e-02 6.86e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_199)     2.91e-04 1.47e-04  161.619    0.162   0.0
+    UUT4 (educell_syndir_199)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_199)        1.03e-02 9.17e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_199)         9.69e-03 7.56e-03  332.356    0.350   0.0
+    UUT1 (educell_predecoder_199)      5.16e-03 7.66e-03  476.333    0.489   0.0
+  gen_educell_i[1].gen_educell_j[19].UUT3_i_j (edu_nexterr_200)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW1_AQCOL19)
+                                         24.248  568.834 7.74e+03  600.823   0.3
+    UUT6 (educell_esmunit_idx_200)     1.83e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_200)     1.28e-02 6.85e-03  200.857    0.220   0.0
+    UUT4 (educell_syndir_200)             0.000    0.000   55.140 5.51e-02   0.0
+    UUT3 (educell_spikegen_200)        1.01e-02 9.25e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_200)         8.98e-03 6.37e-03  283.654    0.299   0.0
+    UUT1 (educell_predecoder_200)      9.32e-03 1.05e-02  441.968    0.462   0.0
+  gen_educell_i[1].gen_educell_j[18].UUT3_i_j (edu_nexterr_201)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW1_AQCOL18)
+                                         24.645  601.337 8.19e+03  634.167   0.3
+    UUT6 (educell_esmunit_idx_201)     2.18e-02 8.85e-03  136.890    0.168   0.0
+    UUT5 (educell_syndromegen_201)     1.02e-02 9.09e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_201)             0.000    0.000  100.797    0.101   0.0
+    UUT3 (educell_spikegen_201)        1.04e-02 9.60e-03  274.665    0.295   0.0
+    UUT2 (educell_decoder_201)         1.43e-02 1.23e-02  334.135    0.361   0.0
+    UUT1 (educell_predecoder_201)      2.90e-03 4.79e-03  222.951    0.231   0.0
+  gen_educell_i[1].gen_educell_j[17].UUT3_i_j (edu_nexterr_202)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW1_AQCOL17)
+                                         25.138  584.479 8.04e+03  617.655   0.3
+    UUT6 (educell_esmunit_idx_202)     2.00e-02 8.25e-03  136.890    0.165   0.0
+    UUT5 (educell_syndromegen_202)     1.01e-02 9.08e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_202)             0.000    0.000  109.982    0.110   0.0
+    UUT3 (educell_spikegen_202)        1.08e-02 9.67e-03  274.665    0.295   0.0
+    UUT2 (educell_decoder_202)         8.33e-03 1.07e-02  322.874    0.342   0.0
+    UUT1 (educell_predecoder_202)      4.19e-03 5.53e-03  271.428    0.281   0.0
+  gen_educell_i[1].gen_educell_j[16].UUT3_i_j (edu_nexterr_203)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW1_AQCOL16)
+                                         24.987  639.672 8.94e+03  673.601   0.4
+    UUT6 (educell_esmunit_idx_203)     2.12e-02 8.82e-03  136.890    0.167   0.0
+    UUT5 (educell_syndromegen_203)     1.02e-02 9.06e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_203)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_203)        1.09e-02 9.75e-03  274.665    0.295   0.0
+    UUT2 (educell_decoder_203)         1.73e-02 1.38e-02  396.703    0.428   0.0
+    UUT1 (educell_predecoder_203)      1.21e-02 1.43e-02  605.860    0.632   0.0
+  gen_educell_i[1].gen_educell_j[15].UUT3_i_j (edu_nexterr_204)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW1_AQCOL15)
+                                         26.621  637.853 9.37e+03  673.848   0.4
+    UUT6 (educell_esmunit_idx_204)     2.04e-02 8.48e-03  136.914    0.166   0.0
+    UUT5 (educell_syndromegen_204)     1.00e-02 9.07e-03  416.720    0.436   0.0
+    UUT4 (educell_syndir_204)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_204)        1.05e-02 9.68e-03  274.658    0.295   0.0
+    UUT2 (educell_decoder_204)         9.78e-03 1.03e-02  348.434    0.369   0.0
+    UUT1 (educell_predecoder_204)      8.96e-03 1.09e-02  739.649    0.759   0.0
+  gen_educell_i[1].gen_educell_j[14].UUT3_i_j (edu_nexterr_205)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW1_AQCOL14)
+                                         24.482  584.260 8.10e+03  616.840   0.3
+    UUT6 (educell_esmunit_idx_205)     2.01e-02 7.82e-03  136.890    0.165   0.0
+    UUT5 (educell_syndromegen_205)     1.02e-02 9.08e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_205)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_205)        7.80e-03 6.95e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_205)         5.56e-03 6.77e-03  282.986    0.295   0.0
+    UUT1 (educell_predecoder_205)      7.71e-04 1.53e-03  222.987    0.225   0.0
+  gen_educell_i[1].gen_educell_j[13].UUT3_i_j (edu_nexterr_206)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW1_AQCOL13)
+                                         24.309  587.131 8.26e+03  619.698   0.3
+    UUT6 (educell_esmunit_idx_206)     1.97e-02 7.81e-03  136.890    0.164   0.0
+    UUT5 (educell_syndromegen_206)     1.01e-02 9.05e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_206)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_206)        1.02e-02 9.25e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_206)         9.39e-03 7.76e-03  323.112    0.340   0.0
+    UUT1 (educell_predecoder_206)      1.32e-03 1.57e-03  271.458    0.274   0.0
+  gen_educell_i[1].gen_educell_j[12].UUT3_i_j (edu_nexterr_207)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW1_AQCOL12)
+                                         24.737  637.268 9.09e+03  671.092   0.4
+    UUT6 (educell_esmunit_idx_207)     1.84e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_207)     1.07e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_207)             0.000    0.000  109.982    0.110   0.0
+    UUT3 (educell_spikegen_207)        8.07e-03 7.00e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_207)         8.74e-03 5.90e-03  411.794    0.426   0.0
+    UUT1 (educell_predecoder_207)      7.11e-03 7.97e-03  626.314    0.641   0.0
+  gen_educell_i[1].gen_educell_j[11].UUT3_i_j (edu_nexterr_208)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW1_AQCOL11)
+                                         25.070  639.118 9.25e+03  673.437   0.4
+    UUT6 (educell_esmunit_idx_208)     1.84e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_208)     1.04e-02 9.09e-03  416.720    0.436   0.0
+    UUT4 (educell_syndir_208)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_208)        8.12e-03 7.01e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_208)         1.41e-02 9.61e-03  402.550    0.426   0.0
+    UUT1 (educell_predecoder_208)      7.68e-03 8.03e-03  739.543    0.755   0.0
+  gen_educell_i[1].gen_educell_j[10].UUT3_i_j (edu_nexterr_209)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW1_AQCOL10)
+                                         24.042  604.104 8.39e+03  636.536   0.3
+    UUT6 (educell_esmunit_idx_209)     1.79e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_209)     1.01e-02 9.00e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_209)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_209)        8.03e-03 7.00e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_209)         1.06e-02 1.14e-02  323.068    0.345   0.0
+    UUT1 (educell_predecoder_209)      4.53e-04 9.42e-04  222.994    0.224   0.0
+  gen_educell_i[1].gen_educell_j[9].UUT3_i_j (edu_nexterr_210)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW1_AQCOL9)
+                                         24.509  589.157 8.65e+03  622.317   0.3
+    UUT6 (educell_esmunit_idx_210)     2.01e-02 7.96e-03  136.879    0.165   0.0
+    UUT5 (educell_syndromegen_210)     1.02e-02 9.00e-03  283.203    0.302   0.0
+    UUT4 (educell_syndir_210)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_210)        8.11e-03 7.43e-03  283.171    0.299   0.0
+    UUT2 (educell_decoder_210)         9.30e-03 9.19e-03  364.952    0.383   0.0
+    UUT1 (educell_predecoder_210)      4.71e-04 7.70e-04  271.491    0.273   0.0
+  gen_educell_i[1].gen_educell_j[8].UUT3_i_j (edu_nexterr_211)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW1_AQCOL8)
+                                         24.409  636.489 8.93e+03  669.828   0.4
+    UUT6 (educell_esmunit_idx_211)     1.80e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_211)     1.03e-02 9.08e-03  283.203    0.303   0.0
+    UUT4 (educell_syndir_211)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_211)        8.27e-03 6.96e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_211)         8.94e-03 5.51e-03  407.913    0.422   0.0
+    UUT1 (educell_predecoder_211)      3.81e-03 4.48e-03  626.299    0.635   0.0
+  gen_educell_i[1].gen_educell_j[7].UUT3_i_j (edu_nexterr_212)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW1_AQCOL7)
+                                         24.484  656.061 9.28e+03  689.827   0.4
+    UUT6 (educell_esmunit_idx_212)     1.97e-02 7.91e-03  136.883    0.164   0.0
+    UUT5 (educell_syndromegen_212)     1.07e-02 9.88e-03  416.728    0.437   0.0
+    UUT4 (educell_syndir_212)             0.000    0.000  109.982    0.110   0.0
+    UUT3 (educell_spikegen_212)        1.08e-02 9.72e-03  274.669    0.295   0.0
+    UUT2 (educell_decoder_212)         1.52e-02 1.78e-02  460.883    0.494   0.0
+    UUT1 (educell_predecoder_212)      2.57e-02 2.98e-02  739.652    0.795   0.0
+  gen_educell_i[1].gen_educell_j[6].UUT3_i_j (edu_nexterr_213)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW1_AQCOL6)
+                                         24.680  588.739 8.58e+03  622.001   0.3
+    UUT6 (educell_esmunit_idx_213)     2.25e-02 9.51e-03  136.902    0.169   0.0
+    UUT5 (educell_syndromegen_213)     1.04e-02 9.02e-03  283.215    0.303   0.0
+    UUT4 (educell_syndir_213)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_213)        1.08e-02 1.00e-02  274.662    0.295   0.0
+    UUT2 (educell_decoder_213)         1.23e-02 1.47e-02  312.201    0.339   0.0
+    UUT1 (educell_predecoder_213)      4.86e-03 8.11e-03  222.918    0.236   0.0
+  gen_educell_i[1].gen_educell_j[5].UUT3_i_j (edu_nexterr_214)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW1_AQCOL5)
+                                         26.033  589.224 8.40e+03  623.654   0.3
+    UUT6 (educell_esmunit_idx_214)     2.00e-02 7.97e-03  136.883    0.165   0.0
+    UUT5 (educell_syndromegen_214)     1.03e-02 9.09e-03  283.215    0.303   0.0
+    UUT4 (educell_syndir_214)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_214)        8.40e-03 7.40e-03  283.168    0.299   0.0
+    UUT2 (educell_decoder_214)         1.34e-02 1.18e-02  349.857    0.375   0.0
+    UUT1 (educell_predecoder_214)      5.88e-03 7.58e-03  271.354    0.285   0.0
+  gen_educell_i[1].gen_educell_j[4].UUT3_i_j (edu_nexterr_215)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW1_AQCOL4)
+                                         25.242  638.264 9.21e+03  672.717   0.4
+    UUT6 (educell_esmunit_idx_215)     2.03e-02 8.47e-03  136.896    0.166   0.0
+    UUT5 (educell_syndromegen_215)     1.06e-02 9.09e-03  283.215    0.303   0.0
+    UUT4 (educell_syndir_215)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_215)        1.10e-02 9.66e-03  274.665    0.295   0.0
+    UUT2 (educell_decoder_215)         1.41e-02 1.19e-02  378.899    0.405   0.0
+    UUT1 (educell_predecoder_215)      1.64e-02 2.20e-02  626.275    0.665   0.0
+  gen_educell_i[1].gen_educell_j[3].UUT3_i_j (edu_nexterr_216)
+                                          0.000    0.000  335.173    0.335   0.0
+  gen_educell_i[1].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW1_AQCOL3)
+                                         24.999  638.259 9.51e+03  672.771   0.4
+    UUT6 (educell_esmunit_idx_216)     1.79e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_216)     1.07e-02 9.82e-03  416.720    0.437   0.0
+    UUT4 (educell_syndir_216)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_216)        7.51e-03 7.01e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_216)         1.37e-02 8.71e-03  441.960    0.464   0.0
+    UUT1 (educell_predecoder_216)      1.51e-02 1.71e-02  782.058    0.814   0.0
+  gen_educell_i[1].gen_educell_j[2].UUT3_i_j (edu_nexterr_217)
+                                          0.000    0.000  319.418    0.319   0.0
+  gen_educell_i[1].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW1_AQCOL2)
+                                         24.806  604.839 8.53e+03  638.180   0.3
+    UUT6 (educell_esmunit_idx_217)     1.80e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_217)     1.02e-02 9.06e-03  283.204    0.302   0.0
+    UUT4 (educell_syndir_217)             0.000    0.000  109.982    0.110   0.0
+    UUT3 (educell_spikegen_217)        1.04e-02 9.26e-03  274.671    0.294   0.0
+    UUT2 (educell_decoder_217)         1.06e-02 1.07e-02  321.810    0.343   0.0
+    UUT1 (educell_predecoder_217)      2.17e-03 3.74e-03  222.992    0.229   0.0
+  gen_educell_i[1].gen_educell_j[1].UUT3_i_j (edu_nexterr_218)
+                                          0.000    0.000  327.296    0.327   0.0
+  gen_educell_i[1].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW1_AQCOL1)
+                                         23.831  584.216 8.54e+03  616.592   0.3
+    UUT6 (educell_esmunit_idx_218)     1.80e-02 6.90e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_218)     1.04e-02 9.01e-03  283.204    0.303   0.0
+    UUT4 (educell_syndir_218)             0.000    0.000   95.138 9.51e-02   0.0
+    UUT3 (educell_spikegen_218)        8.12e-03 7.03e-03  283.171    0.298   0.0
+    UUT2 (educell_decoder_218)         1.26e-02 1.13e-02  394.062    0.418   0.0
+    UUT1 (educell_predecoder_218)      2.82e-03 3.34e-03  271.471    0.278   0.0
+  gen_educell_i[1].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW1_AQCOL0)
+                                         24.285  566.920 7.94e+03  599.144   0.3
+    UUT6 (educell_esmunit_idx_219)     1.79e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_219)     5.15e-03 4.57e-03  157.036    0.167   0.0
+    UUT4 (educell_syndir_219)             0.000    0.000   55.140 5.51e-02   0.0
+    UUT3 (educell_spikegen_219)        8.04e-03 7.14e-03  242.523    0.258   0.0
+    UUT2 (educell_decoder_219)         7.84e-03 7.51e-03  289.029    0.304   0.0
+    UUT1 (educell_predecoder_219)      9.73e-03 1.22e-02  599.221    0.621   0.0
+  gen_educell_i[0].gen_educell_j[19].UUT2_i_j (edu_cell_AQROW0_AQCOL19)
+                                         23.861  516.919 7.54e+03  548.324   0.3
+    UUT6 (educell_esmunit_idx_220)     1.81e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_220)        0.000    0.000   81.153 8.12e-02   0.0
+    UUT3 (educell_spikegen_220)        8.31e-03 6.92e-03  222.198    0.237   0.0
+    UUT2 (educell_decoder_220)         1.38e-02 1.73e-02  257.058    0.288   0.0
+    UUT1 (educell_predecoder_220)      1.89e-02 1.64e-02  872.707    0.908   0.0
+  gen_educell_i[0].gen_educell_j[18].UUT2_i_j (edu_cell_AQROW0_AQCOL18)
+                                         22.857  567.031 7.91e+03  597.796   0.3
+    UUT6 (educell_esmunit_idx_221)     1.78e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_221)        0.000    0.000  180.348    0.180   0.0
+    UUT4 (educell_syndir_221)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_221)        7.80e-03 7.01e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_221)         1.85e-02 1.39e-02  384.357    0.417   0.0
+    UUT1 (educell_predecoder_221)      1.44e-02 1.34e-02  606.169    0.634   0.0
+  gen_educell_i[0].gen_educell_j[17].UUT2_i_j (edu_cell_AQROW0_AQCOL17)
+                                         25.547  553.028 7.63e+03  586.203   0.3
+    UUT6 (educell_esmunit_idx_222)     1.95e-02 7.99e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_222)     5.07e-03 4.51e-03  228.554    0.238   0.0
+    UUT4 (educell_syndir_222)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_222)        1.60e-02 1.18e-02  278.070    0.306   0.0
+    UUT2 (educell_decoder_222)         1.22e-02 1.04e-02  320.285    0.343   0.0
+    UUT1 (educell_predecoder_222)      8.95e-03 1.27e-02  407.452    0.429   0.0
+  gen_educell_i[0].gen_educell_j[16].UUT2_i_j (edu_cell_AQROW0_AQCOL16)
+                                         24.983  589.288 7.91e+03  622.177   0.3
+    UUT6 (educell_esmunit_idx_223)     1.83e-02 6.93e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_223)        0.000    0.000  202.113    0.202   0.0
+    UUT4 (educell_syndir_223)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_223)        1.04e-02 9.16e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_223)         1.08e-02 9.98e-03  288.931    0.310   0.0
+    UUT1 (educell_predecoder_223)      4.77e-03 7.45e-03  462.230    0.474   0.0
+  gen_educell_i[0].gen_educell_j[15].UUT2_i_j (edu_cell_AQROW0_AQCOL15)
+                                         25.049  572.351 8.31e+03  605.707   0.3
+    UUT6 (educell_esmunit_idx_224)     1.82e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_224)        0.000    0.000  179.714    0.180   0.0
+    UUT4 (educell_syndir_224)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_224)        8.17e-03 6.92e-03  242.523    0.258   0.0
+    UUT2 (educell_decoder_224)         6.35e-03 3.27e-03  263.681    0.273   0.0
+    UUT1 (educell_predecoder_224)      1.20e-02 1.21e-02  909.336    0.933   0.0
+  gen_educell_i[0].gen_educell_j[14].UUT2_i_j (edu_cell_AQROW0_AQCOL14)
+                                         24.005  550.402 7.77e+03  582.178   0.3
+    UUT6 (educell_esmunit_idx_225)     1.81e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_225)     5.28e-03 4.51e-03  271.408    0.281   0.0
+    UUT4 (educell_syndir_225)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_225)        1.13e-02 9.32e-03  234.023    0.255   0.0
+    UUT2 (educell_decoder_225)         6.35e-03 3.27e-03  275.409    0.285   0.0
+    UUT1 (educell_predecoder_225)      8.96e-03 9.59e-03  543.014    0.562   0.0
+  gen_educell_i[0].gen_educell_j[13].UUT2_i_j (edu_cell_AQROW0_AQCOL13)
+                                         24.036  551.285 7.61e+03  582.932   0.3
+    UUT6 (educell_esmunit_idx_226)     1.95e-02 7.78e-03  136.890    0.164   0.0
+    UUT5 (educell_syndromegen_226)     5.11e-03 4.51e-03  228.554    0.238   0.0
+    UUT4 (educell_syndir_226)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_226)        5.02e-03 4.71e-03  251.022    0.261   0.0
+    UUT2 (educell_decoder_226)         6.35e-03 3.78e-03  292.233    0.302   0.0
+    UUT1 (educell_predecoder_226)      5.89e-03 7.93e-03  424.178    0.438   0.0
+  gen_educell_i[0].gen_educell_j[12].UUT2_i_j (edu_cell_AQROW0_AQCOL12)
+                                         25.100  568.790 8.06e+03  601.953   0.3
+    UUT6 (educell_esmunit_idx_227)     1.82e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_227)        0.000    0.000  202.113    0.202   0.0
+    UUT4 (educell_syndir_227)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_227)        8.39e-03 6.95e-03  242.523    0.258   0.0
+    UUT2 (educell_decoder_227)         1.17e-02 9.55e-03  348.019    0.369   0.0
+    UUT1 (educell_predecoder_227)      3.02e-03 3.27e-03  566.282    0.573   0.0
+  gen_educell_i[0].gen_educell_j[11].UUT2_i_j (edu_cell_AQROW0_AQCOL11)
+                                         25.212  570.922 8.41e+03  604.542   0.3
+    UUT6 (educell_esmunit_idx_228)     1.81e-02 6.94e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_228)        0.000    0.000  179.714    0.180   0.0
+    UUT4 (educell_syndir_228)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_228)        1.09e-02 9.13e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_228)         7.55e-03 7.57e-03  271.960    0.287   0.0
+    UUT1 (educell_predecoder_228)      1.04e-02 1.07e-02  909.158    0.930   0.0
+  gen_educell_i[0].gen_educell_j[10].UUT2_i_j (edu_cell_AQROW0_AQCOL10)
+                                         26.131  556.030 8.11e+03  590.275   0.3
+    UUT6 (educell_esmunit_idx_229)     1.97e-02 7.88e-03  136.879    0.164   0.0
+    UUT5 (educell_syndromegen_229)     5.06e-03 4.51e-03  271.408    0.281   0.0
+    UUT4 (educell_syndir_229)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_229)        1.16e-02 9.73e-03  234.022    0.255   0.0
+    UUT2 (educell_decoder_229)         6.20e-03 3.40e-03  293.980    0.304   0.0
+    UUT1 (educell_predecoder_229)      6.76e-03 7.21e-03  542.892    0.557   0.0
+  gen_educell_i[0].gen_educell_j[9].UUT2_i_j (edu_cell_AQROW0_AQCOL9)
+                                         25.819  553.391 7.63e+03  586.845   0.3
+    UUT6 (educell_esmunit_idx_230)     1.81e-02 6.86e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_230)     5.75e-03 4.52e-03  217.915    0.228   0.0
+    UUT4 (educell_syndir_230)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_230)        7.93e-03 6.90e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_230)         9.01e-03 5.68e-03  287.174    0.302   0.0
+    UUT1 (educell_predecoder_230)      5.08e-03 7.07e-03  424.128    0.436   0.0
+  gen_educell_i[0].gen_educell_j[8].UUT2_i_j (edu_cell_AQROW0_AQCOL8)
+                                         24.520  585.703 8.01e+03  618.237   0.3
+    UUT6 (educell_esmunit_idx_231)     1.80e-02 6.96e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_231)        0.000    0.000  202.113    0.202   0.0
+    UUT4 (educell_syndir_231)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_231)        8.14e-03 6.91e-03  242.523    0.258   0.0
+    UUT2 (educell_decoder_231)         1.22e-02 1.06e-02  331.857    0.355   0.0
+    UUT1 (educell_predecoder_231)      1.59e-03 1.54e-03  566.352    0.569   0.0
+  gen_educell_i[0].gen_educell_j[7].UUT2_i_j (edu_cell_AQROW0_AQCOL7)
+                                         24.793  568.524 8.25e+03  601.563   0.3
+    UUT6 (educell_esmunit_idx_232)     1.97e-02 7.90e-03  136.895    0.165   0.0
+    UUT5 (educell_syndromegen_232)        0.000    0.000  179.750    0.180   0.0
+    UUT4 (educell_syndir_232)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_232)        1.08e-02 9.59e-03  234.013    0.254   0.0
+    UUT2 (educell_decoder_232)         1.93e-02 1.57e-02  311.222    0.346   0.0
+    UUT1 (educell_predecoder_232)      3.21e-02 2.79e-02  909.281    0.969   0.0
+  gen_educell_i[0].gen_educell_j[6].UUT2_i_j (edu_cell_AQROW0_AQCOL6)
+                                         24.679  552.884 7.83e+03  585.395   0.3
+    UUT6 (educell_esmunit_idx_233)     1.80e-02 6.89e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_233)     5.05e-03 4.51e-03  271.372    0.281   0.0
+    UUT4 (educell_syndir_233)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_233)        1.09e-02 9.13e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_233)         1.39e-02 1.03e-02  328.773    0.353   0.0
+    UUT1 (educell_predecoder_233)      2.16e-02 2.28e-02  543.137    0.588   0.0
+  gen_educell_i[0].gen_educell_j[5].UUT2_i_j (edu_cell_AQROW0_AQCOL5)
+                                         24.480  553.498 7.62e+03  585.602   0.3
+    UUT6 (educell_esmunit_idx_234)     1.99e-02 7.90e-03  136.895    0.165   0.0
+    UUT5 (educell_syndromegen_234)     5.27e-03 4.51e-03  217.934    0.228   0.0
+    UUT4 (educell_syndir_234)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_234)        1.08e-02 9.59e-03  234.013    0.254   0.0
+    UUT2 (educell_decoder_234)         1.03e-02 7.46e-03  283.626    0.301   0.0
+    UUT1 (educell_predecoder_234)      1.78e-02 1.84e-02  424.106    0.460   0.0
+  gen_educell_i[0].gen_educell_j[4].UUT2_i_j (edu_cell_AQROW0_AQCOL4)
+                                         24.241  569.044 7.91e+03  601.191   0.3
+    UUT6 (educell_esmunit_idx_235)     1.79e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_235)        0.000    0.000  202.093    0.202   0.0
+    UUT4 (educell_syndir_235)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_235)        1.04e-02 9.14e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_235)         1.30e-02 9.33e-03  322.864    0.345   0.0
+    UUT1 (educell_predecoder_235)      1.23e-02 1.35e-02  566.303    0.592   0.0
+  gen_educell_i[0].gen_educell_j[3].UUT2_i_j (edu_cell_AQROW0_AQCOL3)
+                                         24.291  569.017 8.17e+03  601.476   0.3
+    UUT6 (educell_esmunit_idx_236)     1.81e-02 7.24e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_236)     5.31e-03 4.51e-03  228.555    0.238   0.0
+    UUT4 (educell_syndir_236)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_236)        1.04e-02 9.21e-03  234.023    0.254   0.0
+    UUT2 (educell_decoder_236)         1.07e-02 7.35e-03  308.880    0.327   0.0
+    UUT1 (educell_predecoder_236)      1.99e-02 2.12e-02  941.811    0.983   0.0
+  gen_educell_i[0].gen_educell_j[2].UUT2_i_j (edu_cell_AQROW0_AQCOL2)
+                                         23.181  554.752 8.02e+03  585.951   0.3
+    UUT6 (educell_esmunit_idx_237)     1.80e-02 6.91e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_237)     5.41e-03 4.51e-03  271.407    0.281   0.0
+    UUT4 (educell_syndir_237)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_237)        7.73e-03 6.97e-03  242.523    0.257   0.0
+    UUT2 (educell_decoder_237)         8.98e-03 6.59e-03  321.601    0.337   0.0
+    UUT1 (educell_predecoder_237)      1.12e-02 1.20e-02  542.976    0.566   0.0
+  gen_educell_i[0].gen_educell_j[1].UUT2_i_j (edu_cell_AQROW0_AQCOL1)
+                                         25.250  553.210 7.60e+03  586.055   0.3
+    UUT6 (educell_esmunit_idx_238)     1.81e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_238)     5.34e-03 4.51e-03  228.555    0.238   0.0
+    UUT4 (educell_syndir_238)             0.000    0.000   26.434 2.64e-02   0.0
+    UUT3 (educell_spikegen_238)        9.69e-03 9.19e-03  234.023    0.253   0.0
+    UUT2 (educell_decoder_238)         7.97e-03 7.51e-03  289.086    0.305   0.0
+    UUT1 (educell_predecoder_238)      7.94e-03 1.23e-02  407.467    0.428   0.0
+  gen_educell_i[0].gen_educell_j[0].UUT2_i_j (edu_cell_AQROW0_AQCOL0)
+                                         23.894  519.431 7.34e+03  550.663   0.3
+    UUT6 (educell_esmunit_idx_239)     1.80e-02 6.88e-03  136.878    0.162   0.0
+    UUT5 (educell_syndromegen_239)        0.000    0.000   94.703 9.47e-02   0.0
+    UUT3 (educell_spikegen_239)        1.06e-02 9.14e-03  213.698    0.233   0.0
+    UUT2 (educell_decoder_239)         7.58e-03 9.38e-03  274.005    0.291   0.0
+    UUT1 (educell_predecoder_239)      8.66e-03 9.36e-03  507.702    0.526   0.0
+  UUT1 (fifo_ADDR_BW1_DATA_BW240)       109.023 8.40e+03 7.31e+04 8.58e+03   4.6
+    UUT1 (fifo_reg_ADDR_BW1_DATA_BW240)
+                                        107.900 8.40e+03 7.27e+04 8.58e+03   4.6
+    UUT0 (fifo_ctrl_ADDR_BW1)             1.124    1.153  384.114    2.661   0.0
+  UUT0 (edu_ctrl)                        34.064   20.027 2.92e+03   57.011   0.0
+1

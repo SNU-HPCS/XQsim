@@ -1,0 +1,35 @@
+/* Define ISA */
+{
+    /* Define instructions -> INST: OPCODE */
+    "inst": {
+        "LQI": 0,
+        "LQM_X": 1, 
+        "LQM_Z": 2, 
+        "RUN_ESM": 3, 
+        "INIT_INTMD": 4, 
+        "MEAS_INTMD": 5, 
+        "SPLIT_INFO": 6, 
+        "PREP_INFO": 7,
+        "MERGE_INFO": 8, 
+        "PPM_INTERPRET": 9, 
+        "LQM_FB": 10, 
+        "LQM_Y": 11
+    },
+
+    /* Define bit format -> FILED: {LENGTH, MSB, LSB} */
+    "bit_format":{
+        "opcode": {"len": 4, "msb": 63, "lsb": 60},
+        "meas_flag": {"len": 6, "msb": 59, "lsb": 54},
+        "mreg_dst": {"len": 13, "msb": 53, "lsb": 41},
+        "lq_addr_offset": {"len": 9, "msb": 40, "lsb": 32},
+        "target": {"len": 32, "msb": 31, "lsb": 0}
+    }, 
+
+    /* Define measurement flags -> FLAG: BIT_LENGTH */
+    "meas_flag":{
+        "sign": 1,
+        "pp_register": 1,  
+        "bp_check": 1, 
+        "abcd_flag": 3
+    }
+}

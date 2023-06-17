@@ -1,0 +1,68 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'QID' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : QID
+Version: P-2019.03
+Date   : Mon May 29 06:31:34 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: all_decoded_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: UUT3/UUT1/regarray_reg[2][9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  all_decoded_reg/CK (DFF_X1)                             0.00 #     0.00 r
+  all_decoded_reg/Q (DFF_X1) <-                           0.09       0.09 f
+  UUT2/all_decoded (qid_ctrl) <-                          0.00       0.09 f
+  UUT2/U37/ZN (NAND2_X2)                                  0.02 *     0.10 r
+  UUT2/U39/ZN (NAND2_X2)                                  0.01 *     0.12 f
+  UUT2/U23/ZN (AOI21_X2)                                  0.04 *     0.15 r
+  UUT2/U14/ZN (OAI211_X2)                                 0.03 *     0.18 f
+  UUT2/U56/ZN (NOR2_X2)                                   0.04 *     0.22 r
+  UUT2/to_pdubuf_valid (qid_ctrl) <-                      0.00       0.22 r
+  UUT3/wr_din (fifo_ADDR_BW4_DATA_BW54) <-                0.00       0.22 r
+  UUT3/UUT0/wr_din (fifo_ctrl_ADDR_BW4_1)                 0.00       0.22 r
+  UUT3/UUT0/U84/ZN (NAND2_X4)                             0.02 *     0.24 f
+  UUT3/UUT0/U83/ZN (INV_X8)                               0.02 *     0.26 r
+  UUT3/UUT0/reg_push (fifo_ctrl_ADDR_BW4_1)               0.00       0.26 r
+  UUT3/UUT1/reg_push (fifo_reg_ADDR_BW4_DATA_BW54) <-     0.00       0.26 r
+  UUT3/UUT1/U482/ZN (NAND2_X1)                            0.02 *     0.28 f
+  UUT3/UUT1/U451/ZN (NAND2_X2)                            0.02 *     0.30 r
+  UUT3/UUT1/U26/ZN (NAND2_X4)                             0.02 *     0.32 f
+  UUT3/UUT1/U1318/ZN (INV_X4)                             0.02 *     0.34 r
+  UUT3/UUT1/U1097/ZN (INV_X4)                             0.02 *     0.35 f
+  UUT3/UUT1/U245/Z (MUX2_X1)                              0.05 *     0.40 f
+  UUT3/UUT1/regarray_reg[2][9]/D (DFF_X1)                 0.00 *     0.40 f
+  data arrival time                                                  0.40
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  UUT3/UUT1/regarray_reg[2][9]/CK (DFF_X1)                0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.04
+
+
+1

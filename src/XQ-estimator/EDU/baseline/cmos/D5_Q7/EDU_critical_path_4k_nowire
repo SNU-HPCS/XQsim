@@ -1,0 +1,86 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'EDU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : EDU
+Version: P-2019.03
+Date   : Tue May 30 20:11:00 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: gen_educell_i[13].gen_educell_j[3].UUT2_i_j/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_educell_i[15].gen_educell_j[28].UUT2_i_j/prev_aqmeas_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  gen_educell_i[13].gen_educell_j[3].UUT2_i_j/state_reg[2]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  gen_educell_i[13].gen_educell_j[3].UUT2_i_j/state_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  gen_educell_i[13].gen_educell_j[3].UUT2_i_j/U128/ZN (INV_X1)
+                                                          0.01 *     0.10 f
+  gen_educell_i[13].gen_educell_j[3].UUT2_i_j/U127/ZN (AND3_X2)
+                                                          0.03 *     0.12 f
+  gen_educell_i[13].gen_educell_j[3].UUT2_i_j/local_errormatch (edu_cell_AQROW13_AQCOL3) <-
+                                                          0.00       0.12 f
+  U6061/ZN (NOR2_X1)                                      0.03 *     0.16 r
+  U6064/ZN (NAND4_X2)                                     0.04 *     0.20 f
+  U6070/ZN (NOR2_X2)                                      0.03 *     0.23 r
+  U15772/ZN (NAND4_X1)                                    0.03 *     0.26 f
+  U6128/ZN (NOR2_X1)                                      0.03 *     0.28 r
+  U6264/ZN (NAND3_X1)                                     0.03 *     0.31 f
+  U15765/ZN (INV_X2)                                      0.02 *     0.33 r
+  U15731/ZN (NAND2_X4)                                    0.02 *     0.35 f
+  U15694/ZN (INV_X4)                                      0.01 *     0.36 r
+  U15702/ZN (INV_X4)                                      0.01 *     0.37 f
+  UUT0/global_errormatch (edu_ctrl)                       0.00       0.37 f
+  UUT0/U9/ZN (NOR2_X4)                                    0.02 *     0.39 r
+  UUT0/U8/ZN (INV_X2)                                     0.01 *     0.40 f
+  UUT0/U7/ZN (OAI21_X4)                                   0.03 *     0.43 r
+  UUT0/U77/ZN (NAND3_X4)                                  0.03 *     0.47 f
+  UUT0/apply_aqmeas_flip_BAR (edu_ctrl)                   0.00       0.47 f
+  U15634/ZN (INV_X8)                                      0.03 *     0.50 r
+  U6506/ZN (INV_X8)                                       0.01 *     0.51 f
+  U15565/Z (BUF_X8)                                       0.04 *     0.55 f
+  gen_educell_i[15].gen_educell_j[28].UUT2_i_j/apply_aqmeas_flip_BAR (edu_cell_AQROW15_AQCOL28) <-
+                                                          0.00       0.55 f
+  gen_educell_i[15].gen_educell_j[28].UUT2_i_j/U119/ZN (NOR2_X1)
+                                                          0.04 *     0.59 r
+  gen_educell_i[15].gen_educell_j[28].UUT2_i_j/U124/ZN (NAND3_X1)
+                                                          0.02 *     0.61 f
+  gen_educell_i[15].gen_educell_j[28].UUT2_i_j/U125/ZN (OAI21_X1)
+                                                          0.02 *     0.64 r
+  gen_educell_i[15].gen_educell_j[28].UUT2_i_j/prev_aqmeas_reg_reg[0]/D (DFF_X1)
+                                                          0.00 *     0.64 r
+  data arrival time                                                  0.64
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  gen_educell_i[15].gen_educell_j[28].UUT2_i_j/prev_aqmeas_reg_reg[0]/CK (DFF_X1)
+                                                          0.00       0.40 r
+  library setup time                                     -0.03       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.27
+
+
+1

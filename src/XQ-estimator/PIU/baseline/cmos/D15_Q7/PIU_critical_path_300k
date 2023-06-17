@@ -1,0 +1,79 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PIU
+Version: P-2019.03
+Date   : Fri May 12 17:48:18 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: opcode_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: merged_reg_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  opcode_reg_reg[3]/CK (DFF_X1)                           0.00       0.00 r
+  opcode_reg_reg[3]/Q (DFF_X1)                            0.10       0.10 r
+  UUT0/opcode_reg[3] (piu_ctrl)                           0.00       0.10 r
+  UUT0/U35/ZN (OAI21_X2)                                  0.02 *     0.13 f
+  UUT0/U95/ZN (INV_X2)                                    0.02 *     0.14 r
+  UUT0/U96/ZN (NOR2_X4)                                   0.01 *     0.15 f
+  UUT0/U97/ZN (AOI22_X4)                                  0.06 *     0.21 r
+  UUT0/sel_pchidxsrc[0] (piu_ctrl)                        0.00       0.21 r
+  UUT1/sel_pchidxsrc[0] (piu_pchindexer)                  0.00       0.21 r
+  UUT1/U43/ZN (NOR2_X4)                                   0.03 *     0.24 f
+  UUT1/U148/ZN (NAND2_X2)                                 0.02 *     0.26 r
+  UUT1/U10/ZN (INV_X1)                                    0.01 *     0.27 f
+  UUT1/U95/ZN (NOR2_X2)                                   0.03 *     0.29 r
+  UUT1/U93/ZN (NAND2_X2)                                  0.02 *     0.31 f
+  UUT1/U42/ZN (INV_X2)                                    0.02 *     0.33 r
+  UUT1/U238/ZN (NAND2_X4)                                 0.02 *     0.35 f
+  UUT1/U247/ZN (NOR2_X4)                                  0.02 *     0.37 r
+  UUT1/U129/ZN (NAND2_X2)                                 0.02 *     0.38 f
+  UUT1/U56/ZN (OAI21_X4)                                  0.03 *     0.42 r
+  UUT1/next_pchidxsrc[13]_BAR (piu_pchindexer)            0.00       0.42 r
+  UUT0/next_pchidxsrc[13]_BAR (piu_ctrl)                  0.00       0.42 r
+  UUT0/U18/ZN (NAND4_X4)                                  0.04 *     0.45 f
+  UUT0/U83/ZN (INV_X2)                                    0.02 *     0.47 r
+  UUT0/U93/ZN (NAND4_X4)                                  0.03 *     0.50 f
+  UUT0/U139/ZN (OAI21_X4)                                 0.03 *     0.53 r
+  UUT0/set_merged (piu_ctrl)                              0.00       0.53 r
+  UUT2/set_merged (piu_nextsrc)                           0.00       0.53 r
+  UUT2/U11/ZN (INV_X1)                                    0.01 *     0.55 f
+  UUT2/U13/ZN (NAND2_X2)                                  0.02 *     0.56 r
+  UUT2/U12/ZN (INV_X4)                                    0.02 *     0.58 f
+  UUT2/U63/ZN (NAND2_X1)                                  0.02 *     0.60 r
+  UUT2/U97/ZN (NAND3_X2)                                  0.02 *     0.62 f
+  UUT2/next_merged[3] (piu_nextsrc)                       0.00       0.62 f
+  U2244/ZN (NAND2_X1)                                     0.02 *     0.64 r
+  U2243/ZN (NAND2_X1)                                     0.01 *     0.65 f
+  merged_reg_reg[3]/D (DFF_X1)                            0.00 *     0.65 f
+  data arrival time                                                  0.65
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  merged_reg_reg[3]/CK (DFF_X1)                           0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.29
+
+
+1

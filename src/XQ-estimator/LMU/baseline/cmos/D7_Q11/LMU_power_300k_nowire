@@ -1,0 +1,73 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : LMU
+Version: P-2019.03
+Date   : Mon May 29 21:57:41 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+LMU                                    6.09e+03 1.36e+05 1.26e+06 1.43e+05 100.0
+  UUT7 (lmu_lqsigngen)                    2.035    1.658 8.18e+03   11.870   0.0
+  UUT6 (lmu_interpret)                    0.463    1.341 2.60e+03    4.409   0.0
+  UUT5_1 (lmu_selproduct_0)               3.963    4.316 8.00e+03   16.276   0.0
+  UUT5_0 (lmu_selproduct_1)               4.324    3.801 7.57e+03   15.695   0.0
+  UUT4 (lmu_measmux)                      3.392    1.724 5.82e+04   63.330   0.0
+    UUT2 (mux_param_NUM_INPUT21_DATA_WIDTH128)
+                                          1.061    0.561 1.80e+04   19.663   0.0
+    UUT1 (mux_param_NUM_INPUT21_DATA_WIDTH64_0)
+                                          1.419    0.729 2.79e+04   30.016   0.0
+    UUT0 (mux_param_NUM_INPUT21_DATA_WIDTH64_1)
+                                          0.865    0.425 1.23e+04   13.576   0.0
+  UUT3 (lmu_ctrl)                         1.085    0.861 3.80e+03    5.742   0.0
+  UUT2 (fifo_ADDR_BW4_DATA_BW4)          69.221 1.35e+03 1.26e+04 1.43e+03   1.0
+    UUT1 (fifo_reg_ADDR_BW4_DATA_BW4)    58.597 1.33e+03 1.11e+04 1.40e+03   1.0
+    UUT0 (fifo_ctrl_ADDR_BW4)            10.625   12.517 1.42e+03   24.562   0.0
+  UUT1 (srmem_double_NUM_RDPORT1_LEN_SRMEM21_DATA_BW59)
+                                        755.346 2.14e+04 1.77e+05 2.24e+04  15.6
+    UUT1 (srmem_single_NUM_RDPORT1_LEN_SRMEM21_DATA_BW59_0)
+                                        330.861 1.07e+04 8.68e+04 1.12e+04   7.8
+      UUT0 (srmem_single_ctrl_NUM_RDPORT1_LEN_SRMEM21_DATA_BW59_0)
+                                          9.204    5.226 1.91e+03   16.344   0.0
+    UUT0 (srmem_single_NUM_RDPORT1_LEN_SRMEM21_DATA_BW59_1)
+                                        380.865 1.06e+04 8.59e+04 1.11e+04   7.8
+      UUT0 (srmem_single_ctrl_NUM_RDPORT1_LEN_SRMEM21_DATA_BW59_1)
+                                         20.635   17.641 1.99e+03   40.267   0.0
+  UUT0 (srmem_double_NUM_RDPORT1_LEN_SRMEM11_DATA_BW32)
+                                        578.587 1.23e+04 1.07e+05 1.30e+04   9.1
+    UUT1 (srmem_single_NUM_RDPORT1_LEN_SRMEM11_DATA_BW32_0)
+                                        228.572 6.20e+03 5.09e+04 6.48e+03   4.5
+      UUT0 (srmem_single_ctrl_NUM_RDPORT1_LEN_SRMEM11_DATA_BW32_0)
+                                         16.605   10.125 2.38e+03   29.114   0.0
+    UUT0 (srmem_single_NUM_RDPORT1_LEN_SRMEM11_DATA_BW32_1)
+                                        294.801 5.99e+03 5.12e+04 6.34e+03   4.4
+      UUT0 (srmem_single_ctrl_NUM_RDPORT1_LEN_SRMEM11_DATA_BW32_1)
+                                         33.609   28.122 2.36e+03   64.090   0.0
+1

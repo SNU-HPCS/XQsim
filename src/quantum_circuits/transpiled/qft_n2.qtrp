@@ -1,0 +1,4 @@
+PPR + [Z] [q[0]]  
+PPR + [ZX] [q[0],q[1]]  
+PPM + [YX] [q[0],q[1]] meas[0]
+SQM + [X] [q[1]] meas[1]

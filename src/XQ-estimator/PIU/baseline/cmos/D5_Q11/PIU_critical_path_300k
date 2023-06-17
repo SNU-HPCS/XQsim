@@ -1,0 +1,81 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'PIU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PIU
+Version: P-2019.03
+Date   : Fri May 12 18:38:25 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: opcode_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: merged_reg_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  opcode_reg_reg[1]/CK (DFF_X1)                           0.00 #     0.00 r
+  opcode_reg_reg[1]/Q (DFF_X1)                            0.11       0.11 r
+  UUT0/opcode_reg[1] (piu_ctrl)                           0.00       0.11 r
+  UUT0/U90/ZN (OAI21_X2)                                  0.02 *     0.13 f
+  UUT0/U88/ZN (NAND2_X2)                                  0.02 *     0.15 r
+  UUT0/U87/ZN (NAND2_X2)                                  0.02 *     0.16 f
+  UUT0/U31/ZN (NAND2_X4)                                  0.03 *     0.19 r
+  UUT0/sel_pchidxsrc[0] (piu_ctrl)                        0.00       0.19 r
+  U2026/Z (BUF_X4)                                        0.03 *     0.22 r
+  UUT1/IN0 (piu_pchindexer)                               0.00       0.22 r
+  UUT1/U164/ZN (NAND2_X4)                                 0.01 *     0.24 f
+  UUT1/U314/ZN (OAI211_X2)                                0.02 *     0.26 r
+  UUT1/U180/ZN (INV_X2)                                   0.01 *     0.27 f
+  UUT1/U120/ZN (NOR2_X4)                                  0.03 *     0.30 r
+  UUT1/U110/ZN (NAND3_X4)                                 0.03 *     0.33 f
+  UUT1/U109/ZN (NOR2_X4)                                  0.04 *     0.37 r
+  UUT1/U259/ZN (NAND2_X4)                                 0.02 *     0.39 f
+  UUT1/U255/ZN (NAND2_X2)                                 0.02 *     0.41 r
+  UUT1/U67/ZN (INV_X2)                                    0.01 *     0.42 f
+  UUT1/U331/ZN (NAND2_X4)                                 0.01 *     0.43 r
+  UUT1/U358/ZN (AOI21_X4)                                 0.02 *     0.46 f
+  UUT1/next_pchidxsrc[10] (piu_pchindexer)                0.00       0.46 f
+  UUT0/next_pchidxsrc[10] (piu_ctrl)                      0.00       0.46 f
+  UUT0/U105/ZN (NOR2_X4)                                  0.03 *     0.49 r
+  UUT0/U104/ZN (NAND4_X4)                                 0.03 *     0.52 f
+  UUT0/U38/ZN (NOR2_X4)                                   0.03 *     0.55 r
+  UUT0/U37/ZN (NAND2_X2)                                  0.01 *     0.56 f
+  UUT0/U164/ZN (NAND2_X2)                                 0.01 *     0.58 r
+  UUT0/U163/ZN (NAND3_X2)                                 0.04 *     0.61 f
+  UUT0/mgdreg_wren (piu_ctrl)                             0.00       0.61 f
+  U2239/ZN (NAND2_X2)                                     0.03 *     0.65 r
+  U2077/ZN (INV_X8)                                       0.02 *     0.66 f
+  U3524/ZN (NAND2_X1)                                     0.02 *     0.68 r
+  U3512/ZN (NAND2_X1)                                     0.01 *     0.69 f
+  merged_reg_reg[5]/D (DFF_X2)                            0.00 *     0.69 f
+  data arrival time                                                  0.69
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  merged_reg_reg[5]/CK (DFF_X2)                           0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.33
+
+
+1

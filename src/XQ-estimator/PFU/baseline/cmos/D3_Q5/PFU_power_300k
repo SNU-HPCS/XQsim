@@ -1,0 +1,467 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : PFU
+Version: P-2019.03
+Date   : Mon May 29 07:25:07 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+PFU                                    2.66e+03 1.72e+04 2.67e+05 2.02e+04 100.0
+  gen_pfupdater[191].UUT5_I (pfu_pfupdater_0)
+                                          6.630    8.615  663.451   15.908   0.1
+  gen_pfupdater[190].UUT5_I (pfu_pfupdater_1)
+                                          5.548    8.745  533.000   14.827   0.1
+  gen_pfupdater[189].UUT5_I (pfu_pfupdater_2)
+                                          6.324   10.008  507.446   16.840   0.1
+  gen_pfupdater[188].UUT5_I (pfu_pfupdater_3)
+                                          6.744    8.820  582.498   16.146   0.1
+  gen_pfupdater[187].UUT5_I (pfu_pfupdater_4)
+                                          5.143    8.306  465.343   13.914   0.1
+  gen_pfupdater[186].UUT5_I (pfu_pfupdater_5)
+                                          5.771    9.631  445.293   15.847   0.1
+  gen_pfupdater[185].UUT5_I (pfu_pfupdater_6)
+                                          5.591    8.671  494.749   14.757   0.1
+  gen_pfupdater[184].UUT5_I (pfu_pfupdater_7)
+                                          5.511    9.169  411.004   15.091   0.1
+  gen_pfupdater[183].UUT5_I (pfu_pfupdater_8)
+                                          5.621    8.754  461.042   14.836   0.1
+  gen_pfupdater[182].UUT5_I (pfu_pfupdater_9)
+                                          5.505    8.792  485.759   14.782   0.1
+  gen_pfupdater[181].UUT5_I (pfu_pfupdater_10)
+                                          5.290    7.866  505.732   13.661   0.1
+  gen_pfupdater[180].UUT5_I (pfu_pfupdater_11)
+                                          6.912   10.323  579.315   17.814   0.1
+  gen_pfupdater[179].UUT5_I (pfu_pfupdater_12)
+                                          5.540    8.943  621.085   15.104   0.1
+  gen_pfupdater[178].UUT5_I (pfu_pfupdater_13)
+                                          5.624    9.289  404.867   15.319   0.1
+  gen_pfupdater[177].UUT5_I (pfu_pfupdater_14)
+                                          5.686   10.386  538.261   16.610   0.1
+  gen_pfupdater[176].UUT5_I (pfu_pfupdater_15)
+                                          1.810    3.265  134.926    5.210   0.0
+  gen_pfupdater[175].UUT5_I (pfu_pfupdater_16)
+                                          6.900    9.301  548.546   16.750   0.1
+  gen_pfupdater[174].UUT5_I (pfu_pfupdater_17)
+                                          6.402    8.700  578.716   15.680   0.1
+  gen_pfupdater[173].UUT5_I (pfu_pfupdater_18)
+                                          5.928   10.130  509.185   16.566   0.1
+  gen_pfupdater[172].UUT5_I (pfu_pfupdater_19)
+                                          6.584    9.367  478.952   16.429   0.1
+  gen_pfupdater[171].UUT5_I (pfu_pfupdater_20)
+                                          5.309    8.367  507.013   14.183   0.1
+  gen_pfupdater[170].UUT5_I (pfu_pfupdater_21)
+                                          5.322    8.892  389.908   14.605   0.1
+  gen_pfupdater[169].UUT5_I (pfu_pfupdater_22)
+                                          6.582    9.289  553.856   16.424   0.1
+  gen_pfupdater[168].UUT5_I (pfu_pfupdater_23)
+                                          5.299    8.858  390.321   14.547   0.1
+  gen_pfupdater[167].UUT5_I (pfu_pfupdater_24)
+                                          6.036    9.247  505.556   15.788   0.1
+  gen_pfupdater[166].UUT5_I (pfu_pfupdater_25)
+                                          6.742    9.427  567.997   16.737   0.1
+  gen_pfupdater[165].UUT5_I (pfu_pfupdater_26)
+                                          6.707   10.286  513.224   17.506   0.1
+  gen_pfupdater[164].UUT5_I (pfu_pfupdater_27)
+                                          5.384    8.064  491.989   13.940   0.1
+  gen_pfupdater[163].UUT5_I (pfu_pfupdater_28)
+                                          7.013   11.387  696.661   19.097   0.1
+  gen_pfupdater[162].UUT5_I (pfu_pfupdater_29)
+                                          5.153    8.714  389.576   14.257   0.1
+  gen_pfupdater[161].UUT5_I (pfu_pfupdater_30)
+                                          6.067    8.492  506.303   15.065   0.1
+  gen_pfupdater[160].UUT5_I (pfu_pfupdater_31)
+                                          1.889    3.320  134.906    5.344   0.0
+  gen_pfupdater[159].UUT5_I (pfu_pfupdater_32)
+                                          6.242   10.495  545.492   17.283   0.1
+  gen_pfupdater[158].UUT5_I (pfu_pfupdater_33)
+                                          6.763   10.700  551.836   18.015   0.1
+  gen_pfupdater[157].UUT5_I (pfu_pfupdater_34)
+                                          6.656    8.763  531.880   15.951   0.1
+  gen_pfupdater[156].UUT5_I (pfu_pfupdater_35)
+                                          6.470    8.445  619.667   15.534   0.1
+  gen_pfupdater[155].UUT5_I (pfu_pfupdater_36)
+                                          5.254    8.309  462.651   14.026   0.1
+  gen_pfupdater[154].UUT5_I (pfu_pfupdater_37)
+                                          5.618    9.604  435.494   15.657   0.1
+  gen_pfupdater[153].UUT5_I (pfu_pfupdater_38)
+                                          6.317   10.282  607.669   17.206   0.1
+  gen_pfupdater[152].UUT5_I (pfu_pfupdater_39)
+                                          5.302    8.946  383.793   14.632   0.1
+  gen_pfupdater[151].UUT5_I (pfu_pfupdater_40)
+                                          6.805    9.100  543.045   16.448   0.1
+  gen_pfupdater[150].UUT5_I (pfu_pfupdater_41)
+                                          5.798    8.939  539.666   15.277   0.1
+  gen_pfupdater[149].UUT5_I (pfu_pfupdater_42)
+                                          6.324    9.217  537.626   16.079   0.1
+  gen_pfupdater[148].UUT5_I (pfu_pfupdater_43)
+                                          5.811    8.535  513.326   14.860   0.1
+  gen_pfupdater[147].UUT5_I (pfu_pfupdater_44)
+                                          6.641    9.960  645.156   17.246   0.1
+  gen_pfupdater[146].UUT5_I (pfu_pfupdater_45)
+                                          5.296    8.736  390.539   14.422   0.1
+  gen_pfupdater[145].UUT5_I (pfu_pfupdater_46)
+                                          5.530   11.427  457.701   17.415   0.1
+  gen_pfupdater[144].UUT5_I (pfu_pfupdater_47)
+                                          1.899    3.306  134.912    5.339   0.0
+  gen_pfupdater[143].UUT5_I (pfu_pfupdater_48)
+                                          7.022    9.175  570.434   16.767   0.1
+  gen_pfupdater[142].UUT5_I (pfu_pfupdater_49)
+                                          5.316    8.192  501.953   14.010   0.1
+  gen_pfupdater[141].UUT5_I (pfu_pfupdater_50)
+                                          7.584    9.710  655.268   17.950   0.1
+  gen_pfupdater[140].UUT5_I (pfu_pfupdater_51)
+                                          6.551    8.611  630.031   15.792   0.1
+  gen_pfupdater[139].UUT5_I (pfu_pfupdater_52)
+                                          5.639    8.303  468.050   14.411   0.1
+  gen_pfupdater[138].UUT5_I (pfu_pfupdater_53)
+                                          5.181    8.715  390.006   14.286   0.1
+  gen_pfupdater[137].UUT5_I (pfu_pfupdater_54)
+                                          7.018    9.132  590.740   16.741   0.1
+  gen_pfupdater[136].UUT5_I (pfu_pfupdater_55)
+                                          5.542    9.303  405.418   15.251   0.1
+  gen_pfupdater[135].UUT5_I (pfu_pfupdater_56)
+                                          6.795    9.354  632.272   16.781   0.1
+  gen_pfupdater[134].UUT5_I (pfu_pfupdater_57)
+                                          6.735    9.860  545.852   17.141   0.1
+  gen_pfupdater[133].UUT5_I (pfu_pfupdater_58)
+                                          6.466   10.129  522.419   17.118   0.1
+  gen_pfupdater[132].UUT5_I (pfu_pfupdater_59)
+                                          5.642    8.537  503.845   14.683   0.1
+  gen_pfupdater[131].UUT5_I (pfu_pfupdater_60)
+                                          7.147   11.079  724.238   18.951   0.1
+  gen_pfupdater[130].UUT5_I (pfu_pfupdater_61)
+                                          5.235    8.689  389.968   14.314   0.1
+  gen_pfupdater[129].UUT5_I (pfu_pfupdater_62)
+                                          6.116    8.429  503.089   15.048   0.1
+  gen_pfupdater[128].UUT5_I (pfu_pfupdater_63)
+                                          1.830    3.272  134.892    5.238   0.0
+  gen_pfupdater[127].UUT5_I (pfu_pfupdater_64)
+                                          5.942   10.013  493.593   16.449   0.1
+  gen_pfupdater[126].UUT5_I (pfu_pfupdater_65)
+                                          5.962   10.003  474.987   16.440   0.1
+  gen_pfupdater[125].UUT5_I (pfu_pfupdater_66)
+                                          6.792    9.207  518.247   16.517   0.1
+  gen_pfupdater[124].UUT5_I (pfu_pfupdater_67)
+                                          6.575   10.352  602.709   17.529   0.1
+  gen_pfupdater[123].UUT5_I (pfu_pfupdater_68)
+                                          5.658    7.967  463.219   14.089   0.1
+  gen_pfupdater[122].UUT5_I (pfu_pfupdater_69)
+                                          5.784    9.763  435.938   15.984   0.1
+  gen_pfupdater[121].UUT5_I (pfu_pfupdater_70)
+                                          6.928    9.320  610.002   16.858   0.1
+  gen_pfupdater[120].UUT5_I (pfu_pfupdater_71)
+                                          5.779    9.858  428.271   16.065   0.1
+  gen_pfupdater[119].UUT5_I (pfu_pfupdater_72)
+                                          7.079   10.536  552.133   18.167   0.1
+  gen_pfupdater[118].UUT5_I (pfu_pfupdater_73)
+                                          6.001    9.387  614.407   16.003   0.1
+  gen_pfupdater[117].UUT5_I (pfu_pfupdater_74)
+                                          5.295    8.249  484.945   14.029   0.1
+  gen_pfupdater[116].UUT5_I (pfu_pfupdater_75)
+                                          5.177    8.113  458.710   13.749   0.1
+  gen_pfupdater[115].UUT5_I (pfu_pfupdater_76)
+                                          6.773   10.104  687.728   17.564   0.1
+  gen_pfupdater[114].UUT5_I (pfu_pfupdater_77)
+                                          5.203    8.622  390.153   14.215   0.1
+  gen_pfupdater[113].UUT5_I (pfu_pfupdater_78)
+                                          5.743    8.592  435.275   14.771   0.1
+  gen_pfupdater[112].UUT5_I (pfu_pfupdater_79)
+                                          1.826    3.270  134.908    5.231   0.0
+  gen_pfupdater[111].UUT5_I (pfu_pfupdater_80)
+                                          5.412    7.975  474.592   13.862   0.1
+  gen_pfupdater[110].UUT5_I (pfu_pfupdater_81)
+                                          5.388    7.892  546.033   13.826   0.1
+  gen_pfupdater[109].UUT5_I (pfu_pfupdater_82)
+                                          7.451   10.974  604.106   19.029   0.1
+  gen_pfupdater[108].UUT5_I (pfu_pfupdater_83)
+                                          6.654    8.664  555.054   15.873   0.1
+  gen_pfupdater[107].UUT5_I (pfu_pfupdater_84)
+                                          6.942   10.249  527.671   17.719   0.1
+  gen_pfupdater[106].UUT5_I (pfu_pfupdater_85)
+                                          5.777    9.954  487.476   16.218   0.1
+  gen_pfupdater[105].UUT5_I (pfu_pfupdater_86)
+                                          6.577    9.261  544.347   16.382   0.1
+  gen_pfupdater[104].UUT5_I (pfu_pfupdater_87)
+                                          5.267    8.822  390.025   14.479   0.1
+  gen_pfupdater[103].UUT5_I (pfu_pfupdater_88)
+                                          7.495    8.988  593.067   17.076   0.1
+  gen_pfupdater[102].UUT5_I (pfu_pfupdater_89)
+                                          5.570    8.458  512.765   14.541   0.1
+  gen_pfupdater[101].UUT5_I (pfu_pfupdater_90)
+                                          6.526    9.121  515.634   16.163   0.1
+  gen_pfupdater[100].UUT5_I (pfu_pfupdater_91)
+                                          5.716    8.450  483.867   14.650   0.1
+  gen_pfupdater[99].UUT5_I (pfu_pfupdater_92)
+                                          6.811   10.086  771.972   17.669   0.1
+  gen_pfupdater[98].UUT5_I (pfu_pfupdater_93)
+                                          5.299    8.940  389.849   14.629   0.1
+  gen_pfupdater[97].UUT5_I (pfu_pfupdater_94)
+                                          5.214    8.446  467.713   14.128   0.1
+  gen_pfupdater[96].UUT5_I (pfu_pfupdater_95)
+                                          1.901    3.289  134.897    5.325   0.0
+  gen_pfupdater[95].UUT5_I (pfu_pfupdater_96)
+                                          7.151   10.349  544.060   18.044   0.1
+  gen_pfupdater[94].UUT5_I (pfu_pfupdater_97)
+                                          6.367    8.417  558.437   15.343   0.1
+  gen_pfupdater[93].UUT5_I (pfu_pfupdater_98)
+                                          6.739    9.105  523.418   16.368   0.1
+  gen_pfupdater[92].UUT5_I (pfu_pfupdater_99)
+                                          6.300    8.855  592.872   15.748   0.1
+  gen_pfupdater[91].UUT5_I (pfu_pfupdater_100)
+                                          5.228    8.346  458.523   14.033   0.1
+  gen_pfupdater[90].UUT5_I (pfu_pfupdater_101)
+                                          5.593    9.360  445.198   15.398   0.1
+  gen_pfupdater[89].UUT5_I (pfu_pfupdater_102)
+                                          7.018    9.423  537.109   16.978   0.1
+  gen_pfupdater[88].UUT5_I (pfu_pfupdater_103)
+                                          5.648    9.762  435.422   15.846   0.1
+  gen_pfupdater[87].UUT5_I (pfu_pfupdater_104)
+                                          6.244    9.867  627.782   16.739   0.1
+  gen_pfupdater[86].UUT5_I (pfu_pfupdater_105)
+                                          6.311    9.027  552.842   15.891   0.1
+  gen_pfupdater[85].UUT5_I (pfu_pfupdater_106)
+                                          5.010    7.919  441.291   13.370   0.1
+  gen_pfupdater[84].UUT5_I (pfu_pfupdater_107)
+                                          5.345    8.340  482.512   14.167   0.1
+  gen_pfupdater[83].UUT5_I (pfu_pfupdater_108)
+                                          5.530    9.062  643.763   15.236   0.1
+  gen_pfupdater[82].UUT5_I (pfu_pfupdater_109)
+                                          5.130    8.687  389.942   14.206   0.1
+  gen_pfupdater[81].UUT5_I (pfu_pfupdater_110)
+                                          5.056    8.748  516.595   14.320   0.1
+  gen_pfupdater[80].UUT5_I (pfu_pfupdater_111)
+                                          1.858    3.312  134.919    5.305   0.0
+  gen_pfupdater[79].UUT5_I (pfu_pfupdater_112)
+                                          6.365    8.776  478.417   15.620   0.1
+  gen_pfupdater[78].UUT5_I (pfu_pfupdater_113)
+                                          6.659    9.656  494.523   16.809   0.1
+  gen_pfupdater[77].UUT5_I (pfu_pfupdater_114)
+                                          6.749    8.561  525.443   15.835   0.1
+  gen_pfupdater[76].UUT5_I (pfu_pfupdater_115)
+                                          5.963    8.593  568.293   15.124   0.1
+  gen_pfupdater[75].UUT5_I (pfu_pfupdater_116)
+                                          6.552    8.158  537.859   15.248   0.1
+  gen_pfupdater[74].UUT5_I (pfu_pfupdater_117)
+                                          5.531    9.322  416.682   15.269   0.1
+  gen_pfupdater[73].UUT5_I (pfu_pfupdater_118)
+                                          7.363    9.075  550.308   16.989   0.1
+  gen_pfupdater[72].UUT5_I (pfu_pfupdater_119)
+                                          5.735    9.912  428.796   16.076   0.1
+  gen_pfupdater[71].UUT5_I (pfu_pfupdater_120)
+                                          5.670    8.115  536.054   14.321   0.1
+  gen_pfupdater[70].UUT5_I (pfu_pfupdater_121)
+                                          6.822    9.675  654.211   17.152   0.1
+  gen_pfupdater[69].UUT5_I (pfu_pfupdater_122)
+                                          4.920    8.053  456.869   13.430   0.1
+  gen_pfupdater[68].UUT5_I (pfu_pfupdater_123)
+                                          5.290    8.380  481.915   14.152   0.1
+  gen_pfupdater[67].UUT5_I (pfu_pfupdater_124)
+                                          7.097   11.247  715.339   19.060   0.1
+  gen_pfupdater[66].UUT5_I (pfu_pfupdater_125)
+                                          5.500    9.321  415.825   15.237   0.1
+  gen_pfupdater[65].UUT5_I (pfu_pfupdater_126)
+                                          5.177    8.319  449.893   13.946   0.1
+  gen_pfupdater[64].UUT5_I (pfu_pfupdater_127)
+                                          1.867    3.279  134.940    5.282   0.0
+  gen_pfupdater[63].UUT5_I (pfu_pfupdater_128)
+                                          7.322    8.784  573.078   16.679   0.1
+  gen_pfupdater[62].UUT5_I (pfu_pfupdater_129)
+                                          5.561    8.678  460.045   14.698   0.1
+  gen_pfupdater[61].UUT5_I (pfu_pfupdater_130)
+                                          6.012    9.246  542.427   15.801   0.1
+  gen_pfupdater[60].UUT5_I (pfu_pfupdater_131)
+                                          6.888    9.455  554.479   16.898   0.1
+  gen_pfupdater[59].UUT5_I (pfu_pfupdater_132)
+                                          6.701    8.437  645.136   15.784   0.1
+  gen_pfupdater[58].UUT5_I (pfu_pfupdater_133)
+                                          5.685    9.637  438.505   15.760   0.1
+  gen_pfupdater[57].UUT5_I (pfu_pfupdater_134)
+                                          6.813    8.967  554.086   16.334   0.1
+  gen_pfupdater[56].UUT5_I (pfu_pfupdater_135)
+                                          5.694    9.718  435.490   15.847   0.1
+  gen_pfupdater[55].UUT5_I (pfu_pfupdater_136)
+                                          6.580   10.995  618.609   18.194   0.1
+  gen_pfupdater[54].UUT5_I (pfu_pfupdater_137)
+                                          5.575    8.267  527.756   14.370   0.1
+  gen_pfupdater[53].UUT5_I (pfu_pfupdater_138)
+                                          6.221   10.683  535.461   17.439   0.1
+  gen_pfupdater[52].UUT5_I (pfu_pfupdater_139)
+                                          6.219    9.343  502.855   16.065   0.1
+  gen_pfupdater[51].UUT5_I (pfu_pfupdater_140)
+                                          7.142   11.165  749.011   19.055   0.1
+  gen_pfupdater[50].UUT5_I (pfu_pfupdater_141)
+                                          5.703    9.187  403.549   15.294   0.1
+  gen_pfupdater[49].UUT5_I (pfu_pfupdater_142)
+                                          5.812   10.707  552.214   17.072   0.1
+  gen_pfupdater[48].UUT5_I (pfu_pfupdater_143)
+                                          1.810    3.257  134.857    5.202   0.0
+  gen_pfupdater[47].UUT5_I (pfu_pfupdater_144)
+                                          6.744    9.209  679.926   16.633   0.1
+  gen_pfupdater[46].UUT5_I (pfu_pfupdater_145)
+                                          6.323    9.666  618.835   16.608   0.1
+  gen_pfupdater[45].UUT5_I (pfu_pfupdater_146)
+                                          7.362    8.804  555.409   16.721   0.1
+  gen_pfupdater[44].UUT5_I (pfu_pfupdater_147)
+                                          6.086    8.666  504.155   15.256   0.1
+  gen_pfupdater[43].UUT5_I (pfu_pfupdater_148)
+                                          5.468    8.890  467.848   14.826   0.1
+  gen_pfupdater[42].UUT5_I (pfu_pfupdater_149)
+                                          5.736    9.645  438.276   15.820   0.1
+  gen_pfupdater[41].UUT5_I (pfu_pfupdater_150)
+                                          6.758    9.294  603.969   16.655   0.1
+  gen_pfupdater[40].UUT5_I (pfu_pfupdater_151)
+                                          5.822    9.920  435.364   16.178   0.1
+  gen_pfupdater[39].UUT5_I (pfu_pfupdater_152)
+                                          6.290   10.708  589.770   17.589   0.1
+  gen_pfupdater[38].UUT5_I (pfu_pfupdater_153)
+                                          7.492   11.131  648.375   19.272   0.1
+  gen_pfupdater[37].UUT5_I (pfu_pfupdater_154)
+                                          6.171    8.836  557.909   15.564   0.1
+  gen_pfupdater[36].UUT5_I (pfu_pfupdater_155)
+                                          5.041    7.979  454.064   13.475   0.1
+  gen_pfupdater[35].UUT5_I (pfu_pfupdater_156)
+                                          6.671    9.999  636.923   17.308   0.1
+  gen_pfupdater[34].UUT5_I (pfu_pfupdater_157)
+                                          5.244    8.795  390.123   14.429   0.1
+  gen_pfupdater[33].UUT5_I (pfu_pfupdater_158)
+                                          5.302   10.714  465.477   16.482   0.1
+  gen_pfupdater[32].UUT5_I (pfu_pfupdater_159)
+                                          1.827    3.239  134.911    5.202   0.0
+  gen_pfupdater[31].UUT5_I (pfu_pfupdater_160)
+                                          7.628   10.094  675.242   18.397   0.1
+  gen_pfupdater[30].UUT5_I (pfu_pfupdater_161)
+                                          5.345    7.977  421.064   13.743   0.1
+  gen_pfupdater[29].UUT5_I (pfu_pfupdater_162)
+                                          6.944    8.789  555.741   16.289   0.1
+  gen_pfupdater[28].UUT5_I (pfu_pfupdater_163)
+                                          6.100    8.809  601.522   15.511   0.1
+  gen_pfupdater[27].UUT5_I (pfu_pfupdater_164)
+                                          5.227    8.340  442.389   14.010   0.1
+  gen_pfupdater[26].UUT5_I (pfu_pfupdater_165)
+                                          5.250    8.879  390.497   14.519   0.1
+  gen_pfupdater[25].UUT5_I (pfu_pfupdater_166)
+                                          6.251    8.837  520.524   15.608   0.1
+  gen_pfupdater[24].UUT5_I (pfu_pfupdater_167)
+                                          5.537    9.223  411.299   15.171   0.1
+  gen_pfupdater[23].UUT5_I (pfu_pfupdater_168)
+                                          5.626    9.481  543.858   15.651   0.1
+  gen_pfupdater[22].UUT5_I (pfu_pfupdater_169)
+                                          6.766    9.073  599.535   16.438   0.1
+  gen_pfupdater[21].UUT5_I (pfu_pfupdater_170)
+                                          5.207    8.816  435.708   14.459   0.1
+  gen_pfupdater[20].UUT5_I (pfu_pfupdater_171)
+                                          7.038    9.375  572.280   16.986   0.1
+  gen_pfupdater[19].UUT5_I (pfu_pfupdater_172)
+                                          6.658   10.101  653.215   17.413   0.1
+  gen_pfupdater[18].UUT5_I (pfu_pfupdater_173)
+                                          5.402    8.994  390.264   14.785   0.1
+  gen_pfupdater[17].UUT5_I (pfu_pfupdater_174)
+                                          5.279    7.748  475.939   13.503   0.1
+  gen_pfupdater[16].UUT5_I (pfu_pfupdater_175)
+                                          1.821    3.294  134.912    5.250   0.0
+  gen_pfupdater[15].UUT5_I (pfu_pfupdater_176)
+                                          6.609   10.320  500.808   17.430   0.1
+  gen_pfupdater[14].UUT5_I (pfu_pfupdater_177)
+                                          5.764    8.315  517.081   14.596   0.1
+  gen_pfupdater[13].UUT5_I (pfu_pfupdater_178)
+                                          7.622    9.052  551.294   17.226   0.1
+  gen_pfupdater[12].UUT5_I (pfu_pfupdater_179)
+                                          6.093    8.985  554.713   15.633   0.1
+  gen_pfupdater[11].UUT5_I (pfu_pfupdater_180)
+                                          5.247    7.885  560.353   13.693   0.1
+  gen_pfupdater[10].UUT5_I (pfu_pfupdater_181)
+                                          5.761    9.669  445.283   15.875   0.1
+  gen_pfupdater[9].UUT5_I (pfu_pfupdater_182)
+                                          7.043    9.537  523.551   17.103   0.1
+  gen_pfupdater[8].UUT5_I (pfu_pfupdater_183)
+                                          5.383    9.504  407.861   15.295   0.1
+  gen_pfupdater[7].UUT5_I (pfu_pfupdater_184)
+                                          6.433   10.080  564.670   17.078   0.1
+  gen_pfupdater[6].UUT5_I (pfu_pfupdater_185)
+                                          6.228    8.662  518.316   15.408   0.1
+  gen_pfupdater[5].UUT5_I (pfu_pfupdater_186)
+                                          5.641    8.226  476.303   14.344   0.1
+  gen_pfupdater[4].UUT5_I (pfu_pfupdater_187)
+                                          6.112    7.865  529.658   14.506   0.1
+  gen_pfupdater[3].UUT5_I (pfu_pfupdater_188)
+                                          6.660    9.846  643.398   17.149   0.1
+  gen_pfupdater[2].UUT5_I (pfu_pfupdater_189)
+                                          6.190   10.117  385.693   16.693   0.1
+  gen_pfupdater[1].UUT5_I (pfu_pfupdater_190)
+                                          6.090    8.346  503.280   14.940   0.1
+  gen_pfupdater[0].UUT5_I (pfu_pfupdater_191)
+                                          1.828    3.313  134.897    5.275   0.0
+  UUT4 (demux_NUM_DATA12_DATA_BW64)       3.584    2.101 2.35e+04   29.207   0.1
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[3].UUT3_i_j_k (pfu_cwdgen_0)
+                                          2.343    2.197  984.124    5.524   0.0
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[2].UUT3_i_j_k (pfu_cwdgen_1)
+                                          2.611    2.356  990.832    5.958   0.0
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[1].UUT3_i_j_k (pfu_cwdgen_2)
+                                          2.356    2.863 1.10e+03    6.319   0.0
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k (pfu_cwdgen_3)
+                                          2.161    2.113 1.00e+03    5.275   0.0
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[0].gen_pfu_cwdgen_k[3].UUT3_i_j_k (pfu_cwdgen_4)
+                                          1.665    1.445 1.14e+03    4.254   0.0
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[0].gen_pfu_cwdgen_k[2].UUT3_i_j_k (pfu_cwdgen_5)
+                                          0.157    0.151  236.472    0.545   0.0
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[0].gen_pfu_cwdgen_k[1].UUT3_i_j_k (pfu_cwdgen_6)
+                                          1.987    2.272  989.183    5.248   0.0
+  gen_pfu_cwdgen_i[1].gen_pfu_cwdgen_j[0].gen_pfu_cwdgen_k[0].UUT3_i_j_k (pfu_cwdgen_7)
+                                          0.152    0.125  299.425    0.576   0.0
+  gen_pfu_cwdgen_i[0].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[3].UUT3_i_j_k (pfu_cwdgen_8)
+                                          2.061    1.611  782.351    4.455   0.0
+  gen_pfu_cwdgen_i[0].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[2].UUT3_i_j_k (pfu_cwdgen_9)
+                                          2.215    1.974  944.699    5.135   0.0
+  gen_pfu_cwdgen_i[0].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[1].UUT3_i_j_k (pfu_cwdgen_10)
+                                          1.189    1.064  816.293    3.070   0.0
+  gen_pfu_cwdgen_i[0].gen_pfu_cwdgen_j[1].gen_pfu_cwdgen_k[0].UUT3_i_j_k (pfu_cwdgen_11)
+                                          1.227    1.052  942.097    3.221   0.0
+  gen_pfu_cwdgen_i[0].gen_pfu_cwdgen_j[0].gen_pfu_cwdgen_k[3].UUT3_i_j_k (pfu_cwdgen_12)
+                                          2.208    1.833 1.02e+03    5.057   0.0
+  gen_pfu_cwdgen_i[0].gen_pfu_cwdgen_j[0].gen_pfu_cwdgen_k[2].UUT3_i_j_k (pfu_cwdgen_13)
+                                          0.138 7.17e-02  497.191    0.707   0.0
+  gen_pfu_cwdgen_i[0].gen_pfu_cwdgen_j[0].gen_pfu_cwdgen_k[1].UUT3_i_j_k (pfu_cwdgen_14)
+                                          1.745    1.492 1.25e+03    4.489   0.0
+  UUT2 (srmem_double_NUM_RDPORT1_LEN_SRMEM12_DATA_BW56)
+                                        334.819 8.29e+03 7.27e+04 8.70e+03  43.2
+    UUT1 (srmem_single_NUM_RDPORT1_LEN_SRMEM12_DATA_BW56_0)
+                                        122.124 4.15e+03 3.51e+04 4.31e+03  21.4
+      UUT0 (srmem_single_ctrl_NUM_RDPORT1_LEN_SRMEM12_DATA_BW56_0)
+                                          7.525    4.551 1.60e+03   13.674   0.1
+    UUT0 (srmem_single_NUM_RDPORT1_LEN_SRMEM12_DATA_BW56_1)
+                                        184.763 4.07e+03 3.36e+04 4.29e+03  21.3
+      UUT0 (srmem_single_ctrl_NUM_RDPORT1_LEN_SRMEM12_DATA_BW56_1)
+                                         24.091   18.828 1.79e+03   44.710   0.2
+  UUT1 (fifo_ADDR_BW1_DATA_BW4)          11.969  189.086 2.74e+03  203.796   1.0
+    UUT1 (fifo_reg_ADDR_BW1_DATA_BW4)     8.624  185.810 2.25e+03  196.683   1.0
+    UUT0 (fifo_ctrl_ADDR_BW1)             3.345    3.276  492.265    7.113   0.0
+  UUT0 (pfu_ctrl)                         3.232    2.980  432.387    6.644   0.0
+1

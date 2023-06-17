@@ -1,0 +1,48 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : QID
+Version: P-2019.03
+Date   : Tue May 16 06:22:43 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+QID                                    2.10e+03 4.72e+04 3.81e+05 4.97e+04 100.0
+  UUT4 (fifo_ADDR_BW4_DATA_BW33)        341.139 9.48e+03 7.66e+04 9.90e+03  19.9
+    UUT1 (fifo_reg_ADDR_BW4_DATA_BW33)  331.952 9.47e+03 7.45e+04 9.88e+03  19.9
+    UUT0 (fifo_ctrl_ADDR_BW4_0)           9.187    8.616 2.08e+03   19.887   0.0
+  UUT3 (fifo_ADDR_BW4_DATA_BW125)      1.48e+03 3.51e+04 2.74e+05 3.69e+04  74.2
+    UUT1 (fifo_reg_ADDR_BW4_DATA_BW125)
+                                       1.44e+03 3.51e+04 2.72e+05 3.68e+04  74.1
+    UUT0 (fifo_ctrl_ADDR_BW4_1)          23.571   21.746 2.07e+03   47.387   0.1
+  UUT2 (qid_ctrl)                        26.576   28.387 2.06e+03   57.026   0.1
+  UUT1 (qid_locator)                     22.612    7.387 3.83e+03   33.828   0.1
+  UUT0 (qid_decoder)                     12.446    5.858  302.683   18.606   0.0
+1

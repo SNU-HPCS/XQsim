@@ -1,0 +1,68 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PDU
+Version: P-2019.03
+Date   : Wed May 17 05:58:11 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: lqlist_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pchop_list1_reg[50]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  lqlist_reg_reg[2]/CK (DFF_X1)                           0.00       0.00 r
+  lqlist_reg_reg[2]/Q (DFF_X1) <-                         0.09       0.09 f
+  UUT1/lqlist_reg[2] (pdu_lqindexer) <-                   0.00       0.09 f
+  UUT1/U11/ZN (NOR2_X4)                                   0.03 *     0.12 r
+  UUT1/U7/ZN (NAND2_X2)                                   0.02 *     0.14 f
+  UUT1/U15/ZN (NOR2_X4)                                   0.04 *     0.18 r
+  UUT1/lqidx[2] (pdu_lqindexer) <-                        0.00       0.18 r
+  UUT2/lqidx[2] (pdu_pchmaptbl) <-                        0.00       0.18 r
+  UUT2/U24/ZN (INV_X4)                                    0.02 *     0.20 f
+  UUT2/U10/ZN (NAND2_X4)                                  0.02 *     0.21 r
+  UUT2/U9/ZN (INV_X2)                                     0.01 *     0.22 f
+  UUT2/U4/ZN (NAND2_X2)                                   0.02 *     0.24 r
+  UUT2/U15/ZN (NAND2_X4)                                  0.03 *     0.27 f
+  UUT2/rd_pchidx1[1] (pdu_pchmaptbl) <-                   0.00       0.27 f
+  UUT3/rd_pchidx1[1] (pdu_decoder) <-                     0.00       0.27 f
+  UUT3/U154/ZN (OAI22_X4)                                 0.05 *     0.32 r
+  UUT3/U191/ZN (AND2_X4)                                  0.05 *     0.37 r
+  UUT3/pch_list_curr[12] (pdu_decoder) <-                 0.00       0.37 r
+  U1641/B1 (AOI21_X4) <-                                  0.00 *     0.37 r
+  U1641/ZN (AOI21_X4) <-                                  0.02       0.39 f
+  U1650/A1 (NOR2_X1) <-                                   0.00 *     0.39 f
+  U1650/ZN (NOR2_X1) <-                                   0.03       0.43 r
+  U2155/B2 (OAI21_X1) <-                                  0.00 *     0.43 r
+  U2155/ZN (OAI21_X1) <-                                  0.02       0.45 f
+  pchop_list1_reg[50]/D (DFF_X1)                          0.00 *     0.45 f
+  data arrival time                                                  0.45
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  pchop_list1_reg[50]/CK (DFF_X1)                         0.00       0.40 r
+  library setup time                                     -0.04       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+1

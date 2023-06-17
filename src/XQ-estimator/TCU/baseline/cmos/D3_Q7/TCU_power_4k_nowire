@@ -1,0 +1,1001 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : TCU
+Version: P-2019.03
+Date   : Mon May 29 08:23:11 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+TCU                                    6.74e+03 4.84e+04 6.50e+05 5.58e+04 100.0
+  gen_cwdbuf[479].UUT3_I (buffer_ADDR_BW1_DATA_BW4_0)
+                                          8.459   97.512 1.25e+03  107.221   0.2
+  gen_cwdbuf[478].UUT3_I (buffer_ADDR_BW1_DATA_BW4_1)
+                                          8.414   97.146 1.25e+03  106.812   0.2
+  gen_cwdbuf[477].UUT3_I (buffer_ADDR_BW1_DATA_BW4_2)
+                                          8.406   97.544 1.25e+03  107.202   0.2
+  gen_cwdbuf[476].UUT3_I (buffer_ADDR_BW1_DATA_BW4_3)
+                                          8.500   97.750 1.27e+03  107.517   0.2
+  gen_cwdbuf[475].UUT3_I (buffer_ADDR_BW1_DATA_BW4_4)
+                                          8.423   98.429 1.28e+03  108.134   0.2
+  gen_cwdbuf[474].UUT3_I (buffer_ADDR_BW1_DATA_BW4_5)
+                                          8.408   97.547 1.25e+03  107.207   0.2
+  gen_cwdbuf[473].UUT3_I (buffer_ADDR_BW1_DATA_BW4_6)
+                                          8.346   97.346 1.25e+03  106.943   0.2
+  gen_cwdbuf[472].UUT3_I (buffer_ADDR_BW1_DATA_BW4_7)
+                                          8.426   97.472 1.25e+03  107.149   0.2
+  gen_cwdbuf[471].UUT3_I (buffer_ADDR_BW1_DATA_BW4_8)
+                                          8.424   97.891 1.25e+03  107.566   0.2
+  gen_cwdbuf[470].UUT3_I (buffer_ADDR_BW1_DATA_BW4_9)
+                                          8.374   97.422 1.25e+03  107.047   0.2
+  gen_cwdbuf[469].UUT3_I (buffer_ADDR_BW1_DATA_BW4_10)
+                                          8.366   97.379 1.25e+03  106.996   0.2
+  gen_cwdbuf[468].UUT3_I (buffer_ADDR_BW1_DATA_BW4_11)
+                                          8.366   97.339 1.25e+03  106.957   0.2
+  gen_cwdbuf[467].UUT3_I (buffer_ADDR_BW1_DATA_BW4_12)
+                                          8.496   97.621 1.25e+03  107.366   0.2
+  gen_cwdbuf[466].UUT3_I (buffer_ADDR_BW1_DATA_BW4_13)
+                                          9.154   98.176 1.28e+03  108.610   0.2
+  gen_cwdbuf[465].UUT3_I (buffer_ADDR_BW1_DATA_BW4_14)
+                                          8.594   98.206 1.32e+03  108.121   0.2
+  gen_cwdbuf[464].UUT3_I (buffer_ADDR_BW1_DATA_BW4_15)
+                                          9.917  101.352 1.47e+03  112.742   0.2
+  gen_cwdbuf[463].UUT3_I (buffer_ADDR_BW1_DATA_BW4_16)
+                                          8.830   98.361 1.32e+03  108.512   0.2
+  gen_cwdbuf[462].UUT3_I (buffer_ADDR_BW1_DATA_BW4_17)
+                                          9.528   99.724 1.38e+03  110.636   0.2
+  gen_cwdbuf[461].UUT3_I (buffer_ADDR_BW1_DATA_BW4_18)
+                                          8.756   98.428 1.36e+03  108.539   0.2
+  gen_cwdbuf[460].UUT3_I (buffer_ADDR_BW1_DATA_BW4_19)
+                                          8.815   97.951 1.31e+03  108.072   0.2
+  gen_cwdbuf[459].UUT3_I (buffer_ADDR_BW1_DATA_BW4_20)
+                                          8.832   97.330 1.27e+03  107.427   0.2
+  gen_cwdbuf[458].UUT3_I (buffer_ADDR_BW1_DATA_BW4_21)
+                                          8.821   99.534 1.33e+03  109.687   0.2
+  gen_cwdbuf[457].UUT3_I (buffer_ADDR_BW1_DATA_BW4_22)
+                                          8.622   99.342 1.33e+03  109.296   0.2
+  gen_cwdbuf[456].UUT3_I (buffer_ADDR_BW1_DATA_BW4_23)
+                                          8.831   99.172 1.33e+03  109.335   0.2
+  gen_cwdbuf[455].UUT3_I (buffer_ADDR_BW1_DATA_BW4_24)
+                                          8.764  100.203 1.33e+03  110.298   0.2
+  gen_cwdbuf[454].UUT3_I (buffer_ADDR_BW1_DATA_BW4_25)
+                                          9.084   98.476 1.29e+03  108.846   0.2
+  gen_cwdbuf[453].UUT3_I (buffer_ADDR_BW1_DATA_BW4_26)
+                                          8.683   98.241 1.29e+03  108.211   0.2
+  gen_cwdbuf[452].UUT3_I (buffer_ADDR_BW1_DATA_BW4_27)
+                                          8.809   98.196 1.29e+03  108.293   0.2
+  gen_cwdbuf[451].UUT3_I (buffer_ADDR_BW1_DATA_BW4_28)
+                                          8.877   98.207 1.29e+03  108.370   0.2
+  gen_cwdbuf[450].UUT3_I (buffer_ADDR_BW1_DATA_BW4_29)
+                                          8.860   97.973 1.29e+03  108.119   0.2
+  gen_cwdbuf[449].UUT3_I (buffer_ADDR_BW1_DATA_BW4_30)
+                                          8.878   98.081 1.29e+03  108.246   0.2
+  gen_cwdbuf[448].UUT3_I (buffer_ADDR_BW1_DATA_BW4_31)
+                                          8.832   97.597 1.29e+03  107.715   0.2
+  gen_cwdbuf[447].UUT3_I (buffer_ADDR_BW1_DATA_BW4_32)
+                                          8.855   98.282 1.29e+03  108.423   0.2
+  gen_cwdbuf[446].UUT3_I (buffer_ADDR_BW1_DATA_BW4_33)
+                                          8.947   97.728 1.29e+03  107.962   0.2
+  gen_cwdbuf[445].UUT3_I (buffer_ADDR_BW1_DATA_BW4_34)
+                                          8.754   98.020 1.29e+03  108.062   0.2
+  gen_cwdbuf[444].UUT3_I (buffer_ADDR_BW1_DATA_BW4_35)
+                                          9.119   97.882 1.30e+03  108.300   0.2
+  gen_cwdbuf[443].UUT3_I (buffer_ADDR_BW1_DATA_BW4_36)
+                                          8.784   97.902 1.29e+03  107.973   0.2
+  gen_cwdbuf[442].UUT3_I (buffer_ADDR_BW1_DATA_BW4_37)
+                                          8.991   98.039 1.30e+03  108.329   0.2
+  gen_cwdbuf[441].UUT3_I (buffer_ADDR_BW1_DATA_BW4_38)
+                                          8.524   99.566 1.31e+03  109.400   0.2
+  gen_cwdbuf[440].UUT3_I (buffer_ADDR_BW1_DATA_BW4_39)
+                                          8.938   98.753 1.30e+03  108.995   0.2
+  gen_cwdbuf[439].UUT3_I (buffer_ADDR_BW1_DATA_BW4_40)
+                                          9.338   98.934 1.32e+03  109.590   0.2
+  gen_cwdbuf[438].UUT3_I (buffer_ADDR_BW1_DATA_BW4_41)
+                                          9.537   98.857 1.34e+03  109.730   0.2
+  gen_cwdbuf[437].UUT3_I (buffer_ADDR_BW1_DATA_BW4_42)
+                                          9.289   98.865 1.32e+03  109.472   0.2
+  gen_cwdbuf[436].UUT3_I (buffer_ADDR_BW1_DATA_BW4_43)
+                                          9.155   98.538 1.30e+03  108.996   0.2
+  gen_cwdbuf[435].UUT3_I (buffer_ADDR_BW1_DATA_BW4_44)
+                                          8.975   98.092 1.30e+03  108.364   0.2
+  gen_cwdbuf[434].UUT3_I (buffer_ADDR_BW1_DATA_BW4_45)
+                                          8.839   98.173 1.27e+03  108.286   0.2
+  gen_cwdbuf[433].UUT3_I (buffer_ADDR_BW1_DATA_BW4_46)
+                                          9.330   98.855 1.32e+03  109.503   0.2
+  gen_cwdbuf[432].UUT3_I (buffer_ADDR_BW1_DATA_BW4_47)
+                                          9.043   98.363 1.30e+03  108.708   0.2
+  gen_cwdbuf[431].UUT3_I (buffer_ADDR_BW1_DATA_BW4_48)
+                                          9.852   98.790 1.32e+03  109.961   0.2
+  gen_cwdbuf[430].UUT3_I (buffer_ADDR_BW1_DATA_BW4_49)
+                                          9.920   98.283 1.31e+03  109.515   0.2
+  gen_cwdbuf[429].UUT3_I (buffer_ADDR_BW1_DATA_BW4_50)
+                                          9.581   98.563 1.30e+03  109.447   0.2
+  gen_cwdbuf[428].UUT3_I (buffer_ADDR_BW1_DATA_BW4_51)
+                                          9.030   97.566 1.25e+03  107.848   0.2
+  gen_cwdbuf[427].UUT3_I (buffer_ADDR_BW1_DATA_BW4_52)
+                                         10.317   98.880 1.33e+03  110.531   0.2
+  gen_cwdbuf[426].UUT3_I (buffer_ADDR_BW1_DATA_BW4_53)
+                                         10.352   98.871 1.36e+03  110.578   0.2
+  gen_cwdbuf[425].UUT3_I (buffer_ADDR_BW1_DATA_BW4_54)
+                                         10.310   98.383 1.33e+03  110.024   0.2
+  gen_cwdbuf[424].UUT3_I (buffer_ADDR_BW1_DATA_BW4_55)
+                                         10.223   98.493 1.33e+03  110.047   0.2
+  gen_cwdbuf[423].UUT3_I (buffer_ADDR_BW1_DATA_BW4_56)
+                                          9.787   98.267 1.32e+03  109.371   0.2
+  gen_cwdbuf[422].UUT3_I (buffer_ADDR_BW1_DATA_BW4_57)
+                                          9.004   98.195 1.29e+03  108.484   0.2
+  gen_cwdbuf[421].UUT3_I (buffer_ADDR_BW1_DATA_BW4_58)
+                                          9.282   98.600 1.32e+03  109.200   0.2
+  gen_cwdbuf[420].UUT3_I (buffer_ADDR_BW1_DATA_BW4_59)
+                                         10.452   98.854 1.36e+03  110.663   0.2
+  gen_cwdbuf[419].UUT3_I (buffer_ADDR_BW1_DATA_BW4_60)
+                                          9.002   98.307 1.29e+03  108.596   0.2
+  gen_cwdbuf[418].UUT3_I (buffer_ADDR_BW1_DATA_BW4_61)
+                                          9.990   98.854 1.33e+03  110.177   0.2
+  gen_cwdbuf[417].UUT3_I (buffer_ADDR_BW1_DATA_BW4_62)
+                                          9.003   98.084 1.29e+03  108.375   0.2
+  gen_cwdbuf[416].UUT3_I (buffer_ADDR_BW1_DATA_BW4_63)
+                                         10.208   98.976 1.33e+03  110.516   0.2
+  gen_cwdbuf[415].UUT3_I (buffer_ADDR_BW1_DATA_BW4_64)
+                                          9.469   98.519 1.32e+03  109.305   0.2
+  gen_cwdbuf[414].UUT3_I (buffer_ADDR_BW1_DATA_BW4_65)
+                                          9.794   98.512 1.33e+03  109.637   0.2
+  gen_cwdbuf[413].UUT3_I (buffer_ADDR_BW1_DATA_BW4_66)
+                                         10.004   98.677 1.33e+03  110.014   0.2
+  gen_cwdbuf[412].UUT3_I (buffer_ADDR_BW1_DATA_BW4_67)
+                                          9.072   98.119 1.29e+03  108.478   0.2
+  gen_cwdbuf[411].UUT3_I (buffer_ADDR_BW1_DATA_BW4_68)
+                                          9.510   99.293 1.33e+03  110.137   0.2
+  gen_cwdbuf[410].UUT3_I (buffer_ADDR_BW1_DATA_BW4_69)
+                                          9.207   98.497 1.30e+03  109.008   0.2
+  gen_cwdbuf[409].UUT3_I (buffer_ADDR_BW1_DATA_BW4_70)
+                                          9.102   98.002 1.29e+03  108.392   0.2
+  gen_cwdbuf[408].UUT3_I (buffer_ADDR_BW1_DATA_BW4_71)
+                                          9.122   97.761 1.29e+03  108.169   0.2
+  gen_cwdbuf[407].UUT3_I (buffer_ADDR_BW1_DATA_BW4_72)
+                                          9.637   98.472 1.33e+03  109.441   0.2
+  gen_cwdbuf[406].UUT3_I (buffer_ADDR_BW1_DATA_BW4_73)
+                                          9.047   98.434 1.29e+03  108.769   0.2
+  gen_cwdbuf[405].UUT3_I (buffer_ADDR_BW1_DATA_BW4_74)
+                                          9.339   98.954 1.32e+03  109.611   0.2
+  gen_cwdbuf[404].UUT3_I (buffer_ADDR_BW1_DATA_BW4_75)
+                                          9.313   98.356 1.29e+03  108.956   0.2
+  gen_cwdbuf[403].UUT3_I (buffer_ADDR_BW1_DATA_BW4_76)
+                                          9.244   97.953 1.29e+03  108.483   0.2
+  gen_cwdbuf[402].UUT3_I (buffer_ADDR_BW1_DATA_BW4_77)
+                                         11.266  100.105 1.38e+03  112.751   0.2
+  gen_cwdbuf[401].UUT3_I (buffer_ADDR_BW1_DATA_BW4_78)
+                                          9.169   97.829 1.29e+03  108.284   0.2
+  gen_cwdbuf[400].UUT3_I (buffer_ADDR_BW1_DATA_BW4_79)
+                                          9.171   97.976 1.29e+03  108.434   0.2
+  gen_cwdbuf[399].UUT3_I (buffer_ADDR_BW1_DATA_BW4_80)
+                                         10.575   98.594 1.35e+03  110.516   0.2
+  gen_cwdbuf[398].UUT3_I (buffer_ADDR_BW1_DATA_BW4_81)
+                                          9.072   97.674 1.29e+03  108.034   0.2
+  gen_cwdbuf[397].UUT3_I (buffer_ADDR_BW1_DATA_BW4_82)
+                                          9.670   98.431 1.32e+03  109.419   0.2
+  gen_cwdbuf[396].UUT3_I (buffer_ADDR_BW1_DATA_BW4_83)
+                                          9.084   97.808 1.29e+03  108.179   0.2
+  gen_cwdbuf[395].UUT3_I (buffer_ADDR_BW1_DATA_BW4_84)
+                                          9.833   98.468 1.33e+03  109.632   0.2
+  gen_cwdbuf[394].UUT3_I (buffer_ADDR_BW1_DATA_BW4_85)
+                                         10.113   99.185 1.36e+03  110.655   0.2
+  gen_cwdbuf[393].UUT3_I (buffer_ADDR_BW1_DATA_BW4_86)
+                                          9.991   98.703 1.33e+03  110.027   0.2
+  gen_cwdbuf[392].UUT3_I (buffer_ADDR_BW1_DATA_BW4_87)
+                                         10.300   98.494 1.33e+03  110.127   0.2
+  gen_cwdbuf[391].UUT3_I (buffer_ADDR_BW1_DATA_BW4_88)
+                                          9.998   98.980 1.33e+03  110.311   0.2
+  gen_cwdbuf[390].UUT3_I (buffer_ADDR_BW1_DATA_BW4_89)
+                                          9.933   98.519 1.33e+03  109.785   0.2
+  gen_cwdbuf[389].UUT3_I (buffer_ADDR_BW1_DATA_BW4_90)
+                                          9.168   97.410 1.27e+03  107.845   0.2
+  gen_cwdbuf[388].UUT3_I (buffer_ADDR_BW1_DATA_BW4_91)
+                                          9.699   98.182 1.29e+03  109.168   0.2
+  gen_cwdbuf[387].UUT3_I (buffer_ADDR_BW1_DATA_BW4_92)
+                                          9.353   98.362 1.29e+03  109.001   0.2
+  gen_cwdbuf[386].UUT3_I (buffer_ADDR_BW1_DATA_BW4_93)
+                                          9.397   98.449 1.29e+03  109.133   0.2
+  gen_cwdbuf[385].UUT3_I (buffer_ADDR_BW1_DATA_BW4_94)
+                                          9.479   98.103 1.29e+03  108.870   0.2
+  gen_cwdbuf[384].UUT3_I (buffer_ADDR_BW1_DATA_BW4_95)
+                                          9.815   98.880 1.32e+03  110.012   0.2
+  gen_cwdbuf[383].UUT3_I (buffer_ADDR_BW1_DATA_BW4_96)
+                                          9.519   98.380 1.29e+03  109.187   0.2
+  gen_cwdbuf[382].UUT3_I (buffer_ADDR_BW1_DATA_BW4_97)
+                                          9.460   98.248 1.29e+03  108.994   0.2
+  gen_cwdbuf[381].UUT3_I (buffer_ADDR_BW1_DATA_BW4_98)
+                                          9.599   98.122 1.29e+03  109.009   0.2
+  gen_cwdbuf[380].UUT3_I (buffer_ADDR_BW1_DATA_BW4_99)
+                                          9.736   97.518 1.29e+03  108.542   0.2
+  gen_cwdbuf[379].UUT3_I (buffer_ADDR_BW1_DATA_BW4_100)
+                                          9.671   98.073 1.29e+03  109.031   0.2
+  gen_cwdbuf[378].UUT3_I (buffer_ADDR_BW1_DATA_BW4_101)
+                                          9.634   98.376 1.29e+03  109.298   0.2
+  gen_cwdbuf[377].UUT3_I (buffer_ADDR_BW1_DATA_BW4_102)
+                                          9.615   98.629 1.29e+03  109.530   0.2
+  gen_cwdbuf[376].UUT3_I (buffer_ADDR_BW1_DATA_BW4_103)
+                                         10.271   98.644 1.32e+03  110.234   0.2
+  gen_cwdbuf[375].UUT3_I (buffer_ADDR_BW1_DATA_BW4_104)
+                                          9.357   98.699 1.32e+03  109.373   0.2
+  gen_cwdbuf[374].UUT3_I (buffer_ADDR_BW1_DATA_BW4_105)
+                                          9.860   98.331 1.30e+03  109.494   0.2
+  gen_cwdbuf[373].UUT3_I (buffer_ADDR_BW1_DATA_BW4_106)
+                                          9.840   99.090 1.32e+03  110.248   0.2
+  gen_cwdbuf[372].UUT3_I (buffer_ADDR_BW1_DATA_BW4_107)
+                                          9.401   97.804 1.25e+03  108.457   0.2
+  gen_cwdbuf[371].UUT3_I (buffer_ADDR_BW1_DATA_BW4_108)
+                                          9.644   97.258 1.25e+03  108.152   0.2
+  gen_cwdbuf[370].UUT3_I (buffer_ADDR_BW1_DATA_BW4_109)
+                                          9.343   98.257 1.27e+03  108.873   0.2
+  gen_cwdbuf[369].UUT3_I (buffer_ADDR_BW1_DATA_BW4_110)
+                                         10.165   98.958 1.32e+03  110.442   0.2
+  gen_cwdbuf[368].UUT3_I (buffer_ADDR_BW1_DATA_BW4_111)
+                                          8.514   97.852 1.25e+03  107.618   0.2
+  gen_cwdbuf[367].UUT3_I (buffer_ADDR_BW1_DATA_BW4_112)
+                                          9.547   98.734 1.32e+03  109.600   0.2
+  gen_cwdbuf[366].UUT3_I (buffer_ADDR_BW1_DATA_BW4_113)
+                                          8.754   97.652 1.27e+03  107.672   0.2
+  gen_cwdbuf[365].UUT3_I (buffer_ADDR_BW1_DATA_BW4_114)
+                                          8.479   97.352 1.25e+03  107.081   0.2
+  gen_cwdbuf[364].UUT3_I (buffer_ADDR_BW1_DATA_BW4_115)
+                                          8.379   97.440 1.25e+03  107.070   0.2
+  gen_cwdbuf[363].UUT3_I (buffer_ADDR_BW1_DATA_BW4_116)
+                                          8.399   97.690 1.25e+03  107.341   0.2
+  gen_cwdbuf[362].UUT3_I (buffer_ADDR_BW1_DATA_BW4_117)
+                                          8.429   96.853 1.25e+03  106.532   0.2
+  gen_cwdbuf[361].UUT3_I (buffer_ADDR_BW1_DATA_BW4_118)
+                                          8.427   97.161 1.25e+03  106.839   0.2
+  gen_cwdbuf[360].UUT3_I (buffer_ADDR_BW1_DATA_BW4_119)
+                                          8.438   97.377 1.25e+03  107.067   0.2
+  gen_cwdbuf[359].UUT3_I (buffer_ADDR_BW1_DATA_BW4_120)
+                                          8.365   97.647 1.25e+03  107.264   0.2
+  gen_cwdbuf[358].UUT3_I (buffer_ADDR_BW1_DATA_BW4_121)
+                                          8.640   97.911 1.27e+03  107.818   0.2
+  gen_cwdbuf[357].UUT3_I (buffer_ADDR_BW1_DATA_BW4_122)
+                                          8.455   97.712 1.25e+03  107.417   0.2
+  gen_cwdbuf[356].UUT3_I (buffer_ADDR_BW1_DATA_BW4_123)
+                                          8.687   97.321 1.25e+03  107.259   0.2
+  gen_cwdbuf[355].UUT3_I (buffer_ADDR_BW1_DATA_BW4_124)
+                                          8.387   97.754 1.25e+03  107.393   0.2
+  gen_cwdbuf[354].UUT3_I (buffer_ADDR_BW1_DATA_BW4_125)
+                                          8.361   97.643 1.25e+03  107.254   0.2
+  gen_cwdbuf[353].UUT3_I (buffer_ADDR_BW1_DATA_BW4_126)
+                                          8.525   96.965 1.25e+03  106.742   0.2
+  gen_cwdbuf[352].UUT3_I (buffer_ADDR_BW1_DATA_BW4_127)
+                                          9.616   97.837 1.31e+03  108.765   0.2
+  gen_cwdbuf[351].UUT3_I (buffer_ADDR_BW1_DATA_BW4_128)
+                                          9.204   97.751 1.30e+03  108.252   0.2
+  gen_cwdbuf[350].UUT3_I (buffer_ADDR_BW1_DATA_BW4_129)
+                                          9.254   97.741 1.27e+03  108.268   0.2
+  gen_cwdbuf[349].UUT3_I (buffer_ADDR_BW1_DATA_BW4_130)
+                                          9.785   99.038 1.31e+03  110.139   0.2
+  gen_cwdbuf[348].UUT3_I (buffer_ADDR_BW1_DATA_BW4_131)
+                                          9.989   99.621 1.33e+03  110.940   0.2
+  gen_cwdbuf[347].UUT3_I (buffer_ADDR_BW1_DATA_BW4_132)
+                                          9.721   99.134 1.32e+03  110.170   0.2
+  gen_cwdbuf[346].UUT3_I (buffer_ADDR_BW1_DATA_BW4_133)
+                                          9.186   98.201 1.27e+03  108.661   0.2
+  gen_cwdbuf[345].UUT3_I (buffer_ADDR_BW1_DATA_BW4_134)
+                                          9.083   98.048 1.27e+03  108.403   0.2
+  gen_cwdbuf[344].UUT3_I (buffer_ADDR_BW1_DATA_BW4_135)
+                                          9.732   99.060 1.31e+03  110.107   0.2
+  gen_cwdbuf[343].UUT3_I (buffer_ADDR_BW1_DATA_BW4_136)
+                                          8.429   97.446 1.25e+03  107.126   0.2
+  gen_cwdbuf[342].UUT3_I (buffer_ADDR_BW1_DATA_BW4_137)
+                                          8.479   97.418 1.25e+03  107.147   0.2
+  gen_cwdbuf[341].UUT3_I (buffer_ADDR_BW1_DATA_BW4_138)
+                                          9.574   97.412 1.25e+03  108.238   0.2
+  gen_cwdbuf[340].UUT3_I (buffer_ADDR_BW1_DATA_BW4_139)
+                                          9.425   97.566 1.27e+03  108.256   0.2
+  gen_cwdbuf[339].UUT3_I (buffer_ADDR_BW1_DATA_BW4_140)
+                                          8.554   97.352 1.25e+03  107.157   0.2
+  gen_cwdbuf[338].UUT3_I (buffer_ADDR_BW1_DATA_BW4_141)
+                                          8.457   97.112 1.25e+03  106.821   0.2
+  gen_cwdbuf[337].UUT3_I (buffer_ADDR_BW1_DATA_BW4_142)
+                                         10.490   99.066 1.31e+03  110.871   0.2
+  gen_cwdbuf[336].UUT3_I (buffer_ADDR_BW1_DATA_BW4_143)
+                                         10.877  100.729 1.37e+03  112.971   0.2
+  gen_cwdbuf[335].UUT3_I (buffer_ADDR_BW1_DATA_BW4_144)
+                                          9.614   98.558 1.30e+03  109.475   0.2
+  gen_cwdbuf[334].UUT3_I (buffer_ADDR_BW1_DATA_BW4_145)
+                                         10.254   99.303 1.33e+03  110.890   0.2
+  gen_cwdbuf[333].UUT3_I (buffer_ADDR_BW1_DATA_BW4_146)
+                                          9.433   98.318 1.27e+03  109.023   0.2
+  gen_cwdbuf[332].UUT3_I (buffer_ADDR_BW1_DATA_BW4_147)
+                                          9.200   98.456 1.27e+03  108.930   0.2
+  gen_cwdbuf[331].UUT3_I (buffer_ADDR_BW1_DATA_BW4_148)
+                                          9.452   98.811 1.29e+03  109.550   0.2
+  gen_cwdbuf[330].UUT3_I (buffer_ADDR_BW1_DATA_BW4_149)
+                                         10.287   98.792 1.31e+03  110.393   0.2
+  gen_cwdbuf[329].UUT3_I (buffer_ADDR_BW1_DATA_BW4_150)
+                                         10.598   98.740 1.31e+03  110.653   0.2
+  gen_cwdbuf[328].UUT3_I (buffer_ADDR_BW1_DATA_BW4_151)
+                                         10.357   99.154 1.31e+03  110.824   0.2
+  gen_cwdbuf[327].UUT3_I (buffer_ADDR_BW1_DATA_BW4_152)
+                                          9.282   98.021 1.27e+03  108.575   0.2
+  gen_cwdbuf[326].UUT3_I (buffer_ADDR_BW1_DATA_BW4_153)
+                                          9.441   98.277 1.27e+03  108.990   0.2
+  gen_cwdbuf[325].UUT3_I (buffer_ADDR_BW1_DATA_BW4_154)
+                                         10.103   99.864 1.33e+03  111.296   0.2
+  gen_cwdbuf[324].UUT3_I (buffer_ADDR_BW1_DATA_BW4_155)
+                                         10.623   99.021 1.31e+03  110.959   0.2
+  gen_cwdbuf[323].UUT3_I (buffer_ADDR_BW1_DATA_BW4_156)
+                                         10.339   99.288 1.31e+03  110.942   0.2
+  gen_cwdbuf[322].UUT3_I (buffer_ADDR_BW1_DATA_BW4_157)
+                                         10.746   99.876 1.36e+03  111.982   0.2
+  gen_cwdbuf[321].UUT3_I (buffer_ADDR_BW1_DATA_BW4_158)
+                                         10.443   99.650 1.33e+03  111.424   0.2
+  gen_cwdbuf[320].UUT3_I (buffer_ADDR_BW1_DATA_BW4_159)
+                                         10.197   99.675 1.32e+03  111.187   0.2
+  gen_cwdbuf[319].UUT3_I (buffer_ADDR_BW1_DATA_BW4_160)
+                                         10.618   98.953 1.31e+03  110.886   0.2
+  gen_cwdbuf[318].UUT3_I (buffer_ADDR_BW1_DATA_BW4_161)
+                                         10.504   99.636 1.31e+03  111.455   0.2
+  gen_cwdbuf[317].UUT3_I (buffer_ADDR_BW1_DATA_BW4_162)
+                                         10.284   99.057 1.31e+03  110.655   0.2
+  gen_cwdbuf[316].UUT3_I (buffer_ADDR_BW1_DATA_BW4_163)
+                                         10.314   99.120 1.31e+03  110.749   0.2
+  gen_cwdbuf[315].UUT3_I (buffer_ADDR_BW1_DATA_BW4_164)
+                                         10.259   99.274 1.31e+03  110.847   0.2
+  gen_cwdbuf[314].UUT3_I (buffer_ADDR_BW1_DATA_BW4_165)
+                                         10.464   99.465 1.32e+03  111.244   0.2
+  gen_cwdbuf[313].UUT3_I (buffer_ADDR_BW1_DATA_BW4_166)
+                                         10.653   98.748 1.32e+03  110.716   0.2
+  gen_cwdbuf[312].UUT3_I (buffer_ADDR_BW1_DATA_BW4_167)
+                                         10.359   98.897 1.31e+03  110.571   0.2
+  gen_cwdbuf[311].UUT3_I (buffer_ADDR_BW1_DATA_BW4_168)
+                                         10.420   99.217 1.33e+03  110.966   0.2
+  gen_cwdbuf[310].UUT3_I (buffer_ADDR_BW1_DATA_BW4_169)
+                                         10.160   98.860 1.31e+03  110.334   0.2
+  gen_cwdbuf[309].UUT3_I (buffer_ADDR_BW1_DATA_BW4_170)
+                                          9.979   99.100 1.32e+03  110.394   0.2
+  gen_cwdbuf[308].UUT3_I (buffer_ADDR_BW1_DATA_BW4_171)
+                                         10.062   98.410 1.31e+03  109.786   0.2
+  gen_cwdbuf[307].UUT3_I (buffer_ADDR_BW1_DATA_BW4_172)
+                                          9.940   98.785 1.31e+03  110.040   0.2
+  gen_cwdbuf[306].UUT3_I (buffer_ADDR_BW1_DATA_BW4_173)
+                                         10.329   99.227 1.33e+03  110.887   0.2
+  gen_cwdbuf[305].UUT3_I (buffer_ADDR_BW1_DATA_BW4_174)
+                                          9.030   97.905 1.27e+03  108.208   0.2
+  gen_cwdbuf[304].UUT3_I (buffer_ADDR_BW1_DATA_BW4_175)
+                                         11.021   98.620 1.32e+03  110.956   0.2
+  gen_cwdbuf[303].UUT3_I (buffer_ADDR_BW1_DATA_BW4_176)
+                                         10.714   98.668 1.32e+03  110.697   0.2
+  gen_cwdbuf[302].UUT3_I (buffer_ADDR_BW1_DATA_BW4_177)
+                                         10.079   98.216 1.27e+03  109.568   0.2
+  gen_cwdbuf[301].UUT3_I (buffer_ADDR_BW1_DATA_BW4_178)
+                                         11.121   98.650 1.31e+03  111.086   0.2
+  gen_cwdbuf[300].UUT3_I (buffer_ADDR_BW1_DATA_BW4_179)
+                                         10.876   99.088 1.31e+03  111.278   0.2
+  gen_cwdbuf[299].UUT3_I (buffer_ADDR_BW1_DATA_BW4_180)
+                                         10.602   99.424 1.32e+03  111.342   0.2
+  gen_cwdbuf[298].UUT3_I (buffer_ADDR_BW1_DATA_BW4_181)
+                                          9.392   98.290 1.27e+03  108.956   0.2
+  gen_cwdbuf[297].UUT3_I (buffer_ADDR_BW1_DATA_BW4_182)
+                                          9.328   98.275 1.27e+03  108.875   0.2
+  gen_cwdbuf[296].UUT3_I (buffer_ADDR_BW1_DATA_BW4_183)
+                                          8.660   98.651 1.27e+03  108.584   0.2
+  gen_cwdbuf[295].UUT3_I (buffer_ADDR_BW1_DATA_BW4_184)
+                                          9.542   99.404 1.31e+03  110.259   0.2
+  gen_cwdbuf[294].UUT3_I (buffer_ADDR_BW1_DATA_BW4_185)
+                                          9.985   99.462 1.31e+03  110.762   0.2
+  gen_cwdbuf[293].UUT3_I (buffer_ADDR_BW1_DATA_BW4_186)
+                                          9.628   98.837 1.31e+03  109.779   0.2
+  gen_cwdbuf[292].UUT3_I (buffer_ADDR_BW1_DATA_BW4_187)
+                                          9.927   98.928 1.33e+03  110.185   0.2
+  gen_cwdbuf[291].UUT3_I (buffer_ADDR_BW1_DATA_BW4_188)
+                                          9.446   98.785 1.31e+03  109.545   0.2
+  gen_cwdbuf[290].UUT3_I (buffer_ADDR_BW1_DATA_BW4_189)
+                                          9.144   97.932 1.27e+03  108.349   0.2
+  gen_cwdbuf[289].UUT3_I (buffer_ADDR_BW1_DATA_BW4_190)
+                                          9.177   97.594 1.27e+03  108.044   0.2
+  gen_cwdbuf[288].UUT3_I (buffer_ADDR_BW1_DATA_BW4_191)
+                                         10.696  100.093 1.35e+03  112.136   0.2
+  gen_cwdbuf[287].UUT3_I (buffer_ADDR_BW1_DATA_BW4_192)
+                                         10.144   99.383 1.31e+03  110.842   0.2
+  gen_cwdbuf[286].UUT3_I (buffer_ADDR_BW1_DATA_BW4_193)
+                                          9.486   98.201 1.27e+03  108.959   0.2
+  gen_cwdbuf[285].UUT3_I (buffer_ADDR_BW1_DATA_BW4_194)
+                                          8.926   98.315 1.27e+03  108.514   0.2
+  gen_cwdbuf[284].UUT3_I (buffer_ADDR_BW1_DATA_BW4_195)
+                                          8.735   98.092 1.27e+03  108.099   0.2
+  gen_cwdbuf[283].UUT3_I (buffer_ADDR_BW1_DATA_BW4_196)
+                                          8.916   98.200 1.27e+03  108.389   0.2
+  gen_cwdbuf[282].UUT3_I (buffer_ADDR_BW1_DATA_BW4_197)
+                                          8.731   98.571 1.27e+03  108.576   0.2
+  gen_cwdbuf[281].UUT3_I (buffer_ADDR_BW1_DATA_BW4_198)
+                                          8.756   98.281 1.27e+03  108.310   0.2
+  gen_cwdbuf[280].UUT3_I (buffer_ADDR_BW1_DATA_BW4_199)
+                                          9.784   98.851 1.31e+03  109.950   0.2
+  gen_cwdbuf[279].UUT3_I (buffer_ADDR_BW1_DATA_BW4_200)
+                                          8.664   97.904 1.27e+03  107.841   0.2
+  gen_cwdbuf[278].UUT3_I (buffer_ADDR_BW1_DATA_BW4_201)
+                                          8.984   98.090 1.27e+03  108.346   0.2
+  gen_cwdbuf[277].UUT3_I (buffer_ADDR_BW1_DATA_BW4_202)
+                                          8.804   98.254 1.27e+03  108.331   0.2
+  gen_cwdbuf[276].UUT3_I (buffer_ADDR_BW1_DATA_BW4_203)
+                                          8.846   97.870 1.27e+03  107.987   0.2
+  gen_cwdbuf[275].UUT3_I (buffer_ADDR_BW1_DATA_BW4_204)
+                                          9.841   98.627 1.32e+03  109.784   0.2
+  gen_cwdbuf[274].UUT3_I (buffer_ADDR_BW1_DATA_BW4_205)
+                                          8.954   98.338 1.27e+03  108.565   0.2
+  gen_cwdbuf[273].UUT3_I (buffer_ADDR_BW1_DATA_BW4_206)
+                                          9.129   98.663 1.29e+03  109.081   0.2
+  gen_cwdbuf[272].UUT3_I (buffer_ADDR_BW1_DATA_BW4_207)
+                                          9.871   99.219 1.31e+03  110.405   0.2
+  gen_cwdbuf[271].UUT3_I (buffer_ADDR_BW1_DATA_BW4_208)
+                                          9.964   98.179 1.32e+03  109.458   0.2
+  gen_cwdbuf[270].UUT3_I (buffer_ADDR_BW1_DATA_BW4_209)
+                                         10.172   99.027 1.31e+03  110.513   0.2
+  gen_cwdbuf[269].UUT3_I (buffer_ADDR_BW1_DATA_BW4_210)
+                                          9.807   99.928 1.32e+03  111.051   0.2
+  gen_cwdbuf[268].UUT3_I (buffer_ADDR_BW1_DATA_BW4_211)
+                                          9.865   99.132 1.31e+03  110.311   0.2
+  gen_cwdbuf[267].UUT3_I (buffer_ADDR_BW1_DATA_BW4_212)
+                                          9.751   99.472 1.32e+03  110.538   0.2
+  gen_cwdbuf[266].UUT3_I (buffer_ADDR_BW1_DATA_BW4_213)
+                                          9.749   99.636 1.31e+03  110.699   0.2
+  gen_cwdbuf[265].UUT3_I (buffer_ADDR_BW1_DATA_BW4_214)
+                                          9.212   97.731 1.27e+03  108.216   0.2
+  gen_cwdbuf[264].UUT3_I (buffer_ADDR_BW1_DATA_BW4_215)
+                                          9.387   98.071 1.27e+03  108.732   0.2
+  gen_cwdbuf[263].UUT3_I (buffer_ADDR_BW1_DATA_BW4_216)
+                                         10.290   99.005 1.31e+03  110.609   0.2
+  gen_cwdbuf[262].UUT3_I (buffer_ADDR_BW1_DATA_BW4_217)
+                                         10.638   99.185 1.34e+03  111.167   0.2
+  gen_cwdbuf[261].UUT3_I (buffer_ADDR_BW1_DATA_BW4_218)
+                                         10.458   99.111 1.31e+03  110.884   0.2
+  gen_cwdbuf[260].UUT3_I (buffer_ADDR_BW1_DATA_BW4_219)
+                                         10.718  100.383 1.37e+03  112.466   0.2
+  gen_cwdbuf[259].UUT3_I (buffer_ADDR_BW1_DATA_BW4_220)
+                                          9.115   97.805 1.27e+03  108.192   0.2
+  gen_cwdbuf[258].UUT3_I (buffer_ADDR_BW1_DATA_BW4_221)
+                                          8.807   98.013 1.27e+03  108.093   0.2
+  gen_cwdbuf[257].UUT3_I (buffer_ADDR_BW1_DATA_BW4_222)
+                                          9.063   98.065 1.27e+03  108.400   0.2
+  gen_cwdbuf[256].UUT3_I (buffer_ADDR_BW1_DATA_BW4_223)
+                                          9.152   98.402 1.27e+03  108.826   0.2
+  gen_cwdbuf[255].UUT3_I (buffer_ADDR_BW1_DATA_BW4_224)
+                                          8.993   98.054 1.27e+03  108.321   0.2
+  gen_cwdbuf[254].UUT3_I (buffer_ADDR_BW1_DATA_BW4_225)
+                                         10.804   99.463 1.35e+03  111.616   0.2
+  gen_cwdbuf[253].UUT3_I (buffer_ADDR_BW1_DATA_BW4_226)
+                                          9.086   98.141 1.27e+03  108.500   0.2
+  gen_cwdbuf[252].UUT3_I (buffer_ADDR_BW1_DATA_BW4_227)
+                                          9.868   98.327 1.30e+03  109.498   0.2
+  gen_cwdbuf[251].UUT3_I (buffer_ADDR_BW1_DATA_BW4_228)
+                                         11.010  100.451 1.36e+03  112.826   0.2
+  gen_cwdbuf[250].UUT3_I (buffer_ADDR_BW1_DATA_BW4_229)
+                                         10.090   99.236 1.31e+03  110.640   0.2
+  gen_cwdbuf[249].UUT3_I (buffer_ADDR_BW1_DATA_BW4_230)
+                                          9.779   98.990 1.31e+03  110.083   0.2
+  gen_cwdbuf[248].UUT3_I (buffer_ADDR_BW1_DATA_BW4_231)
+                                          8.968   97.714 1.27e+03  107.953   0.2
+  gen_cwdbuf[247].UUT3_I (buffer_ADDR_BW1_DATA_BW4_232)
+                                          9.785   98.811 1.31e+03  109.911   0.2
+  gen_cwdbuf[246].UUT3_I (buffer_ADDR_BW1_DATA_BW4_233)
+                                         10.452   99.905 1.36e+03  111.719   0.2
+  gen_cwdbuf[245].UUT3_I (buffer_ADDR_BW1_DATA_BW4_234)
+                                          8.875   97.584 1.25e+03  107.710   0.2
+  gen_cwdbuf[244].UUT3_I (buffer_ADDR_BW1_DATA_BW4_235)
+                                          9.124   97.833 1.27e+03  108.230   0.2
+  gen_cwdbuf[243].UUT3_I (buffer_ADDR_BW1_DATA_BW4_236)
+                                          8.995   98.109 1.27e+03  108.376   0.2
+  gen_cwdbuf[242].UUT3_I (buffer_ADDR_BW1_DATA_BW4_237)
+                                          9.190   96.966 1.25e+03  107.407   0.2
+  gen_cwdbuf[241].UUT3_I (buffer_ADDR_BW1_DATA_BW4_238)
+                                          9.364   98.287 1.27e+03  108.925   0.2
+  gen_cwdbuf[240].UUT3_I (buffer_ADDR_BW1_DATA_BW4_239)
+                                          8.412   97.823 1.29e+03  107.521   0.2
+  gen_cwdbuf[239].UUT3_I (buffer_ADDR_BW1_DATA_BW4_240)
+                                          8.383   98.428 1.29e+03  108.097   0.2
+  gen_cwdbuf[238].UUT3_I (buffer_ADDR_BW1_DATA_BW4_241)
+                                          9.882   98.703 1.33e+03  109.914   0.2
+  gen_cwdbuf[237].UUT3_I (buffer_ADDR_BW1_DATA_BW4_242)
+                                         10.295   98.522 1.31e+03  110.132   0.2
+  gen_cwdbuf[236].UUT3_I (buffer_ADDR_BW1_DATA_BW4_243)
+                                         10.558   99.744 1.33e+03  111.633   0.2
+  gen_cwdbuf[235].UUT3_I (buffer_ADDR_BW1_DATA_BW4_244)
+                                          9.985   97.773 1.27e+03  109.030   0.2
+  gen_cwdbuf[234].UUT3_I (buffer_ADDR_BW1_DATA_BW4_245)
+                                         10.526   98.858 1.31e+03  110.698   0.2
+  gen_cwdbuf[233].UUT3_I (buffer_ADDR_BW1_DATA_BW4_246)
+                                          8.664   97.545 1.25e+03  107.459   0.2
+  gen_cwdbuf[232].UUT3_I (buffer_ADDR_BW1_DATA_BW4_247)
+                                          8.830   97.643 1.27e+03  107.744   0.2
+  gen_cwdbuf[231].UUT3_I (buffer_ADDR_BW1_DATA_BW4_248)
+                                          8.928   98.211 1.27e+03  108.412   0.2
+  gen_cwdbuf[230].UUT3_I (buffer_ADDR_BW1_DATA_BW4_249)
+                                          8.492   97.350 1.25e+03  107.093   0.2
+  gen_cwdbuf[229].UUT3_I (buffer_ADDR_BW1_DATA_BW4_250)
+                                          8.846   98.031 1.26e+03  108.133   0.2
+  gen_cwdbuf[228].UUT3_I (buffer_ADDR_BW1_DATA_BW4_251)
+                                          8.562   97.524 1.26e+03  107.341   0.2
+  gen_cwdbuf[227].UUT3_I (buffer_ADDR_BW1_DATA_BW4_252)
+                                          8.657   98.025 1.26e+03  107.937   0.2
+  gen_cwdbuf[226].UUT3_I (buffer_ADDR_BW1_DATA_BW4_253)
+                                          8.730   97.442 1.26e+03  107.429   0.2
+  gen_cwdbuf[225].UUT3_I (buffer_ADDR_BW1_DATA_BW4_254)
+                                          8.834   97.815 1.26e+03  107.905   0.2
+  gen_cwdbuf[224].UUT3_I (buffer_ADDR_BW1_DATA_BW4_255)
+                                          8.555   97.573 1.25e+03  107.379   0.2
+  gen_cwdbuf[223].UUT3_I (buffer_ADDR_BW1_DATA_BW4_256)
+                                          8.860   97.576 1.27e+03  107.703   0.2
+  gen_cwdbuf[222].UUT3_I (buffer_ADDR_BW1_DATA_BW4_257)
+                                          8.534   97.378 1.25e+03  107.162   0.2
+  gen_cwdbuf[221].UUT3_I (buffer_ADDR_BW1_DATA_BW4_258)
+                                          8.445   97.687 1.25e+03  107.384   0.2
+  gen_cwdbuf[220].UUT3_I (buffer_ADDR_BW1_DATA_BW4_259)
+                                          8.596   97.571 1.25e+03  107.419   0.2
+  gen_cwdbuf[219].UUT3_I (buffer_ADDR_BW1_DATA_BW4_260)
+                                          8.756   97.101 1.25e+03  107.108   0.2
+  gen_cwdbuf[218].UUT3_I (buffer_ADDR_BW1_DATA_BW4_261)
+                                          8.550   97.264 1.25e+03  107.065   0.2
+  gen_cwdbuf[217].UUT3_I (buffer_ADDR_BW1_DATA_BW4_262)
+                                          8.748   97.092 1.25e+03  107.090   0.2
+  gen_cwdbuf[216].UUT3_I (buffer_ADDR_BW1_DATA_BW4_263)
+                                          8.711   96.951 1.25e+03  106.912   0.2
+  gen_cwdbuf[215].UUT3_I (buffer_ADDR_BW1_DATA_BW4_264)
+                                          8.532   97.873 1.25e+03  107.655   0.2
+  gen_cwdbuf[214].UUT3_I (buffer_ADDR_BW1_DATA_BW4_265)
+                                          9.233   97.692 1.30e+03  108.221   0.2
+  gen_cwdbuf[213].UUT3_I (buffer_ADDR_BW1_DATA_BW4_266)
+                                          9.077   98.100 1.30e+03  108.474   0.2
+  gen_cwdbuf[212].UUT3_I (buffer_ADDR_BW1_DATA_BW4_267)
+                                          8.420   97.781 1.25e+03  107.453   0.2
+  gen_cwdbuf[211].UUT3_I (buffer_ADDR_BW1_DATA_BW4_268)
+                                          8.804   97.560 1.27e+03  107.630   0.2
+  gen_cwdbuf[210].UUT3_I (buffer_ADDR_BW1_DATA_BW4_269)
+                                         10.436   99.280 1.34e+03  111.058   0.2
+  gen_cwdbuf[209].UUT3_I (buffer_ADDR_BW1_DATA_BW4_270)
+                                          8.515   97.212 1.25e+03  106.978   0.2
+  gen_cwdbuf[208].UUT3_I (buffer_ADDR_BW1_DATA_BW4_271)
+                                          8.595   97.527 1.25e+03  107.372   0.2
+  gen_cwdbuf[207].UUT3_I (buffer_ADDR_BW1_DATA_BW4_272)
+                                          8.925   97.572 1.27e+03  107.764   0.2
+  gen_cwdbuf[206].UUT3_I (buffer_ADDR_BW1_DATA_BW4_273)
+                                          8.537   97.639 1.27e+03  107.442   0.2
+  gen_cwdbuf[205].UUT3_I (buffer_ADDR_BW1_DATA_BW4_274)
+                                          8.885   97.982 1.30e+03  108.164   0.2
+  gen_cwdbuf[204].UUT3_I (buffer_ADDR_BW1_DATA_BW4_275)
+                                          8.932   98.265 1.30e+03  108.493   0.2
+  gen_cwdbuf[203].UUT3_I (buffer_ADDR_BW1_DATA_BW4_276)
+                                          8.470   97.121 1.27e+03  106.856   0.2
+  gen_cwdbuf[202].UUT3_I (buffer_ADDR_BW1_DATA_BW4_277)
+                                          9.059   97.365 1.29e+03  107.718   0.2
+  gen_cwdbuf[201].UUT3_I (buffer_ADDR_BW1_DATA_BW4_278)
+                                          8.716   98.021 1.28e+03  108.019   0.2
+  gen_cwdbuf[200].UUT3_I (buffer_ADDR_BW1_DATA_BW4_279)
+                                          8.345   98.003 1.25e+03  107.599   0.2
+  gen_cwdbuf[199].UUT3_I (buffer_ADDR_BW1_DATA_BW4_280)
+                                          8.527   97.084 1.27e+03  106.877   0.2
+  gen_cwdbuf[198].UUT3_I (buffer_ADDR_BW1_DATA_BW4_281)
+                                          9.324   98.651 1.32e+03  109.293   0.2
+  gen_cwdbuf[197].UUT3_I (buffer_ADDR_BW1_DATA_BW4_282)
+                                          9.058   98.223 1.30e+03  108.578   0.2
+  gen_cwdbuf[196].UUT3_I (buffer_ADDR_BW1_DATA_BW4_283)
+                                          8.449   97.700 1.25e+03  107.400   0.2
+  gen_cwdbuf[195].UUT3_I (buffer_ADDR_BW1_DATA_BW4_284)
+                                          9.266   98.873 1.30e+03  109.442   0.2
+  gen_cwdbuf[194].UUT3_I (buffer_ADDR_BW1_DATA_BW4_285)
+                                          8.553   97.201 1.25e+03  107.006   0.2
+  gen_cwdbuf[193].UUT3_I (buffer_ADDR_BW1_DATA_BW4_286)
+                                          8.279   98.046 1.25e+03  107.577   0.2
+  gen_cwdbuf[192].UUT3_I (buffer_ADDR_BW1_DATA_BW4_287)
+                                          8.383   97.592 1.25e+03  107.226   0.2
+  gen_cwdbuf[191].UUT3_I (buffer_ADDR_BW1_DATA_BW4_288)
+                                          8.538   97.197 1.25e+03  106.987   0.2
+  gen_cwdbuf[190].UUT3_I (buffer_ADDR_BW1_DATA_BW4_289)
+                                         10.314   99.011 1.34e+03  110.666   0.2
+  gen_cwdbuf[189].UUT3_I (buffer_ADDR_BW1_DATA_BW4_290)
+                                          9.101   98.220 1.28e+03  108.600   0.2
+  gen_cwdbuf[188].UUT3_I (buffer_ADDR_BW1_DATA_BW4_291)
+                                          8.373   97.418 1.25e+03  107.042   0.2
+  gen_cwdbuf[187].UUT3_I (buffer_ADDR_BW1_DATA_BW4_292)
+                                          8.449   97.342 1.25e+03  107.043   0.2
+  gen_cwdbuf[186].UUT3_I (buffer_ADDR_BW1_DATA_BW4_293)
+                                          8.361   97.810 1.25e+03  107.423   0.2
+  gen_cwdbuf[185].UUT3_I (buffer_ADDR_BW1_DATA_BW4_294)
+                                          8.426   97.506 1.25e+03  107.182   0.2
+  gen_cwdbuf[184].UUT3_I (buffer_ADDR_BW1_DATA_BW4_295)
+                                          8.307   98.015 1.25e+03  107.573   0.2
+  gen_cwdbuf[183].UUT3_I (buffer_ADDR_BW1_DATA_BW4_296)
+                                          8.351   97.484 1.25e+03  107.087   0.2
+  gen_cwdbuf[182].UUT3_I (buffer_ADDR_BW1_DATA_BW4_297)
+                                          8.493   97.652 1.25e+03  107.396   0.2
+  gen_cwdbuf[181].UUT3_I (buffer_ADDR_BW1_DATA_BW4_298)
+                                          8.554   97.379 1.25e+03  107.184   0.2
+  gen_cwdbuf[180].UUT3_I (buffer_ADDR_BW1_DATA_BW4_299)
+                                          8.439   97.593 1.25e+03  107.283   0.2
+  gen_cwdbuf[179].UUT3_I (buffer_ADDR_BW1_DATA_BW4_300)
+                                          8.716   97.022 1.25e+03  106.991   0.2
+  gen_cwdbuf[178].UUT3_I (buffer_ADDR_BW1_DATA_BW4_301)
+                                          8.213   97.438 1.26e+03  106.913   0.2
+  gen_cwdbuf[177].UUT3_I (buffer_ADDR_BW1_DATA_BW4_302)
+                                          8.825   96.834 1.27e+03  106.926   0.2
+  gen_cwdbuf[176].UUT3_I (buffer_ADDR_BW1_DATA_BW4_303)
+                                          8.886   97.337 1.27e+03  107.491   0.2
+  gen_cwdbuf[175].UUT3_I (buffer_ADDR_BW1_DATA_BW4_304)
+                                          8.370   97.766 1.25e+03  107.386   0.2
+  gen_cwdbuf[174].UUT3_I (buffer_ADDR_BW1_DATA_BW4_305)
+                                          8.565   97.321 1.25e+03  107.137   0.2
+  gen_cwdbuf[173].UUT3_I (buffer_ADDR_BW1_DATA_BW4_306)
+                                          8.408   97.548 1.25e+03  107.207   0.2
+  gen_cwdbuf[172].UUT3_I (buffer_ADDR_BW1_DATA_BW4_307)
+                                          8.708   97.816 1.27e+03  107.796   0.2
+  gen_cwdbuf[171].UUT3_I (buffer_ADDR_BW1_DATA_BW4_308)
+                                          8.744   97.763 1.27e+03  107.772   0.2
+  gen_cwdbuf[170].UUT3_I (buffer_ADDR_BW1_DATA_BW4_309)
+                                          9.216   97.371 1.29e+03  107.876   0.2
+  gen_cwdbuf[169].UUT3_I (buffer_ADDR_BW1_DATA_BW4_310)
+                                          8.860   97.383 1.28e+03  107.524   0.2
+  gen_cwdbuf[168].UUT3_I (buffer_ADDR_BW1_DATA_BW4_311)
+                                          8.997   97.615 1.27e+03  107.880   0.2
+  gen_cwdbuf[167].UUT3_I (buffer_ADDR_BW1_DATA_BW4_312)
+                                          9.296   97.814 1.29e+03  108.401   0.2
+  gen_cwdbuf[166].UUT3_I (buffer_ADDR_BW1_DATA_BW4_313)
+                                          9.196   97.509 1.29e+03  107.995   0.2
+  gen_cwdbuf[165].UUT3_I (buffer_ADDR_BW1_DATA_BW4_314)
+                                          9.283   97.397 1.29e+03  107.971   0.2
+  gen_cwdbuf[164].UUT3_I (buffer_ADDR_BW1_DATA_BW4_315)
+                                          9.376   97.785 1.29e+03  108.453   0.2
+  gen_cwdbuf[163].UUT3_I (buffer_ADDR_BW1_DATA_BW4_316)
+                                          8.679   97.932 1.28e+03  107.892   0.2
+  gen_cwdbuf[162].UUT3_I (buffer_ADDR_BW1_DATA_BW4_317)
+                                          8.633   97.416 1.25e+03  107.301   0.2
+  gen_cwdbuf[161].UUT3_I (buffer_ADDR_BW1_DATA_BW4_318)
+                                          9.183   98.358 1.33e+03  108.874   0.2
+  gen_cwdbuf[160].UUT3_I (buffer_ADDR_BW1_DATA_BW4_319)
+                                          9.177   97.257 1.29e+03  107.724   0.2
+  gen_cwdbuf[159].UUT3_I (buffer_ADDR_BW1_DATA_BW4_320)
+                                          9.342   97.533 1.29e+03  108.166   0.2
+  gen_cwdbuf[158].UUT3_I (buffer_ADDR_BW1_DATA_BW4_321)
+                                          9.039   97.040 1.27e+03  107.346   0.2
+  gen_cwdbuf[157].UUT3_I (buffer_ADDR_BW1_DATA_BW4_322)
+                                          9.105   97.285 1.29e+03  107.681   0.2
+  gen_cwdbuf[156].UUT3_I (buffer_ADDR_BW1_DATA_BW4_323)
+                                          9.111   97.246 1.27e+03  107.624   0.2
+  gen_cwdbuf[155].UUT3_I (buffer_ADDR_BW1_DATA_BW4_324)
+                                          9.106   97.856 1.29e+03  108.254   0.2
+  gen_cwdbuf[154].UUT3_I (buffer_ADDR_BW1_DATA_BW4_325)
+                                         10.173   98.136 1.32e+03  109.630   0.2
+  gen_cwdbuf[153].UUT3_I (buffer_ADDR_BW1_DATA_BW4_326)
+                                          8.648   97.418 1.24e+03  107.310   0.2
+  gen_cwdbuf[152].UUT3_I (buffer_ADDR_BW1_DATA_BW4_327)
+                                          9.221   97.006 1.29e+03  107.518   0.2
+  gen_cwdbuf[151].UUT3_I (buffer_ADDR_BW1_DATA_BW4_328)
+                                          9.700   97.522 1.28e+03  108.502   0.2
+  gen_cwdbuf[150].UUT3_I (buffer_ADDR_BW1_DATA_BW4_329)
+                                          9.398   97.172 1.29e+03  107.860   0.2
+  gen_cwdbuf[149].UUT3_I (buffer_ADDR_BW1_DATA_BW4_330)
+                                          8.868   97.042 1.27e+03  107.178   0.2
+  gen_cwdbuf[148].UUT3_I (buffer_ADDR_BW1_DATA_BW4_331)
+                                          9.215   97.568 1.30e+03  108.087   0.2
+  gen_cwdbuf[147].UUT3_I (buffer_ADDR_BW1_DATA_BW4_332)
+                                          8.801   97.210 1.27e+03  107.280   0.2
+  gen_cwdbuf[146].UUT3_I (buffer_ADDR_BW1_DATA_BW4_333)
+                                          9.239   97.248 1.29e+03  107.778   0.2
+  gen_cwdbuf[145].UUT3_I (buffer_ADDR_BW1_DATA_BW4_334)
+                                          8.848   97.416 1.27e+03  107.531   0.2
+  gen_cwdbuf[144].UUT3_I (buffer_ADDR_BW1_DATA_BW4_335)
+                                          9.219   97.707 1.29e+03  108.218   0.2
+  gen_cwdbuf[143].UUT3_I (buffer_ADDR_BW1_DATA_BW4_336)
+                                          9.010   97.490 1.27e+03  107.767   0.2
+  gen_cwdbuf[142].UUT3_I (buffer_ADDR_BW1_DATA_BW4_337)
+                                          8.465   97.227 1.25e+03  106.943   0.2
+  gen_cwdbuf[141].UUT3_I (buffer_ADDR_BW1_DATA_BW4_338)
+                                          8.402   97.502 1.25e+03  107.155   0.2
+  gen_cwdbuf[140].UUT3_I (buffer_ADDR_BW1_DATA_BW4_339)
+                                          8.851   97.253 1.27e+03  107.372   0.2
+  gen_cwdbuf[139].UUT3_I (buffer_ADDR_BW1_DATA_BW4_340)
+                                          9.290   97.447 1.29e+03  108.027   0.2
+  gen_cwdbuf[138].UUT3_I (buffer_ADDR_BW1_DATA_BW4_341)
+                                          9.160   97.945 1.29e+03  108.397   0.2
+  gen_cwdbuf[137].UUT3_I (buffer_ADDR_BW1_DATA_BW4_342)
+                                          9.137   97.346 1.29e+03  107.773   0.2
+  gen_cwdbuf[136].UUT3_I (buffer_ADDR_BW1_DATA_BW4_343)
+                                          9.297   97.545 1.29e+03  108.134   0.2
+  gen_cwdbuf[135].UUT3_I (buffer_ADDR_BW1_DATA_BW4_344)
+                                          9.250   97.742 1.31e+03  108.298   0.2
+  gen_cwdbuf[134].UUT3_I (buffer_ADDR_BW1_DATA_BW4_345)
+                                          9.241   97.412 1.29e+03  107.944   0.2
+  gen_cwdbuf[133].UUT3_I (buffer_ADDR_BW1_DATA_BW4_346)
+                                          8.613   97.552 1.25e+03  107.416   0.2
+  gen_cwdbuf[132].UUT3_I (buffer_ADDR_BW1_DATA_BW4_347)
+                                          9.192  100.298 1.43e+03  110.920   0.2
+  gen_cwdbuf[131].UUT3_I (buffer_ADDR_BW1_DATA_BW4_348)
+                                          8.516   97.567 1.25e+03  107.335   0.2
+  gen_cwdbuf[130].UUT3_I (buffer_ADDR_BW1_DATA_BW4_349)
+                                          9.268   99.647 1.43e+03  110.344   0.2
+  gen_cwdbuf[129].UUT3_I (buffer_ADDR_BW1_DATA_BW4_350)
+                                          9.559   97.564 1.27e+03  108.389   0.2
+  gen_cwdbuf[128].UUT3_I (buffer_ADDR_BW1_DATA_BW4_351)
+                                         10.153   97.246 1.29e+03  108.691   0.2
+  gen_cwdbuf[127].UUT3_I (buffer_ADDR_BW1_DATA_BW4_352)
+                                          9.365   97.658 1.29e+03  108.315   0.2
+  gen_cwdbuf[126].UUT3_I (buffer_ADDR_BW1_DATA_BW4_353)
+                                          8.550   97.364 1.25e+03  107.165   0.2
+  gen_cwdbuf[125].UUT3_I (buffer_ADDR_BW1_DATA_BW4_354)
+                                          8.857   99.653 1.33e+03  109.841   0.2
+  gen_cwdbuf[124].UUT3_I (buffer_ADDR_BW1_DATA_BW4_355)
+                                          8.493   99.242 1.31e+03  109.046   0.2
+  gen_cwdbuf[123].UUT3_I (buffer_ADDR_BW1_DATA_BW4_356)
+                                          8.546   99.038 1.33e+03  108.910   0.2
+  gen_cwdbuf[122].UUT3_I (buffer_ADDR_BW1_DATA_BW4_357)
+                                          9.248   97.199 1.25e+03  107.698   0.2
+  gen_cwdbuf[121].UUT3_I (buffer_ADDR_BW1_DATA_BW4_358)
+                                          8.446   97.574 1.25e+03  107.272   0.2
+  gen_cwdbuf[120].UUT3_I (buffer_ADDR_BW1_DATA_BW4_359)
+                                          8.511   96.820 1.25e+03  106.582   0.2
+  gen_cwdbuf[119].UUT3_I (buffer_ADDR_BW1_DATA_BW4_360)
+                                          8.533   97.715 1.25e+03  107.500   0.2
+  gen_cwdbuf[118].UUT3_I (buffer_ADDR_BW1_DATA_BW4_361)
+                                          8.639   97.603 1.28e+03  107.519   0.2
+  gen_cwdbuf[117].UUT3_I (buffer_ADDR_BW1_DATA_BW4_362)
+                                          8.624   97.797 1.28e+03  107.697   0.2
+  gen_cwdbuf[116].UUT3_I (buffer_ADDR_BW1_DATA_BW4_363)
+                                          9.064   97.925 1.32e+03  108.305   0.2
+  gen_cwdbuf[115].UUT3_I (buffer_ADDR_BW1_DATA_BW4_364)
+                                          8.894   98.319 1.30e+03  108.515   0.2
+  gen_cwdbuf[114].UUT3_I (buffer_ADDR_BW1_DATA_BW4_365)
+                                          8.921   99.174 1.32e+03  109.412   0.2
+  gen_cwdbuf[113].UUT3_I (buffer_ADDR_BW1_DATA_BW4_366)
+                                          9.133   98.837 1.32e+03  109.288   0.2
+  gen_cwdbuf[112].UUT3_I (buffer_ADDR_BW1_DATA_BW4_367)
+                                          9.417   98.531 1.33e+03  109.279   0.2
+  gen_cwdbuf[111].UUT3_I (buffer_ADDR_BW1_DATA_BW4_368)
+                                          9.294   98.997 1.33e+03  109.623   0.2
+  gen_cwdbuf[110].UUT3_I (buffer_ADDR_BW1_DATA_BW4_369)
+                                          8.755   99.632 1.32e+03  109.705   0.2
+  gen_cwdbuf[109].UUT3_I (buffer_ADDR_BW1_DATA_BW4_370)
+                                          9.327   98.521 1.33e+03  109.180   0.2
+  gen_cwdbuf[108].UUT3_I (buffer_ADDR_BW1_DATA_BW4_371)
+                                          8.912   98.220 1.30e+03  108.427   0.2
+  gen_cwdbuf[107].UUT3_I (buffer_ADDR_BW1_DATA_BW4_372)
+                                          9.274   98.221 1.30e+03  108.797   0.2
+  gen_cwdbuf[106].UUT3_I (buffer_ADDR_BW1_DATA_BW4_373)
+                                          8.891   97.760 1.30e+03  107.948   0.2
+  gen_cwdbuf[105].UUT3_I (buffer_ADDR_BW1_DATA_BW4_374)
+                                          8.766   97.555 1.28e+03  107.602   0.2
+  gen_cwdbuf[104].UUT3_I (buffer_ADDR_BW1_DATA_BW4_375)
+                                          9.144   98.542 1.32e+03  109.005   0.2
+  gen_cwdbuf[103].UUT3_I (buffer_ADDR_BW1_DATA_BW4_376)
+                                          8.857   97.843 1.28e+03  107.982   0.2
+  gen_cwdbuf[102].UUT3_I (buffer_ADDR_BW1_DATA_BW4_377)
+                                          8.925   97.748 1.30e+03  107.969   0.2
+  gen_cwdbuf[101].UUT3_I (buffer_ADDR_BW1_DATA_BW4_378)
+                                          9.034   97.645 1.30e+03  107.975   0.2
+  gen_cwdbuf[100].UUT3_I (buffer_ADDR_BW1_DATA_BW4_379)
+                                          8.962   97.532 1.30e+03  107.792   0.2
+  gen_cwdbuf[99].UUT3_I (buffer_ADDR_BW1_DATA_BW4_380)
+                                          8.881   97.414 1.30e+03  107.591   0.2
+  gen_cwdbuf[98].UUT3_I (buffer_ADDR_BW1_DATA_BW4_381)
+                                          8.500   98.070 1.31e+03  107.876   0.2
+  gen_cwdbuf[97].UUT3_I (buffer_ADDR_BW1_DATA_BW4_382)
+                                          8.662   98.364 1.31e+03  108.332   0.2
+  gen_cwdbuf[96].UUT3_I (buffer_ADDR_BW1_DATA_BW4_383)
+                                          9.002   98.054 1.30e+03  108.354   0.2
+  gen_cwdbuf[95].UUT3_I (buffer_ADDR_BW1_DATA_BW4_384)
+                                          9.131   98.526 1.32e+03  108.975   0.2
+  gen_cwdbuf[94].UUT3_I (buffer_ADDR_BW1_DATA_BW4_385)
+                                          9.155   98.350 1.32e+03  108.820   0.2
+  gen_cwdbuf[93].UUT3_I (buffer_ADDR_BW1_DATA_BW4_386)
+                                          9.208   99.268 1.33e+03  109.810   0.2
+  gen_cwdbuf[92].UUT3_I (buffer_ADDR_BW1_DATA_BW4_387)
+                                          9.098   98.100 1.32e+03  108.516   0.2
+  gen_cwdbuf[91].UUT3_I (buffer_ADDR_BW1_DATA_BW4_388)
+                                          8.832   97.974 1.33e+03  108.132   0.2
+  gen_cwdbuf[90].UUT3_I (buffer_ADDR_BW1_DATA_BW4_389)
+                                          9.614   98.912 1.33e+03  109.859   0.2
+  gen_cwdbuf[89].UUT3_I (buffer_ADDR_BW1_DATA_BW4_390)
+                                          9.621   98.105 1.32e+03  109.045   0.2
+  gen_cwdbuf[88].UUT3_I (buffer_ADDR_BW1_DATA_BW4_391)
+                                          9.303   98.580 1.32e+03  109.200   0.2
+  gen_cwdbuf[87].UUT3_I (buffer_ADDR_BW1_DATA_BW4_392)
+                                          9.579   98.715 1.32e+03  109.611   0.2
+  gen_cwdbuf[86].UUT3_I (buffer_ADDR_BW1_DATA_BW4_393)
+                                          9.565   98.486 1.32e+03  109.368   0.2
+  gen_cwdbuf[85].UUT3_I (buffer_ADDR_BW1_DATA_BW4_394)
+                                          9.555   98.847 1.33e+03  109.734   0.2
+  gen_cwdbuf[84].UUT3_I (buffer_ADDR_BW1_DATA_BW4_395)
+                                          9.496   98.729 1.32e+03  109.543   0.2
+  gen_cwdbuf[83].UUT3_I (buffer_ADDR_BW1_DATA_BW4_396)
+                                          9.419   98.417 1.30e+03  109.134   0.2
+  gen_cwdbuf[82].UUT3_I (buffer_ADDR_BW1_DATA_BW4_397)
+                                          9.139   98.125 1.30e+03  108.562   0.2
+  gen_cwdbuf[81].UUT3_I (buffer_ADDR_BW1_DATA_BW4_398)
+                                          9.082   97.772 1.30e+03  108.151   0.2
+  gen_cwdbuf[80].UUT3_I (buffer_ADDR_BW1_DATA_BW4_399)
+                                          9.037   97.481 1.28e+03  107.798   0.2
+  gen_cwdbuf[79].UUT3_I (buffer_ADDR_BW1_DATA_BW4_400)
+                                          9.888   99.347 1.34e+03  110.571   0.2
+  gen_cwdbuf[78].UUT3_I (buffer_ADDR_BW1_DATA_BW4_401)
+                                          9.327   98.747 1.30e+03  109.378   0.2
+  gen_cwdbuf[77].UUT3_I (buffer_ADDR_BW1_DATA_BW4_402)
+                                          9.195   98.100 1.30e+03  108.595   0.2
+  gen_cwdbuf[76].UUT3_I (buffer_ADDR_BW1_DATA_BW4_403)
+                                          8.938   97.931 1.30e+03  108.167   0.2
+  gen_cwdbuf[75].UUT3_I (buffer_ADDR_BW1_DATA_BW4_404)
+                                          8.969   98.305 1.28e+03  108.554   0.2
+  gen_cwdbuf[74].UUT3_I (buffer_ADDR_BW1_DATA_BW4_405)
+                                          8.978   98.450 1.29e+03  108.717   0.2
+  gen_cwdbuf[73].UUT3_I (buffer_ADDR_BW1_DATA_BW4_406)
+                                          8.919   97.922 1.29e+03  108.128   0.2
+  gen_cwdbuf[72].UUT3_I (buffer_ADDR_BW1_DATA_BW4_407)
+                                          8.843   98.113 1.29e+03  108.242   0.2
+  gen_cwdbuf[71].UUT3_I (buffer_ADDR_BW1_DATA_BW4_408)
+                                          9.469   98.807 1.33e+03  109.609   0.2
+  gen_cwdbuf[70].UUT3_I (buffer_ADDR_BW1_DATA_BW4_409)
+                                          8.895   98.489 1.29e+03  108.672   0.2
+  gen_cwdbuf[69].UUT3_I (buffer_ADDR_BW1_DATA_BW4_410)
+                                          8.744   97.331 1.25e+03  107.325   0.2
+  gen_cwdbuf[68].UUT3_I (buffer_ADDR_BW1_DATA_BW4_411)
+                                          9.983   98.148 1.34e+03  109.472   0.2
+  gen_cwdbuf[67].UUT3_I (buffer_ADDR_BW1_DATA_BW4_412)
+                                          9.478   97.209 1.29e+03  107.979   0.2
+  gen_cwdbuf[66].UUT3_I (buffer_ADDR_BW1_DATA_BW4_413)
+                                          9.238   98.025 1.29e+03  108.557   0.2
+  gen_cwdbuf[65].UUT3_I (buffer_ADDR_BW1_DATA_BW4_414)
+                                          9.195   97.437 1.29e+03  107.924   0.2
+  gen_cwdbuf[64].UUT3_I (buffer_ADDR_BW1_DATA_BW4_415)
+                                          9.318   98.352 1.30e+03  108.967   0.2
+  gen_cwdbuf[63].UUT3_I (buffer_ADDR_BW1_DATA_BW4_416)
+                                          8.838   97.614 1.24e+03  107.695   0.2
+  gen_cwdbuf[62].UUT3_I (buffer_ADDR_BW1_DATA_BW4_417)
+                                          8.529   97.525 1.25e+03  107.305   0.2
+  gen_cwdbuf[61].UUT3_I (buffer_ADDR_BW1_DATA_BW4_418)
+                                          8.542   97.642 1.25e+03  107.435   0.2
+  gen_cwdbuf[60].UUT3_I (buffer_ADDR_BW1_DATA_BW4_419)
+                                          9.094   97.486 1.27e+03  107.847   0.2
+  gen_cwdbuf[59].UUT3_I (buffer_ADDR_BW1_DATA_BW4_420)
+                                          9.027   97.192 1.25e+03  107.472   0.2
+  gen_cwdbuf[58].UUT3_I (buffer_ADDR_BW1_DATA_BW4_421)
+                                          9.596   97.499 1.25e+03  108.345   0.2
+  gen_cwdbuf[57].UUT3_I (buffer_ADDR_BW1_DATA_BW4_422)
+                                          8.656   96.970 1.22e+03  106.847   0.2
+  gen_cwdbuf[56].UUT3_I (buffer_ADDR_BW1_DATA_BW4_423)
+                                          9.571   98.166 1.30e+03  109.040   0.2
+  gen_cwdbuf[55].UUT3_I (buffer_ADDR_BW1_DATA_BW4_424)
+                                          9.859   97.787 1.33e+03  108.973   0.2
+  gen_cwdbuf[54].UUT3_I (buffer_ADDR_BW1_DATA_BW4_425)
+                                          9.903   98.214 1.33e+03  109.444   0.2
+  gen_cwdbuf[53].UUT3_I (buffer_ADDR_BW1_DATA_BW4_426)
+                                          9.002   97.415 1.27e+03  107.685   0.2
+  gen_cwdbuf[52].UUT3_I (buffer_ADDR_BW1_DATA_BW4_427)
+                                          8.985   97.752 1.27e+03  108.007   0.2
+  gen_cwdbuf[51].UUT3_I (buffer_ADDR_BW1_DATA_BW4_428)
+                                          8.413   97.630 1.25e+03  107.296   0.2
+  gen_cwdbuf[50].UUT3_I (buffer_ADDR_BW1_DATA_BW4_429)
+                                          8.618   97.374 1.25e+03  107.243   0.2
+  gen_cwdbuf[49].UUT3_I (buffer_ADDR_BW1_DATA_BW4_430)
+                                          8.411   96.921 1.25e+03  106.583   0.2
+  gen_cwdbuf[48].UUT3_I (buffer_ADDR_BW1_DATA_BW4_431)
+                                          8.274   97.526 1.25e+03  107.052   0.2
+  gen_cwdbuf[47].UUT3_I (buffer_ADDR_BW1_DATA_BW4_432)
+                                          8.541   97.519 1.25e+03  107.311   0.2
+  gen_cwdbuf[46].UUT3_I (buffer_ADDR_BW1_DATA_BW4_433)
+                                          8.517   97.331 1.25e+03  107.100   0.2
+  gen_cwdbuf[45].UUT3_I (buffer_ADDR_BW1_DATA_BW4_434)
+                                          8.408   96.929 1.25e+03  106.589   0.2
+  gen_cwdbuf[44].UUT3_I (buffer_ADDR_BW1_DATA_BW4_435)
+                                          8.258   97.230 1.25e+03  106.739   0.2
+  gen_cwdbuf[43].UUT3_I (buffer_ADDR_BW1_DATA_BW4_436)
+                                          8.419   97.231 1.25e+03  106.901   0.2
+  gen_cwdbuf[42].UUT3_I (buffer_ADDR_BW1_DATA_BW4_437)
+                                          8.412   97.629 1.25e+03  107.291   0.2
+  gen_cwdbuf[41].UUT3_I (buffer_ADDR_BW1_DATA_BW4_438)
+                                          8.476   97.297 1.25e+03  107.025   0.2
+  gen_cwdbuf[40].UUT3_I (buffer_ADDR_BW1_DATA_BW4_439)
+                                          8.452   96.952 1.22e+03  106.625   0.2
+  gen_cwdbuf[39].UUT3_I (buffer_ADDR_BW1_DATA_BW4_440)
+                                          8.455   97.307 1.25e+03  107.013   0.2
+  gen_cwdbuf[38].UUT3_I (buffer_ADDR_BW1_DATA_BW4_441)
+                                          8.561   97.876 1.27e+03  107.711   0.2
+  gen_cwdbuf[37].UUT3_I (buffer_ADDR_BW1_DATA_BW4_442)
+                                         10.355   99.340 1.34e+03  111.038   0.2
+  gen_cwdbuf[36].UUT3_I (buffer_ADDR_BW1_DATA_BW4_443)
+                                          8.238   97.661 1.25e+03  107.149   0.2
+  gen_cwdbuf[35].UUT3_I (buffer_ADDR_BW1_DATA_BW4_444)
+                                          9.407   98.885 1.32e+03  109.609   0.2
+  gen_cwdbuf[34].UUT3_I (buffer_ADDR_BW1_DATA_BW4_445)
+                                          9.215   98.993 1.32e+03  109.527   0.2
+  gen_cwdbuf[33].UUT3_I (buffer_ADDR_BW1_DATA_BW4_446)
+                                          8.359   97.404 1.25e+03  107.015   0.2
+  gen_cwdbuf[32].UUT3_I (buffer_ADDR_BW1_DATA_BW4_447)
+                                          9.181   99.086 1.32e+03  109.586   0.2
+  gen_cwdbuf[31].UUT3_I (buffer_ADDR_BW1_DATA_BW4_448)
+                                          9.004   98.003 1.30e+03  108.310   0.2
+  gen_cwdbuf[30].UUT3_I (buffer_ADDR_BW1_DATA_BW4_449)
+                                          9.255   98.780 1.32e+03  109.352   0.2
+  gen_cwdbuf[29].UUT3_I (buffer_ADDR_BW1_DATA_BW4_450)
+                                          8.366   97.700 1.25e+03  107.318   0.2
+  gen_cwdbuf[28].UUT3_I (buffer_ADDR_BW1_DATA_BW4_451)
+                                          8.265   97.612 1.25e+03  107.129   0.2
+  gen_cwdbuf[27].UUT3_I (buffer_ADDR_BW1_DATA_BW4_452)
+                                          8.722   97.695 1.27e+03  107.689   0.2
+  gen_cwdbuf[26].UUT3_I (buffer_ADDR_BW1_DATA_BW4_453)
+                                          8.346   97.974 1.25e+03  107.571   0.2
+  gen_cwdbuf[25].UUT3_I (buffer_ADDR_BW1_DATA_BW4_454)
+                                          9.523   98.945 1.34e+03  109.809   0.2
+  gen_cwdbuf[24].UUT3_I (buffer_ADDR_BW1_DATA_BW4_455)
+                                          8.666   98.532 1.27e+03  108.471   0.2
+  gen_cwdbuf[23].UUT3_I (buffer_ADDR_BW1_DATA_BW4_456)
+                                          8.546   96.483 1.25e+03  106.280   0.2
+  gen_cwdbuf[22].UUT3_I (buffer_ADDR_BW1_DATA_BW4_457)
+                                          8.382   97.738 1.25e+03  107.372   0.2
+  gen_cwdbuf[21].UUT3_I (buffer_ADDR_BW1_DATA_BW4_458)
+                                          8.411   97.271 1.25e+03  106.934   0.2
+  gen_cwdbuf[20].UUT3_I (buffer_ADDR_BW1_DATA_BW4_459)
+                                          8.422   97.428 1.25e+03  107.102   0.2
+  gen_cwdbuf[19].UUT3_I (buffer_ADDR_BW1_DATA_BW4_460)
+                                          8.481   97.298 1.25e+03  107.030   0.2
+  gen_cwdbuf[18].UUT3_I (buffer_ADDR_BW1_DATA_BW4_461)
+                                          8.296   97.721 1.25e+03  107.268   0.2
+  gen_cwdbuf[17].UUT3_I (buffer_ADDR_BW1_DATA_BW4_462)
+                                          8.337   97.229 1.25e+03  106.818   0.2
+  gen_cwdbuf[16].UUT3_I (buffer_ADDR_BW1_DATA_BW4_463)
+                                          8.315   97.795 1.25e+03  107.362   0.2
+  gen_cwdbuf[15].UUT3_I (buffer_ADDR_BW1_DATA_BW4_464)
+                                          8.331   97.585 1.25e+03  107.167   0.2
+  gen_cwdbuf[14].UUT3_I (buffer_ADDR_BW1_DATA_BW4_465)
+                                          8.298   97.419 1.25e+03  106.967   0.2
+  gen_cwdbuf[13].UUT3_I (buffer_ADDR_BW1_DATA_BW4_466)
+                                          8.403   97.446 1.25e+03  107.101   0.2
+  gen_cwdbuf[12].UUT3_I (buffer_ADDR_BW1_DATA_BW4_467)
+                                          8.323   97.122 1.25e+03  106.695   0.2
+  gen_cwdbuf[11].UUT3_I (buffer_ADDR_BW1_DATA_BW4_468)
+                                          9.675  100.885 1.37e+03  111.933   0.2
+  gen_cwdbuf[10].UUT3_I (buffer_ADDR_BW1_DATA_BW4_469)
+                                          9.767  100.166 1.37e+03  111.306   0.2
+  gen_cwdbuf[9].UUT3_I (buffer_ADDR_BW1_DATA_BW4_470)
+                                          9.615  100.204 1.37e+03  111.193   0.2
+  gen_cwdbuf[8].UUT3_I (buffer_ADDR_BW1_DATA_BW4_471)
+                                          9.059   97.557 1.27e+03  107.881   0.2
+  gen_cwdbuf[7].UUT3_I (buffer_ADDR_BW1_DATA_BW4_472)
+                                          8.770   97.669 1.25e+03  107.691   0.2
+  gen_cwdbuf[6].UUT3_I (buffer_ADDR_BW1_DATA_BW4_473)
+                                          8.571   97.211 1.25e+03  107.033   0.2
+  gen_cwdbuf[5].UUT3_I (buffer_ADDR_BW1_DATA_BW4_474)
+                                          8.783   97.237 1.25e+03  107.273   0.2
+  gen_cwdbuf[4].UUT3_I (buffer_ADDR_BW1_DATA_BW4_475)
+                                          8.664   97.470 1.25e+03  107.385   0.2
+  gen_cwdbuf[3].UUT3_I (buffer_ADDR_BW1_DATA_BW4_476)
+                                          8.521   97.786 1.25e+03  107.559   0.2
+  gen_cwdbuf[2].UUT3_I (buffer_ADDR_BW1_DATA_BW4_477)
+                                          8.409   97.127 1.25e+03  106.787   0.2
+  gen_cwdbuf[1].UUT3_I (buffer_ADDR_BW1_DATA_BW4_478)
+                                          8.394   97.526 1.25e+03  107.172   0.2
+  gen_cwdbuf[0].UUT3_I (buffer_ADDR_BW1_DATA_BW4_479)
+                                          8.672   97.250 1.25e+03  107.173   0.2
+  UUT2 (buffer_ADDR_BW1_DATA_BW16)       37.863  390.401 5.52e+03  433.783   0.8
+  UUT1 (buffer_ADDR_BW1_DATA_BW4_480)     8.472   97.321 1.25e+03  107.043   0.2
+  UUT0 (buffer_ctrl_ADDR_BW1)            15.381   10.348  683.762   26.413   0.0
+1

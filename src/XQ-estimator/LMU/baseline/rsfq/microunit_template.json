@@ -1,0 +1,125 @@
+{
+    "fifo_ctrl_mobuf": {
+        "type": "rtl_common", 
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "mobuf_sz"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "ndroram_mobuf": {
+        "type": "custom_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "mobuf_sz",
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    }, 
+
+    "demux_mobuf": {
+        "type": "rtl_common",
+        "num": 1, 
+        "param": {
+            "NUM_DATA": "mobuf_sz",
+            "DATA_BW": "opcode_bw"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "srmem_instinfo1": {
+        "type": "custom_common",
+        "num": "instinfo_bw",
+        "param": {
+            "NUM_DATA": "num_lq"
+        },
+        "clk": "counter", 
+        "loop": true
+    },
+
+    "srmem_instinfo2": {
+        "type": "custom_common",
+        "num": "instinfo_bw",
+        "param": {
+            "NUM_DATA": "num_lq"
+        },
+        "clk": "counter", 
+        "loop": true
+    }, 
+
+    "srmem_pchinfo1": {
+        "type": "custom_common",
+        "num": "pchinfo_bw",
+        "param": {
+            "NUM_DATA": "num_pch"
+        },
+        "clk": "counter", 
+        "loop": true
+    },
+
+    "srmem_pchinfo2": {
+        "type": "custom_common",
+        "num": "pchinfo_bw",
+        "param": {
+            "NUM_DATA": "num_pch"
+        },
+        "clk": "counter", 
+        "loop": true
+    }, 
+
+    "lmu_ctrl": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+        },
+        "clk": "concurrent", 
+        "loop": false
+    },
+
+    "mux_pfmeas": {
+        "type": "rtl_common", 
+        "num": "pfmeas_mux_bw", 
+        "param": {
+            "NUM_DATA": "num_pch", 
+            "DATA_BW": 1
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "lmu_selproduct": {
+        "type": "rtl_unit", 
+        "num": 2, 
+        "param": {
+            "CODE_DIST": "code_dist"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "lmu_interpret": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_LQ": "num_lq"
+        },
+        "clk": "concurrent",
+        "loop": false
+    },
+
+    "lmu_lqsigngen": {
+        "type": "rtl_unit",
+        "num": 1, 
+        "param": {
+            "NUM_LQ": "num_lq", 
+            "NUM_PCH": "num_pch", 
+            "CODE_DIST": "code_dist"
+        },
+        "clk": "concurrent", 
+        "loop": false
+    }
+}

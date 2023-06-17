@@ -1,0 +1,47 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : QID
+Version: P-2019.03
+Date   : Wed May 17 05:30:27 2023
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /work/XQsim_private/src/XQ-estimator/CryoModel/CryoPipeline/freepdk-45nm/stdview/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+QID                                    1.05e+03 2.22e+04 1.85e+05 2.34e+04 100.0
+  UUT4 (fifo_ADDR_BW4_DATA_BW20)        209.482 5.80e+03 4.63e+04 6.06e+03  25.8
+    UUT1 (fifo_reg_ADDR_BW4_DATA_BW20)  200.792 5.79e+03 4.44e+04 6.04e+03  25.8
+    UUT0 (fifo_ctrl_ADDR_BW4_0)           8.690    7.721 1.87e+03   18.285   0.1
+  UUT3 (fifo_ADDR_BW4_DATA_BW54)        661.029 1.52e+04 1.22e+05 1.59e+04  68.0
+    UUT1 (fifo_reg_ADDR_BW4_DATA_BW54)  635.493 1.51e+04 1.20e+05 1.59e+04  67.8
+    UUT0 (fifo_ctrl_ADDR_BW4_1)          25.539   25.123 2.25e+03   52.908   0.2
+  UUT2 (qid_ctrl)                        22.197   25.006 1.92e+03   49.125   0.2
+  UUT1 (qid_locator)                     18.283    4.968 1.56e+03   24.806   0.1
+  UUT0 (qid_decoder)                     10.015    5.880  302.890   16.199   0.1
+1

@@ -1,0 +1,66 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'LMU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LMU
+Version: P-2019.03
+Date   : Mon May 29 11:12:25 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+  Startpoint: aqmeas_array_pch_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: initmeas_reg_reg[0][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  aqmeas_array_pch_reg_reg[2]/CK (DFF_X1)                 0.00 #     0.00 r
+  aqmeas_array_pch_reg_reg[2]/Q (DFF_X1) <-               0.11       0.11 r
+  UUT5_0/aqmeas_array_pch[2] (lmu_selproduct_1) <-        0.00       0.11 r
+  UUT5_0/U25/ZN (XNOR2_X1)                                0.04 *     0.15 r
+  UUT5_0/U26/ZN (XNOR2_X1)                                0.04 *     0.19 r
+  UUT5_0/U27/ZN (XNOR2_X1)                                0.04 *     0.24 r
+  UUT5_0/U44/ZN (OAI211_X1)                               0.02 *     0.26 f
+  UUT5_0/U57/ZN (OAI21_X1)                                0.04 *     0.29 r
+  UUT5_0/U81/ZN (XNOR2_X1)                                0.05 *     0.34 r
+  UUT5_0/U129/ZN (OAI21_X2)                               0.02 *     0.36 f
+  UUT5_0/initial_meas (lmu_selproduct_1) <-               0.00       0.36 f
+  U6822/A (XNOR2_X2) <-                                   0.00 *     0.36 f
+  U6822/ZN (XNOR2_X2) <-                                  0.05       0.41 f
+  U5660/A1 (NAND2_X4) <-                                  0.00 *     0.41 f
+  U5660/ZN (NAND2_X4) <-                                  0.03       0.43 r
+  U5671/C1 (OAI211_X1) <-                                 0.00 *     0.43 r
+  U5671/ZN (OAI211_X1) <-                                 0.02       0.45 f
+  U5672/A (AOI21_X1) <-                                   0.00 *     0.45 f
+  U5672/ZN (AOI21_X1) <-                                  0.04       0.49 r
+  initmeas_reg_reg[0][0]/D (DFF_X1)                       0.00 *     0.49 r
+  data arrival time                                                  0.49
+
+  clock clk (rise edge)                                   0.40       0.40
+  clock network delay (ideal)                             0.00       0.40
+  initmeas_reg_reg[0][0]/CK (DFF_X1)                      0.00       0.40 r
+  library setup time                                     -0.03       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.49
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+1
